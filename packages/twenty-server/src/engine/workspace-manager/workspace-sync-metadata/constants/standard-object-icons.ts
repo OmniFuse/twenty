@@ -41,4 +41,7 @@ export const STANDARD_OBJECT_ICONS = {
   workflowVersion: 'IconVersions',
   workflowAutomatedTrigger: 'IconSettingsAutomation',
   workspaceMember: 'IconUserCircle',
+  contact: 'IconPhone',
+  lead: 'IconTargetArrow',
+  call: 'IconPhoneCall',
 } as const;
