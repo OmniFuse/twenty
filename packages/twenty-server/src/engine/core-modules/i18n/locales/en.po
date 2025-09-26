@@ -1484,6 +1484,22 @@ msgstr "ICP"
 msgid "Id"
 msgstr "Id"
 
+#. js-lingui-id: Rtuu4k
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "ID участника"
+msgstr "ID участника"
+
+#. js-lingui-id: lqKg7t
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "ID участника рабочего пространства, создавшего контакт"
+msgstr "ID участника рабочего пространства, создавшего контакт"
+
+#. js-lingui-id: 8Y8ASd
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "ID участника рабочего пространства, создавшего лида"
+msgstr "ID участника рабочего пространства, создавшего лида"
+
 #. js-lingui-id: Ebc83S
 #: src/modules/company/standard-objects/company.workspace-entity.ts
 msgid "Ideal Customer Profile:  Indicates whether the company is the most suitable and valuable customer for you"
@@ -3905,3 +3921,318 @@ msgstr "Your team member responsible for managing the company account"
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts
 msgid "Your workspace has been updated with a new data model. Please refresh the page."
 msgstr "Your workspace has been updated with a new data model. Please refresh the page."
+
+#. js-lingui-id: AovOpD
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Адрес"
+msgstr "Адрес"
+
+#. js-lingui-id: HciGAS
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Адрес лида"
+msgstr "Адрес лида"
+
+#. js-lingui-id: 6GEQo7
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Валюта"
+msgstr "Валюта"
+
+#. js-lingui-id: jiOKyX
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Валюта сделки"
+msgstr "Валюта сделки"
+
+#. js-lingui-id: lKcr7P
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Доп. информация"
+msgstr "Доп. информация"
+
+#. js-lingui-id: rgOPIM
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Дополнительная информация в формате JSON"
+msgstr "Дополнительная информация в формате JSON"
+
+#. js-lingui-id: gRrLON
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Дополнительная информация о контакте"
+msgstr "Дополнительная информация о контакте"
+
+#. js-lingui-id: 0ur0iI
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Дополнительная информация о лиде"
+msgstr "Дополнительная информация о лиде"
+
+#. js-lingui-id: Nr7Xaq
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Заметки"
+msgstr "Заметки"
+
+#. js-lingui-id: oHFI50
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Заметки и комментарии к звонку"
+msgstr "Заметки и комментарии к звонку"
+
+#. js-lingui-id: qF5zvm
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Запись"
+msgstr "Запись"
+
+#. js-lingui-id: 0UR/kn
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Запись телефонного звонка"
+msgstr "Запись телефонного звонка"
+
+#. js-lingui-id: +xixtW
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Звонки"
+msgstr "Звонки"
+
+#. js-lingui-id: cgT0kT
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Звонки, связанные с этим лидом"
+msgstr "Звонки, связанные с этим лидом"
+
+#. js-lingui-id: Cs3y/W
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Звонки, совершенные этому контакту"
+msgstr "Звонки, совершенные этому контакту"
+
+#. js-lingui-id: 8FDvWe
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Звонок"
+msgstr "Звонок"
+
+#. js-lingui-id: MSYYL/
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Имя"
+msgstr "Имя"
+
+#. js-lingui-id: 7NimC8
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Имя контакта"
+msgstr "Имя контакта"
+
+#. js-lingui-id: ZHhH71
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Имя лида"
+msgstr "Имя лида"
+
+#. js-lingui-id: jYGrqz
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Имя человека, создавшего лида"
+msgstr "Имя человека, создавшего лида"
+
+#. js-lingui-id: Tk/qVq
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Источник"
+msgstr "Источник"
+
+#. js-lingui-id: mjoWUG
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Источник получения контакта"
+msgstr "Источник получения контакта"
+
+#. js-lingui-id: r1yu0e
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Источник получения лида"
+msgstr "Источник получения лида"
+
+#. js-lingui-id: EpvXEI
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Исход или результат звонка"
+msgstr "Исход или результат звонка"
+
+#. js-lingui-id: YXp2RA
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Когда закончился звонок"
+msgstr "Когда закончился звонок"
+
+#. js-lingui-id: /r/WTS
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Когда начался звонок"
+msgstr "Когда начался звонок"
+
+#. js-lingui-id: 38BYwM
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Контакт"
+msgstr "Контакт"
+
+#. js-lingui-id: uOMQPx
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Контакт с номером телефона"
+msgstr "Контакт с номером телефона"
+
+#. js-lingui-id: 4iW4JJ
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Контакт, связанный с этим звонком"
+msgstr "Контакт, связанный с этим звонком"
+
+#. js-lingui-id: 0Kdm0f
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Контакты"
+msgstr "Контакты"
+
+#. js-lingui-id: gAH8ME
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Контакты, связанные с этим лидом"
+msgstr "Контакты, связанные с этим лидом"
+
+#. js-lingui-id: zWrTA4
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Контекст"
+msgstr "Контекст"
+
+#. js-lingui-id: As004h
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Лид"
+msgstr "Лид"
+
+#. js-lingui-id: YKUhbH
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Лид, связанный с этим звонком"
+msgstr "Лид, связанный с этим звонком"
+
+#. js-lingui-id: Wb+/aM
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Лиды"
+msgstr "Лиды"
+
+#. js-lingui-id: trutaG
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Лиды, связанные с этим контактом"
+msgstr "Лиды, связанные с этим контактом"
+
+#. js-lingui-id: IxTyQ2
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Начало"
+msgstr "Начало"
+
+#. js-lingui-id: 2OdcPt
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Номер телефона контакта"
+msgstr "Номер телефона контакта"
+
+#. js-lingui-id: 6nnrXl
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Обработан"
+msgstr "Обработан"
+
+#. js-lingui-id: dMHrt8
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Обработан ли данный контакт"
+msgstr "Обработан ли данный контакт"
+
+#. js-lingui-id: caKEdv
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Окончание"
+msgstr "Окончание"
+
+#. js-lingui-id: CeuT1n
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Описание"
+msgstr "Описание"
+
+#. js-lingui-id: L3VhIu
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Подробное описание лида"
+msgstr "Подробное описание лида"
+
+#. js-lingui-id: tOr3hu
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Позиция"
+msgstr "Позиция"
+
+#. js-lingui-id: X6mKWE
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Позиция записи звонка"
+msgstr "Позиция записи звонка"
+
+#. js-lingui-id: 7eku7w
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Позиция записи контакта"
+msgstr "Позиция записи контакта"
+
+#. js-lingui-id: W7jqpn
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Позиция записи лида"
+msgstr "Позиция записи лида"
+
+#. js-lingui-id: vxkgWi
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Потенциальная сумма сделки"
+msgstr "Потенциальная сумма сделки"
+
+#. js-lingui-id: nRunYR
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Потенциальный клиент"
+msgstr "Потенциальный клиент"
+
+#. js-lingui-id: qUitIW
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Продолжительность"
+msgstr "Продолжительность"
+
+#. js-lingui-id: ElExBh
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Продолжительность звонка в секундах"
+msgstr "Продолжительность звонка в секундах"
+
+#. js-lingui-id: WB04kN
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Результат"
+msgstr "Результат"
+
+#. js-lingui-id: CtkQn6
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Создал"
+msgstr "Создал"
+
+#. js-lingui-id: fQ7a/0
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Создано"
+msgstr "Создано"
+
+#. js-lingui-id: FZxJie
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Создатель записи"
+msgstr "Создатель записи"
+
+#. js-lingui-id: Uaa4m4
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Ссылка на запись звонка"
+msgstr "Ссылка на запись звонка"
+
+#. js-lingui-id: XWcng2
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Сумма"
+msgstr "Сумма"
+
+#. js-lingui-id: AqemRq
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Теги"
+msgstr "Теги"
+
+#. js-lingui-id: fgOofR
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Теги, связанные с контактом"
+msgstr "Теги, связанные с контактом"
+
+#. js-lingui-id: N3FP7q
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Телефон"
+msgstr "Телефон"

@@ -7734,3 +7734,177 @@ msgstr "למקום העבודה שלך אין מנוי פעיל. אנא פנו �
 #: src/modules/billing/components/SettingsBillingContent.tsx
 msgid "Your workspace will be disabled"
 msgstr "המרחב האישי שלך יהפוך ללא פעיל"
+
+#. js-lingui-id: OIM4LA
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Активность звонков сегодня"
+msgstr ""
+
+#. js-lingui-id: zphZsO
+#: src/pages/analytics/components/KpiCards.tsx
+msgid "Активные лиды"
+msgstr ""
+
+#. js-lingui-id: bVnRY3
+#: src/pages/analytics/Analytics.tsx
+msgid "Анализ генерации и конверсии лидов"
+msgstr ""
+
+#. js-lingui-id: vJMN1s
+#: src/pages/analytics/Analytics.tsx
+#: src/pages/analytics/Analytics.tsx
+#: src/modules/settings/hooks/useSettingsNavigationItems.tsx
+msgid "Аналитика"
+msgstr ""
+
+#. js-lingui-id: f6sPIU
+#: src/pages/analytics/Analytics.tsx
+msgid "Аналитика звонков"
+msgstr ""
+
+#. js-lingui-id: j5EAQN
+#: src/pages/analytics/Analytics.tsx
+msgid "Аналитика контактов"
+msgstr ""
+
+#. js-lingui-id: wUyJJe
+#: src/pages/analytics/Analytics.tsx
+msgid "Аналитика лидов"
+msgstr ""
+
+#. js-lingui-id: 7VPqMt
+#: src/pages/analytics/components/KpiCards.tsx
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Всего звонков"
+msgstr ""
+
+#. js-lingui-id: AnIZTV
+#: src/pages/analytics/components/KpiCards.tsx
+msgid "Всего контактов"
+msgstr ""
+
+#. js-lingui-id: wo1Y0X
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Всего лидов"
+msgstr ""
+
+#. js-lingui-id: byoEdd
+#: src/pages/analytics/components/ContactsChart.tsx
+msgid "Всего создано"
+msgstr ""
+
+#. js-lingui-id: BY+EkB
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Закрыты"
+msgstr ""
+
+#. js-lingui-id: qPd1qM
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Занято"
+msgstr ""
+
+#. js-lingui-id: YRkccV
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Звонки по часам"
+msgstr ""
+
+#. js-lingui-id: vfwUxm
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Квалифицированы"
+msgstr ""
+
+#. js-lingui-id: Uu3DBx
+#: src/pages/analytics/Analytics.tsx
+msgid "Ключевые показатели эффективности"
+msgstr ""
+
+#. js-lingui-id: omhVRj
+#: src/pages/analytics/components/LeadsChart.tsx
+#: src/pages/analytics/components/KpiCards.tsx
+msgid "Конверсия"
+msgstr ""
+
+#. js-lingui-id: 0Chb3X
+#: src/pages/analytics/components/ContactsChart.tsx
+msgid "Контакты за эту неделю"
+msgstr ""
+
+#. js-lingui-id: JiF3R3
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Новые"
+msgstr ""
+
+#. js-lingui-id: 3K6vxW
+#: src/pages/analytics/Analytics.tsx
+msgid "Обзор эффективности вашей воронки продаж"
+msgstr ""
+
+#. js-lingui-id: p4/fsR
+#: src/pages/analytics/components/ContactsChart.tsx
+msgid "Обработано"
+msgstr ""
+
+#. js-lingui-id: jU3r7O
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Общая стоимость воронки"
+msgstr ""
+
+#. js-lingui-id: RcZrPe
+#: src/pages/analytics/Analytics.tsx
+msgid "Отслеживание активности и результатов звонков"
+msgstr ""
+
+#. js-lingui-id: GlS3d5
+#: src/pages/analytics/components/ContactsChart.tsx
+msgid "Показатель обработки"
+msgstr ""
+
+#. js-lingui-id: oZ2CDg
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Пропущенные"
+msgstr ""
+
+#. js-lingui-id: +oTVNN
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Процент успеха"
+msgstr ""
+
+#. js-lingui-id: 7GZNvn
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Распределение лидов по статусам"
+msgstr ""
+
+#. js-lingui-id: RwW3in
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Связались"
+msgstr ""
+
+#. js-lingui-id: bZsKrT
+#: src/pages/analytics/components/ContactsChart.tsx
+msgid "Создание контактов по дням"
+msgstr ""
+
+#. js-lingui-id: 5yVWfW
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Средн. длительность"
+msgstr ""
+
+#. js-lingui-id: 1PJ87d
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Средняя стоимость лида"
+msgstr ""
+
+#. js-lingui-id: TPJMbD
+#: src/pages/analytics/components/LeadsChart.tsx
+msgid "Статус воронки лидов"
+msgstr ""
+
+#. js-lingui-id: 6Knhv+
+#: src/pages/analytics/Analytics.tsx
+msgid "Тенденции создания и обработки телефонных контактов"
+msgstr ""
+
+#. js-lingui-id: 1WplHg
+#: src/pages/analytics/components/CallsChart.tsx
+msgid "Успешные"
+msgstr ""
