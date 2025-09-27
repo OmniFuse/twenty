@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { useLingui } from '@lingui/react/macro';
-import { Card } from 'twenty-ui/card';
+import { Card } from 'twenty-ui/layout';
 import { IconPhone, IconTargetArrow, IconTrendingUp, IconUsers } from 'twenty-ui/display';
 
 const KpiContainer = styled.div`

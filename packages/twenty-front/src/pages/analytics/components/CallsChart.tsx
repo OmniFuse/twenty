@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { useLingui } from '@lingui/react/macro';
-import { Card } from 'twenty-ui/card';
+import { Card } from 'twenty-ui/layout';
 
 const ChartContainer = styled(Card)`
   padding: ${({ theme }) => theme.spacing(6)};
