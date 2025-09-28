@@ -3,9 +3,9 @@ import { Route, Routes } from 'react-router-dom';
 
 import { SettingsProtectedRouteWrapper } from '@/settings/components/SettingsProtectedRouteWrapper';
 import { SettingsSkeletonLoader } from '@/settings/components/SettingsSkeletonLoader';
-import { SettingPublicDomain } from '@/settings/domains/components/SettingPublicDomain';
 import { SettingsPath } from 'twenty-shared/types';
 import { PermissionFlagType } from '~/generated/graphql';
+import { SettingPublicDomain } from '@/settings/domains/components/SettingPublicDomain';
 
 const SettingsGraphQLPlayground = lazy(() =>
   import(
@@ -338,12 +338,6 @@ const SettingsReleases = lazy(() =>
   })),
 );
 
-const Analytics = lazy(() =>
-  import('~/pages/analytics/Analytics').then((module) => ({
-    default: module.Analytics,
-  })),
-);
-
 const SettingsRoles = lazy(() =>
   import('~/pages/settings/roles/SettingsRoles').then((module) => ({
     default: module.SettingsRoles,
@@ -618,7 +612,6 @@ export const SettingsRoutes = ({
         }
       >
         <Route path={SettingsPath.Releases} element={<SettingsReleases />} />
-        <Route path={SettingsPath.Analytics} element={<Analytics />} />
       </Route>
     </Routes>
   </Suspense>

@@ -49,8 +49,4 @@ export const STANDARD_OBJECT_IDS = {
   workflowVersion: '20202020-d65d-4ab9-9344-d77bfb376a3d',
   workspaceMember: '20202020-3319-4234-a34c-82d5c0e881a6',
   workflowAutomatedTrigger: '20202020-3319-4234-a34c-7f3b9d2e4d1f',
-  // Custom objects for CRM lead management
-  contact: '20202020-c001-4001-8001-f001e001d001',
-  lead: '20202020-1001-4001-8001-f001e001d002',
-  call: '20202020-ca11-4001-8001-f001e001d003',
 } as const;
