@@ -43,7 +43,7 @@ export const PUBLIC_FEATURE_FLAGS: PublicFeatureFlag[] = [
     key: FeatureFlagKey.IS_CALENDAR_VIEW_ENABLED,
     metadata: {
       label: 'Calendar View',
-      description: 'Enable calendar view for records with date fields',
+      description: 'Some Calendar View',
       imagePath: '',
     },
   },
