@@ -154,6 +154,45 @@ export const CONNECTED_ACCOUNT_STANDARD_FIELD_IDS = {
   connectionParameters: '20202020-a1b2-46be-814f-6228af16c481',
 } as const;
 
+export const CONTACT_STANDARD_FIELD_IDS = {
+  name: '20202020-c001-48e5-a542-72570eee9001',
+  source: '20202020-c002-48e5-a542-72570eee9002',
+  additionalInfo: '20202020-c003-48e5-a542-72570eee9003',
+  processed: '20202020-c004-48e5-a542-72570eee9004',
+  phones: '20202020-c005-48e5-a542-72570eee9005',
+  createdBy: '20202020-c006-48e5-a542-72570eee9006',
+  leads: '20202020-c007-48e5-a542-72570eee9007',
+  calls: '20202020-c008-48e5-a542-72570eee9008',
+  position: '20202020-c009-48e5-a542-72570eee9009',
+  searchVector: '20202020-c010-48e5-a542-72570eee9010',
+} as const;
+
+export const LEAD_STANDARD_FIELD_IDS = {
+  name: '20202020-1001-49dd-b2b2-883999db5001',
+  additionalInfo: '20202020-1002-49dd-b2b2-883999db5002',
+  amount: '20202020-1003-49dd-b2b2-883999db5003',
+  currency: '20202020-1004-49dd-b2b2-883999db5004',
+  location: '20202020-1005-49dd-b2b2-883999db5005',
+  contact: '20202020-1006-49dd-b2b2-883999db5006',
+  contactId: '20202020-1007-49dd-b2b2-883999db5007',
+  createdBy: '20202020-1008-49dd-b2b2-883999db5008',
+  position: '20202020-1009-49dd-b2b2-883999db5009',
+  searchVector: '20202020-1010-49dd-b2b2-883999db5010',
+} as const;
+
+export const CALL_STANDARD_FIELD_IDS = {
+  status: '20202020-c401-4c62-8dc5-571c71d8801',
+  notes: '20202020-c402-4c62-8dc5-571c71d8802',
+  duration: '20202020-c403-4c62-8dc5-571c71d8803',
+  scheduledAt: '20202020-c404-4c62-8dc5-571c71d8804',
+  completedAt: '20202020-c405-4c62-8dc5-571c71d8805',
+  contact: '20202020-c406-4c62-8dc5-571c71d8806',
+  contactId: '20202020-c407-4c62-8dc5-571c71d8807',
+  createdBy: '20202020-c408-4c62-8dc5-571c71d8808',
+  position: '20202020-c409-4c62-8dc5-571c71d8809',
+  searchVector: '20202020-c410-4c62-8dc5-571c71d8810',
+} as const;
+
 export const EVENT_STANDARD_FIELD_IDS = {
   properties: '20202020-f142-4b04-b91b-6a2b4af3bf10',
   workspaceMember: '20202020-af23-4479-9a30-868edc474b35',
@@ -568,8 +607,10 @@ export const STANDARD_OBJECT_FIELD_IDS = {
   calendarEventParticipant: CALENDAR_EVENT_PARTICIPANT_STANDARD_FIELD_IDS,
   calendarEvent: CALENDAR_EVENT_STANDARD_FIELD_IDS,
   comment: COMMENT_STANDARD_FIELD_IDS,
+  call: CALL_STANDARD_FIELD_IDS,
   company: COMPANY_STANDARD_FIELD_IDS,
   connectedAccount: CONNECTED_ACCOUNT_STANDARD_FIELD_IDS,
+  contact: CONTACT_STANDARD_FIELD_IDS,
   dashboard: DASHBOARD_STANDARD_FIELD_IDS,
   favorite: FAVORITE_STANDARD_FIELD_IDS,
   auditLog: AUDIT_LOGS_STANDARD_FIELD_IDS,
@@ -580,6 +621,7 @@ export const STANDARD_OBJECT_FIELD_IDS = {
   messageThread: MESSAGE_THREAD_STANDARD_FIELD_IDS,
   messageThreadSubscriber: MESSAGE_THREAD_SUBSCRIBER_STANDARD_FIELD_IDS,
   message: MESSAGE_STANDARD_FIELD_IDS,
+  lead: LEAD_STANDARD_FIELD_IDS,
   note: NOTE_STANDARD_FIELD_IDS,
   noteTarget: NOTE_TARGET_STANDARD_FIELD_IDS,
   opportunity: OPPORTUNITY_STANDARD_FIELD_IDS,
