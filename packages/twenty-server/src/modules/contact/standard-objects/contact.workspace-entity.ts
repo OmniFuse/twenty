@@ -3,6 +3,7 @@ import { FieldMetadataType } from 'twenty-shared/types';
 
 import { RelationOnDeleteAction } from 'src/engine/metadata-modules/field-metadata/interfaces/relation-on-delete-action.interface';
 import { RelationType } from 'src/engine/metadata-modules/field-metadata/interfaces/relation-type.interface';
+import { Relation } from 'src/engine/workspace-manager/workspace-sync-metadata/interfaces/relation.interface';
 
 import { SEARCH_VECTOR_FIELD } from 'src/engine/metadata-modules/constants/search-vector-field.constants';
 import { ActorMetadata } from 'src/engine/metadata-modules/field-metadata/composite-types/actor.composite-type';
@@ -126,7 +127,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
     onDelete: RelationOnDeleteAction.SET_NULL,
   })
   @WorkspaceIsFieldUIReadOnly()
-  leads: any; // Will be properly typed when LeadWorkspaceEntity is defined
+  leads: Relation<any[]>; // Will be properly typed when LeadWorkspaceEntity is defined
 
   @WorkspaceRelation({
     standardId: CONTACT_STANDARD_FIELD_IDS.calls,
@@ -139,7 +140,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
     onDelete: RelationOnDeleteAction.SET_NULL,
   })
   @WorkspaceIsFieldUIReadOnly()
-  calls: any; // Will be properly typed when CallWorkspaceEntity is defined
+  calls: Relation<any[]>; // Will be properly typed when CallWorkspaceEntity is defined
 
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.searchVector,
