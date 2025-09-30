@@ -31,22 +31,6 @@ export const PUBLIC_FEATURE_FLAGS: PublicFeatureFlag[] = [
         'https://twenty.com/images/lab/is-message-folder-control-enabled.png',
     },
   },
-  {
-    key: FeatureFlagKey.IS_PAGE_LAYOUT_ENABLED,
-    metadata: {
-      label: 'Page Layout & Widgets',
-      description: 'Create customizable page layouts with various widgets including charts, tables, and embedded content for enhanced data visualization',
-      imagePath: '',
-    },
-  },
-  {
-    key: FeatureFlagKey.IS_CALENDAR_VIEW_ENABLED,
-    metadata: {
-      label: 'Calendar View',
-      description: 'Some Calendar View',
-      imagePath: '',
-    },
-  },
   ...(process.env.CLOUDFLARE_API_KEY
     ? [
         // {
