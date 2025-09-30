@@ -31,6 +31,16 @@ export const PUBLIC_FEATURE_FLAGS: PublicFeatureFlag[] = [
         'https://twenty.com/images/lab/is-message-folder-control-enabled.png',
     },
   },
+  {
+    key: FeatureFlagKey.IS_PAGE_LAYOUT_ENABLED,
+    metadata: {
+      label: 'Page Layout & Dashboards',
+      description:
+        'Enable advanced page layouts, custom dashboards with widgets, and enhanced record views with customizable tabs and cards',
+      imagePath:
+        'https://twenty.com/images/lab/is-page-layout-enabled.png',
+    },
+  },
   ...(process.env.CLOUDFLARE_API_KEY
     ? [
         // {
