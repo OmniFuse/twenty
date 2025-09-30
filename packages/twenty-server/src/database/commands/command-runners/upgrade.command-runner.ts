@@ -10,17 +10,17 @@ import { WorkspaceActivationStatus } from 'twenty-shared/workspace';
 import { In, Repository } from 'typeorm';
 
 import {
-    ActiveOrSuspendedWorkspacesMigrationCommandOptions,
-    ActiveOrSuspendedWorkspacesMigrationCommandRunner,
-    type RunOnWorkspaceArgs,
+  ActiveOrSuspendedWorkspacesMigrationCommandOptions,
+  ActiveOrSuspendedWorkspacesMigrationCommandRunner,
+  type RunOnWorkspaceArgs,
 } from 'src/database/commands/command-runners/active-or-suspended-workspaces-migration.command-runner';
 import { TwentyConfigService } from 'src/engine/core-modules/twenty-config/twenty-config.service';
 import { Workspace } from 'src/engine/core-modules/workspace/workspace.entity';
 import { TwentyORMGlobalManager } from 'src/engine/twenty-orm/twenty-orm-global.manager';
 import { SyncWorkspaceMetadataCommand } from 'src/engine/workspace-manager/workspace-sync-metadata/commands/sync-workspace-metadata.command';
 import {
-    type CompareVersionMajorAndMinorReturnType,
-    compareVersionMajorAndMinor,
+  type CompareVersionMajorAndMinorReturnType,
+  compareVersionMajorAndMinor,
 } from 'src/utils/version/compare-version-minor-and-major';
 import { getPreviousVersion } from 'src/utils/version/get-previous-version';
 
@@ -74,9 +74,6 @@ export abstract class UpgradeCommandRunner extends ActiveOrSuspendedWorkspacesMi
     this.logger.log('Running global database migrations');
 
     try {
-      // Ensure applicationId column exists before running TypeORM migrations
-      await this.ensureApplicationIdColumn();
-
       this.logger.log('Running core datasource migrations...');
       const coreResult = await execPromise(
         'npx -y typeorm migration:run -d dist/src/database/typeorm/core/core.datasource',
@@ -88,38 +85,6 @@ export abstract class UpgradeCommandRunner extends ActiveOrSuspendedWorkspacesMi
     } catch (error) {
       this.logger.error('Error running database migrations:', error);
       throw error;
-    }
-  }
-
-  private async ensureApplicationIdColumn(): Promise<void> {
-    try {
-      this.logger.log('Checking if applicationId column exists...');
-      
-      const checkColumnQuery = `
-        SELECT EXISTS (
-          SELECT 1 
-          FROM information_schema.columns 
-          WHERE table_schema = 'core' 
-          AND table_name = 'objectMetadata' 
-          AND column_name = 'applicationId'
-        ) as column_exists;
-      `;
-
-      const result = await this.workspaceRepository.query(checkColumnQuery);
-      const columnExists = result[0]?.column_exists;
-
-      if (!columnExists) {
-        this.logger.log('applicationId column does not exist, creating...');
-        await this.workspaceRepository.query(
-          `ALTER TABLE "core"."objectMetadata" ADD "applicationId" uuid`
-        );
-        this.logger.log('✅ applicationId column created successfully');
-      } else {
-        this.logger.log('✅ applicationId column already exists');
-      }
-    } catch (error) {
-      this.logger.warn('Warning: Could not ensure applicationId column:', error.message);
-      // Don't throw error to not break existing installations
     }
   }
 
