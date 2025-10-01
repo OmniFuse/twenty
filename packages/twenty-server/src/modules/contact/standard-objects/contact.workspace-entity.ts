@@ -25,6 +25,8 @@ import {
     type FieldTypeAndNameMetadata,
     getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
+import { CallWorkspaceEntity } from 'src/modules/call/standard-objects/call.workspace-entity';
+import { LeadWorkspaceEntity } from 'src/modules/lead/standard-objects/lead.workspace-entity';
 
 const NAME_FIELD_NAME = 'name';
 const PHONES_FIELD_NAME = 'phones';
@@ -122,12 +124,12 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
     label: msg`Leads`,
     description: msg`Leads associated with this contact`,
     icon: 'IconTargetArrow',
-    inverseSideTarget: () => require('../../../lead/standard-objects/lead.workspace-entity').LeadWorkspaceEntity,
+    inverseSideTarget: () => LeadWorkspaceEntity,
     inverseSideFieldKey: 'contact',
     onDelete: RelationOnDeleteAction.SET_NULL,
   })
   @WorkspaceIsFieldUIReadOnly()
-  leads: Relation<any[]>; // Will be properly typed when LeadWorkspaceEntity is defined
+  leads: Relation<LeadWorkspaceEntity[]>;
 
   @WorkspaceRelation({
     standardId: CONTACT_STANDARD_FIELD_IDS.calls,
@@ -135,12 +137,12 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
     label: msg`Calls`,
     description: msg`Calls made to this contact`,
     icon: 'IconPhone',
-    inverseSideTarget: () => require('../../../call/standard-objects/call.workspace-entity').CallWorkspaceEntity,
+    inverseSideTarget: () => CallWorkspaceEntity,
     inverseSideFieldKey: 'contact',
     onDelete: RelationOnDeleteAction.SET_NULL,
   })
   @WorkspaceIsFieldUIReadOnly()
-  calls: Relation<any[]>; // Will be properly typed when CallWorkspaceEntity is defined
+  calls: Relation<CallWorkspaceEntity[]>;
 
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.searchVector,

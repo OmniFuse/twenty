@@ -1,16 +1,9 @@
 import { CONTACT_DATA_SEED_IDS } from 'src/engine/workspace-manager/dev-seeder/data/constants/contact-data-seeds.constant';
 import { WORKSPACE_MEMBER_DATA_SEED_IDS } from 'src/engine/workspace-manager/dev-seeder/data/constants/workspace-member-data-seeds.constant';
 
-export enum CallStatus {
-  SCHEDULED = 'SCHEDULED',
-  COMPLETED = 'COMPLETED',
-  MISSED = 'MISSED',
-  CANCELLED = 'CANCELLED',
-}
-
 type CallDataSeed = {
   id: string;
-  status: CallStatus;
+  status: string;
   notes: string;
   duration: number;
   scheduledAt: string;
@@ -48,7 +41,7 @@ export const CALL_DATA_SEED_IDS = {
 export const CALL_DATA_SEEDS: CallDataSeed[] = [
   {
     id: CALL_DATA_SEED_IDS.ID_1,
-    status: CallStatus.COMPLETED,
+    status: 'COMPLETED',
     notes: 'Успешный контакт. Клиент заинтересован в сотрудничестве. Договорились о встрече.',
     duration: 12,
     scheduledAt: '2025-09-26T14:00:00.000Z',
@@ -61,7 +54,7 @@ export const CALL_DATA_SEEDS: CallDataSeed[] = [
   },
   {
     id: CALL_DATA_SEED_IDS.ID_2,
-    status: CallStatus.MISSED,
+    status: 'MISSED',
     notes: 'Клиент не ответил на звонок. Попробовать позвонить позже.',
     duration: 0,
     scheduledAt: '2025-09-27T10:00:00.000Z',
@@ -74,7 +67,7 @@ export const CALL_DATA_SEEDS: CallDataSeed[] = [
   },
   {
     id: CALL_DATA_SEED_IDS.ID_3,
-    status: CallStatus.COMPLETED,
+    status: 'COMPLETED',
     notes: 'Клиент сказал, что сейчас не готов к покупке. Запланировать повторный звонок через месяц.',
     duration: 8,
     scheduledAt: '2025-09-28T16:30:00.000Z',
@@ -87,7 +80,7 @@ export const CALL_DATA_SEEDS: CallDataSeed[] = [
   },
   {
     id: CALL_DATA_SEED_IDS.ID_4,
-    status: CallStatus.SCHEDULED,
+    status: 'SCHEDULED',
     notes: 'Первый звонок новому клиенту. Представить компанию и услуги.',
     duration: null,
     scheduledAt: '2025-10-01T09:00:00.000Z',
@@ -100,7 +93,7 @@ export const CALL_DATA_SEEDS: CallDataSeed[] = [
   },
   {
     id: CALL_DATA_SEED_IDS.ID_5,
-    status: CallStatus.SCHEDULED,
+    status: 'SCHEDULED',
     notes: 'Повторный звонок клиенту для уточнения деталей заказа.',
     duration: null,
     scheduledAt: '2025-10-02T14:15:00.000Z',

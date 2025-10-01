@@ -26,7 +26,6 @@ import {
     type FieldTypeAndNameMetadata,
     getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
-import { ContactWorkspaceEntity } from 'src/modules/contact/standard-objects/contact.workspace-entity';
 
 const NAME_FIELD_NAME = 'name';
 const LOCATION_FIELD_NAME = 'location';
@@ -115,12 +114,12 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
     label: msg`Contact`,
     description: msg`Lead contact`,
     icon: 'IconUser',
-    inverseSideTarget: () => ContactWorkspaceEntity,
+    inverseSideTarget: () => require('../../contact/standard-objects/contact.workspace-entity').ContactWorkspaceEntity,
     inverseSideFieldKey: 'leads',
     onDelete: RelationOnDeleteAction.SET_NULL,
   })
   @WorkspaceIsNullable()
-  contact: Relation<ContactWorkspaceEntity> | null;
+  contact: Relation<any> | null;
 
   @WorkspaceJoinColumn('contact')
   contactId: string | null;

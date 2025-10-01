@@ -16,8 +16,11 @@ import { type WorkspaceEntityManager } from 'src/engine/twenty-orm/entity-manage
 import { shouldSeedWorkspaceFavorite } from 'src/engine/utils/should-seed-workspace-favorite';
 import { prefillWorkspaceFavorites } from 'src/engine/workspace-manager/standard-objects-prefill-data/prefill-workspace-favorites';
 import { type ViewDefinition } from 'src/engine/workspace-manager/standard-objects-prefill-data/types/view-definition.interface';
+import { callsAllView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/calls-all.view';
 import { companiesAllView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/companies-all.view';
+import { contactsAllView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/contacts-all.view';
 import { dashboardsAllView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/dashboards-all.view';
+import { leadsAllView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/leads-all.view';
 import { notesAllView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/notes-all.view';
 import { opportunitiesAllView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/opportunities-all.view';
 import { opportunitiesByStageView } from 'src/engine/workspace-manager/standard-objects-prefill-data/views/opportunity-by-stage.view';
@@ -49,6 +52,9 @@ export const prefillCoreViews = async ({
   const views = [
     companiesAllView(objectMetadataItems, true),
     peopleAllView(objectMetadataItems, true),
+    contactsAllView(objectMetadataItems, true),
+    leadsAllView(objectMetadataItems, true),
+    callsAllView(objectMetadataItems, true),
     opportunitiesAllView(objectMetadataItems, true),
     opportunitiesByStageView(objectMetadataItems, true),
     notesAllView(objectMetadataItems, true),

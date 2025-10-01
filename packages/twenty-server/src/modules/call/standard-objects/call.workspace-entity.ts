@@ -25,20 +25,12 @@ import {
     type FieldTypeAndNameMetadata,
     getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
-import { ContactWorkspaceEntity } from 'src/modules/contact/standard-objects/contact.workspace-entity';
 
 const NOTES_FIELD_NAME = 'notes';
 
 export const SEARCH_FIELDS_FOR_CALL: FieldTypeAndNameMetadata[] = [
   { name: NOTES_FIELD_NAME, type: FieldMetadataType.TEXT },
 ];
-
-export enum CallStatus {
-  SCHEDULED = 'SCHEDULED',
-  COMPLETED = 'COMPLETED',
-  MISSED = 'MISSED',
-  CANCELLED = 'CANCELLED',
-}
 
 @WorkspaceEntity({
   standardId: STANDARD_OBJECT_IDS.call,
@@ -59,14 +51,14 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
     description: msg`Call status`,
     icon: 'IconCheckbox',
     options: [
-      { value: CallStatus.SCHEDULED, label: 'Scheduled', color: 'blue' },
-      { value: CallStatus.COMPLETED, label: 'Completed', color: 'green' },
-      { value: CallStatus.MISSED, label: 'Missed', color: 'red' },
-      { value: CallStatus.CANCELLED, label: 'Cancelled', color: 'gray' },
+      { value: 'SCHEDULED', label: 'Scheduled', color: 'blue' },
+      { value: 'COMPLETED', label: 'Completed', color: 'green' },
+      { value: 'MISSED', label: 'Missed', color: 'red' },
+      { value: 'CANCELLED', label: 'Cancelled', color: 'gray' },
     ],
-    defaultValue: CallStatus.SCHEDULED,
+    defaultValue: "'SCHEDULED'",
   })
-  status: CallStatus;
+  status: string;
 
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.notes,
@@ -136,12 +128,12 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
     label: msg`Contact`,
     description: msg`Call contact`,
     icon: 'IconUser',
-    inverseSideTarget: () => ContactWorkspaceEntity,
+    inverseSideTarget: () => require('../../contact/standard-objects/contact.workspace-entity').ContactWorkspaceEntity,
     inverseSideFieldKey: 'calls',
     onDelete: RelationOnDeleteAction.SET_NULL,
   })
   @WorkspaceIsNullable()
-  contact: Relation<ContactWorkspaceEntity> | null;
+  contact: Relation<any> | null;
 
   @WorkspaceJoinColumn('contact')
   contactId: string | null;
