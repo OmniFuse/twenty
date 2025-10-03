@@ -82,7 +82,7 @@ export const callsAllView = (
             (field) => field.standardId === CALL_STANDARD_FIELD_IDS.notes,
           )?.id ?? '',
         position: 5,
-        isVisible: false,
+        isVisible: true,
         size: 200,
       },
     ],
