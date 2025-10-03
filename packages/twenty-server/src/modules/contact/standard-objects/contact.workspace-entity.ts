@@ -25,8 +25,10 @@ import {
     type FieldTypeAndNameMetadata,
     getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
+import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
 import { CallWorkspaceEntity } from 'src/modules/call/standard-objects/call.workspace-entity';
 import { LeadWorkspaceEntity } from 'src/modules/lead/standard-objects/lead.workspace-entity';
+import { TimelineActivityWorkspaceEntity } from 'src/modules/timeline/standard-objects/timeline-activity.workspace-entity';
 
 const NAME_FIELD_NAME = 'name';
 const PHONES_FIELD_NAME = 'phones';
@@ -143,6 +145,30 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   })
   @WorkspaceIsFieldUIReadOnly()
   calls: Relation<CallWorkspaceEntity[]>;
+
+  @WorkspaceRelation({
+    standardId: CONTACT_STANDARD_FIELD_IDS.attachments,
+    type: RelationType.ONE_TO_MANY,
+    label: msg`Attachments`,
+    description: msg`Attachments for this contact`,
+    icon: 'IconFileImport',
+    inverseSideTarget: () => AttachmentWorkspaceEntity,
+    onDelete: RelationOnDeleteAction.CASCADE,
+  })
+  @WorkspaceIsSystem()
+  attachments: Relation<AttachmentWorkspaceEntity[]>;
+
+  @WorkspaceRelation({
+    standardId: CONTACT_STANDARD_FIELD_IDS.timelineActivities,
+    type: RelationType.ONE_TO_MANY,
+    label: msg`Events`,
+    description: msg`Timeline activities for this contact`,
+    icon: 'IconTimelineEvent',
+    inverseSideTarget: () => TimelineActivityWorkspaceEntity,
+    onDelete: RelationOnDeleteAction.CASCADE,
+  })
+  @WorkspaceIsSystem()
+  timelineActivities: Relation<TimelineActivityWorkspaceEntity[]>;
 
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.searchVector,

@@ -142,6 +142,22 @@ export class TimelineActivityService {
       });
     }
 
+    if (objectSingularName === 'call') {
+      return await this.computeTimelineActivityPayloadsForCall({
+        events,
+        workspaceId,
+        eventName,
+      });
+    }
+
+    if (objectSingularName === 'lead') {
+      return await this.computeTimelineActivityPayloadsForLead({
+        events,
+        workspaceId,
+        eventName,
+      });
+    }
+
     return events.map((event) => ({
       name: eventName,
       objectSingularName,
@@ -313,6 +329,80 @@ export class TimelineActivityService {
           linkedObjectMetadataId: activityObjectMetadataId,
           workspaceMemberId: event.workspaceMemberId,
           properties: {},
+        } satisfies TimelineActivityPayload;
+      })
+      .filter(isDefined);
+  }
+
+  private async computeTimelineActivityPayloadsForCall({
+    events,
+    workspaceId,
+  }: Pick<EventsWithNameAndWorkspaceId, 'events' | 'workspaceId'>): Promise<
+    TimelineActivityPayload[]
+  > {
+    const callRepository = await this.twentyORMGlobalManager.getRepositoryForWorkspace(
+      workspaceId,
+      'call',
+      { shouldBypassPermissionChecks: true },
+    );
+
+    const calls = await callRepository.find({
+      where: { id: In(events.map((e) => e.recordId)) },
+    });
+
+    return events
+      .map((event) => {
+        const call = calls.find((c: Record<string, unknown>) => c.id === event.recordId);
+        if (!call || !call.contactId) {
+          return;
+        }
+
+        return {
+          name: eventNameFromPropertiesOrDefault(eventName),
+          overrideObjectSingularName: 'contact',
+          recordId: call.contactId as string,
+          linkedRecordCachedName: (event.properties.after as ObjectRecord)?.notes,
+          linkedRecordId: event.recordId,
+          linkedObjectMetadataId: event.objectMetadata.id,
+          workspaceMemberId: event.workspaceMemberId,
+          properties: event.properties,
+        } satisfies TimelineActivityPayload;
+      })
+      .filter(isDefined);
+  }
+
+  private async computeTimelineActivityPayloadsForLead({
+    events,
+    workspaceId,
+  }: Pick<EventsWithNameAndWorkspaceId, 'events' | 'workspaceId'>): Promise<
+    TimelineActivityPayload[]
+  > {
+    const leadRepository = await this.twentyORMGlobalManager.getRepositoryForWorkspace(
+      workspaceId,
+      'lead',
+      { shouldBypassPermissionChecks: true },
+    );
+
+    const leads = await leadRepository.find({
+      where: { id: In(events.map((e) => e.recordId)) },
+    });
+
+    return events
+      .map((event) => {
+        const lead = leads.find((l: Record<string, unknown>) => l.id === event.recordId);
+        if (!lead || !lead.contactId) {
+          return;
+        }
+
+        return {
+          name: eventNameFromPropertiesOrDefault(eventName),
+          overrideObjectSingularName: 'contact',
+          recordId: lead.contactId as string,
+          linkedRecordCachedName: (event.properties.after as ObjectRecord)?.name,
+          linkedRecordId: event.recordId,
+          linkedObjectMetadataId: event.objectMetadata.id,
+          workspaceMemberId: event.workspaceMemberId,
+          properties: event.properties,
         } satisfies TimelineActivityPayload;
       })
       .filter(isDefined);

@@ -25,6 +25,8 @@ import {
     type FieldTypeAndNameMetadata,
     getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
+import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
+import { TimelineActivityWorkspaceEntity } from 'src/modules/timeline/standard-objects/timeline-activity.workspace-entity';
 
 const NOTES_FIELD_NAME = 'notes';
 
@@ -137,6 +139,30 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
 
   @WorkspaceJoinColumn('contact')
   contactId: string | null;
+
+  @WorkspaceRelation({
+    standardId: CALL_STANDARD_FIELD_IDS.timelineActivities,
+    type: RelationType.ONE_TO_MANY,
+    label: msg`Events`,
+    description: msg`Timeline activities for this call`,
+    icon: 'IconTimelineEvent',
+    inverseSideTarget: () => TimelineActivityWorkspaceEntity,
+    inverseSideFieldKey: 'call',
+    onDelete: RelationOnDeleteAction.SET_NULL,
+  })
+  timelineActivities: Relation<TimelineActivityWorkspaceEntity[]>;
+
+  @WorkspaceRelation({
+    standardId: CALL_STANDARD_FIELD_IDS.attachments,
+    type: RelationType.ONE_TO_MANY,
+    label: msg`Attachments`,
+    description: msg`Attachments linked to this call`,
+    icon: 'IconFileImport',
+    inverseSideTarget: () => AttachmentWorkspaceEntity,
+    inverseSideFieldKey: 'call',
+    onDelete: RelationOnDeleteAction.SET_NULL,
+  })
+  attachments: Relation<AttachmentWorkspaceEntity[]>;
 
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.searchVector,

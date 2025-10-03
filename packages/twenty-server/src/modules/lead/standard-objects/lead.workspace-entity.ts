@@ -26,6 +26,8 @@ import {
     type FieldTypeAndNameMetadata,
     getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
+import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
+import { TimelineActivityWorkspaceEntity } from 'src/modules/timeline/standard-objects/timeline-activity.workspace-entity';
 
 const NAME_FIELD_NAME = 'name';
 const LOCATION_FIELD_NAME = 'location';
@@ -123,6 +125,30 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
 
   @WorkspaceJoinColumn('contact')
   contactId: string | null;
+
+  @WorkspaceRelation({
+    standardId: LEAD_STANDARD_FIELD_IDS.attachments,
+    type: RelationType.ONE_TO_MANY,
+    label: msg`Attachments`,
+    description: msg`Attachments linked to this lead`,
+    icon: 'IconFileImport',
+    inverseSideTarget: () => AttachmentWorkspaceEntity,
+    onDelete: RelationOnDeleteAction.CASCADE,
+  })
+  @WorkspaceIsSystem()
+  attachments: Relation<AttachmentWorkspaceEntity[]>;
+
+  @WorkspaceRelation({
+    standardId: LEAD_STANDARD_FIELD_IDS.timelineActivities,
+    type: RelationType.ONE_TO_MANY,
+    label: msg`Events`,
+    description: msg`Timeline activities for this lead`,
+    icon: 'IconTimelineEvent',
+    inverseSideTarget: () => TimelineActivityWorkspaceEntity,
+    onDelete: RelationOnDeleteAction.CASCADE,
+  })
+  @WorkspaceIsSystem()
+  timelineActivities: Relation<TimelineActivityWorkspaceEntity[]>;
 
   @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.searchVector,

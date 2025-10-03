@@ -37,6 +37,9 @@ export const ATTACHMENT_STANDARD_FIELD_IDS = {
   activity: '20202020-b569-481b-a13f-9b94e47e54fe',
   task: '20202020-51e5-4621-9cf8-215487951c4b',
   note: '20202020-4f4b-4503-a6fc-6b982f3dffb5',
+  contact: '20202020-c0a1-4c01-8000-000000000011',
+  lead: '20202020-1ead-4c01-8000-000000000011',
+  call: '20202020-ca11-4c01-8000-000000000011',
   person: '20202020-0158-4aa2-965c-5cdafe21ffa2',
   company: '20202020-ceab-4a28-b546-73b06b4c08d5',
   opportunity: '20202020-7374-499d-bea3-9354890755b5',
@@ -165,6 +168,8 @@ export const CONTACT_STANDARD_FIELD_IDS = {
   calls: '20202020-c008-48e5-a542-72570eee9a08',
   position: '20202020-c009-48e5-a542-72570eee9a09',
   searchVector: '20202020-c010-48e5-a542-72570eee9a10',
+  attachments: '20202020-c0a1-4c01-8000-000000000001',
+  timelineActivities: '20202020-c0a1-4c01-8000-000000000002',
 } as const;
 
 export const LEAD_STANDARD_FIELD_IDS = {
@@ -178,6 +183,8 @@ export const LEAD_STANDARD_FIELD_IDS = {
   createdBy: '20202020-1a08-49dd-b2b2-883999db5b08',
   position: '20202020-1a09-49dd-b2b2-883999db5b09',
   searchVector: '20202020-1a10-49dd-b2b2-883999db5b10',
+  attachments: '20202020-1ead-4c01-8000-000000000001',
+  timelineActivities: '20202020-1ead-4c01-8000-000000000002',
 } as const;
 
 export const CALL_STANDARD_FIELD_IDS = {
@@ -191,6 +198,8 @@ export const CALL_STANDARD_FIELD_IDS = {
   createdBy: '20202020-ca08-4c62-8dc5-571c71d88477',
   position: '20202020-ca09-4c62-8dc5-571c71d88478',
   searchVector: '20202020-ca10-4c62-8dc5-571c71d8847a',
+  attachments: '20202020-ca11-4c01-8000-000000000001',
+  timelineActivities: '20202020-ca11-4c01-8000-000000000002',
 } as const;
 
 export const EVENT_STANDARD_FIELD_IDS = {
@@ -239,6 +248,9 @@ export const TIMELINE_ACTIVITY_STANDARD_FIELD_IDS = {
   linkedRecordCachedName: '20202020-cfdb-4bef-bbce-a29f41230934',
   linkedRecordId: '20202020-2e0e-48c0-b445-ee6c1e61687d',
   linkedObjectMetadataId: '20202020-c595-449d-9f89-562758c9ee69',
+  contact: '20202020-c014-4c01-8000-0000000000c1',
+  lead: '20202020-1ead-4c01-8000-0000000000ed',
+  call: '20202020-ca11-4c01-8000-0000000000a1',
 } as const;
 
 export const FAVORITE_STANDARD_FIELD_IDS = {
