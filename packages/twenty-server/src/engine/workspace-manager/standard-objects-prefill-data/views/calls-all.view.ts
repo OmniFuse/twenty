@@ -76,15 +76,7 @@ export const callsAllView = (
         isVisible: true,
         size: 150,
       },
-      {
-        fieldMetadataId:
-          callObjectMetadata.fields.find(
-            (field) => field.standardId === CALL_STANDARD_FIELD_IDS.notes,
-          )?.id ?? '',
-        position: 5,
-        isVisible: true,
-        size: 200,
-      },
+      // position 5 intentionally unused after removing notes
     ],
   };
 };

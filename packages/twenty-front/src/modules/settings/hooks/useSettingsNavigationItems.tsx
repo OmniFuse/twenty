@@ -20,6 +20,7 @@ import {
   IconFunction,
   IconHierarchy2,
   IconKey,
+  IconLifebuoy,
   IconLock,
   IconMail,
   IconRocket,
@@ -184,6 +185,13 @@ const useSettingsNavigationItems = (): SettingsNavigationSection[] => {
           path: SettingsPath.AdminPanel,
           Icon: IconServer,
           isHidden: !isAdminEnabled,
+        },
+        {
+          label: t`Поддержка`,
+          onClick: () =>
+            window.open('https://t.me/anton_aideal', '_blank', 'noopener,noreferrer'),
+          Icon: IconLifebuoy,
+          matchSubPages: false,
         },
         {
           label: t`Releases`,

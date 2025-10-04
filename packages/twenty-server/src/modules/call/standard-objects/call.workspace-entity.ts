@@ -5,33 +5,24 @@ import { RelationOnDeleteAction } from 'src/engine/metadata-modules/field-metada
 import { RelationType } from 'src/engine/metadata-modules/field-metadata/interfaces/relation-type.interface';
 import { Relation } from 'src/engine/workspace-manager/workspace-sync-metadata/interfaces/relation.interface';
 
-import { SEARCH_VECTOR_FIELD } from 'src/engine/metadata-modules/constants/search-vector-field.constants';
 import { ActorMetadata } from 'src/engine/metadata-modules/field-metadata/composite-types/actor.composite-type';
-import { IndexType } from 'src/engine/metadata-modules/index-metadata/types/indexType.types';
 import { BaseWorkspaceEntity } from 'src/engine/twenty-orm/base.workspace-entity';
 import { WorkspaceEntity } from 'src/engine/twenty-orm/decorators/workspace-entity.decorator';
-import { WorkspaceFieldIndex } from 'src/engine/twenty-orm/decorators/workspace-field-index.decorator';
 import { WorkspaceField } from 'src/engine/twenty-orm/decorators/workspace-field.decorator';
 import { WorkspaceIsFieldUIReadOnly } from 'src/engine/twenty-orm/decorators/workspace-is-field-ui-readonly.decorator';
 import { WorkspaceIsNullable } from 'src/engine/twenty-orm/decorators/workspace-is-nullable.decorator';
-import { WorkspaceIsSearchable } from 'src/engine/twenty-orm/decorators/workspace-is-searchable.decorator';
 import { WorkspaceIsSystem } from 'src/engine/twenty-orm/decorators/workspace-is-system.decorator';
 import { WorkspaceJoinColumn } from 'src/engine/twenty-orm/decorators/workspace-join-column.decorator';
 import { WorkspaceRelation } from 'src/engine/twenty-orm/decorators/workspace-relation.decorator';
 import { CALL_STANDARD_FIELD_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-field-ids';
 import { STANDARD_OBJECT_ICONS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-icons';
 import { STANDARD_OBJECT_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-ids';
-import {
-    type FieldTypeAndNameMetadata,
-    getTsVectorColumnExpressionFromFields,
-} from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
+import { type FieldTypeAndNameMetadata } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
 import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
 import { TimelineActivityWorkspaceEntity } from 'src/modules/timeline/standard-objects/timeline-activity.workspace-entity';
 
-const NOTES_FIELD_NAME = 'notes';
-
 export const SEARCH_FIELDS_FOR_CALL: FieldTypeAndNameMetadata[] = [
-  { name: NOTES_FIELD_NAME, type: FieldMetadataType.TEXT },
+  // Intentionally left empty as calls are not text-searchable for now
 ];
 
 @WorkspaceEntity({
@@ -42,9 +33,8 @@ export const SEARCH_FIELDS_FOR_CALL: FieldTypeAndNameMetadata[] = [
   description: msg`A call made to a contact`,
   icon: STANDARD_OBJECT_ICONS.task, // Using task icon as placeholder
   shortcut: 'K',
-  labelIdentifierStandardId: CALL_STANDARD_FIELD_IDS.notes,
+  labelIdentifierStandardId: CALL_STANDARD_FIELD_IDS.status,
 })
-@WorkspaceIsSearchable()
 export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.status,
@@ -62,15 +52,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   })
   status: string;
 
-  @WorkspaceField({
-    standardId: CALL_STANDARD_FIELD_IDS.notes,
-    type: FieldMetadataType.TEXT,
-    label: msg`Notes`,
-    description: msg`Call notes and details`,
-    icon: 'IconNotes',
-  })
-  @WorkspaceIsNullable()
-  notes: string | null;
+  // Notes field removed
 
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.duration,
@@ -164,19 +146,5 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   })
   attachments: Relation<AttachmentWorkspaceEntity[]>;
 
-  @WorkspaceField({
-    standardId: CALL_STANDARD_FIELD_IDS.searchVector,
-    type: FieldMetadataType.TS_VECTOR,
-    label: SEARCH_VECTOR_FIELD.label,
-    description: SEARCH_VECTOR_FIELD.description,
-    icon: 'IconPhone',
-    generatedType: 'STORED',
-    asExpression: getTsVectorColumnExpressionFromFields(
-      SEARCH_FIELDS_FOR_CALL,
-    ),
-  })
-  @WorkspaceIsNullable()
-  @WorkspaceIsSystem()
-  @WorkspaceFieldIndex({ indexType: IndexType.GIN })
-  searchVector: string;
+  // Search vector removed as there are no searchable fields on Call
 }
