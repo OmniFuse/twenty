@@ -5,6 +5,7 @@ import { RelationOnDeleteAction } from 'src/engine/metadata-modules/field-metada
 import { RelationType } from 'src/engine/metadata-modules/field-metadata/interfaces/relation-type.interface';
 import { Relation } from 'src/engine/workspace-manager/workspace-sync-metadata/interfaces/relation.interface';
 
+import { SEARCH_VECTOR_FIELD } from 'src/engine/metadata-modules/constants/search-vector-field.constants';
 import { ActorMetadata } from 'src/engine/metadata-modules/field-metadata/composite-types/actor.composite-type';
 import { BaseWorkspaceEntity } from 'src/engine/twenty-orm/base.workspace-entity';
 import { WorkspaceEntity } from 'src/engine/twenty-orm/decorators/workspace-entity.decorator';
@@ -144,5 +145,16 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   })
   attachments: Relation<AttachmentWorkspaceEntity[]>;
 
-  // Search vector removed as there are no searchable fields on Call
+  @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.searchVector,
+    type: FieldMetadataType.TS_VECTOR,
+    label: SEARCH_VECTOR_FIELD.label,
+    description: SEARCH_VECTOR_FIELD.description,
+    icon: 'IconPhone',
+    generatedType: 'STORED',
+    asExpression: "to_tsvector('simple', '')",
+  })
+  @WorkspaceIsNullable()
+  @WorkspaceIsSystem()
+  searchVector: string;
 }
