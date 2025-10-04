@@ -187,7 +187,7 @@ const useSettingsNavigationItems = (): SettingsNavigationSection[] => {
           isHidden: !isAdminEnabled,
         },
         {
-          label: t`Поддержка`,
+          label: `Поддержка`,
           onClick: () =>
             window.open('https://t.me/anton_aideal', '_blank', 'noopener,noreferrer'),
           Icon: IconLifebuoy,

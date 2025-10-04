@@ -23,8 +23,8 @@ import { LEAD_STANDARD_FIELD_IDS } from 'src/engine/workspace-manager/workspace-
 import { STANDARD_OBJECT_ICONS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-icons';
 import { STANDARD_OBJECT_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-ids';
 import {
-    type FieldTypeAndNameMetadata,
-    getTsVectorColumnExpressionFromFields,
+  type FieldTypeAndNameMetadata,
+  getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
 import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
 import { TimelineActivityWorkspaceEntity } from 'src/modules/timeline/standard-objects/timeline-activity.workspace-entity';
@@ -40,8 +40,8 @@ export const SEARCH_FIELDS_FOR_LEAD: FieldTypeAndNameMetadata[] = [
 @WorkspaceEntity({
   standardId: STANDARD_OBJECT_IDS.lead,
   namePlural: 'leads',
-  labelSingular: msg`Lead`,
-  labelPlural: msg`Leads`,
+  labelSingular: `Лид`,
+  labelPlural: `Лиды`,
   description: msg`A potential customer interested in cooperation`,
   icon: STANDARD_OBJECT_ICONS.opportunity,
   shortcut: 'L',
@@ -52,7 +52,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.name,
     type: FieldMetadataType.TEXT,
-    label: msg`Name`,
+    label: `Имя`,
     description: msg`Lead name`,
     icon: 'IconUser',
   })
@@ -61,7 +61,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.additionalInfo,
     type: FieldMetadataType.RAW_JSON,
-    label: msg`Additional Info`,
+    label: `Доп. Информация`,
     description: msg`Additional lead information in JSON format`,
     icon: 'IconInfoCircle',
   })
@@ -71,7 +71,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.amount,
     type: FieldMetadataType.CURRENCY,
-    label: msg`Amount`,
+    label: `Сумма`,
     description: msg`Lead opportunity amount`,
     icon: 'IconCurrencyDollar',
   })
@@ -81,7 +81,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.location,
     type: FieldMetadataType.TEXT,
-    label: msg`Location`,
+    label: `Локация`,
     description: msg`Lead location`,
     icon: 'IconMap',
   })
@@ -91,7 +91,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.position,
     type: FieldMetadataType.POSITION,
-    label: msg`Position`,
+    label: `Позиция`,
     description: msg`Lead record Position`,
     icon: 'IconHierarchy2',
     defaultValue: 0,
@@ -102,7 +102,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.createdBy,
     type: FieldMetadataType.ACTOR,
-    label: msg`Created by`,
+    label: `Создано`,
     icon: 'IconCreativeCommonsSa',
     description: msg`The creator of the record`,
   })
@@ -113,7 +113,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: LEAD_STANDARD_FIELD_IDS.contact,
     type: RelationType.MANY_TO_ONE,
-    label: msg`Contact`,
+    label: `Контакт`,
     description: msg`Lead contact`,
     icon: 'IconUser',
     inverseSideTarget: () => require('../../contact/standard-objects/contact.workspace-entity').ContactWorkspaceEntity,
@@ -129,7 +129,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: LEAD_STANDARD_FIELD_IDS.attachments,
     type: RelationType.ONE_TO_MANY,
-    label: msg`Attachments`,
+    label: `Вложения`,
     description: msg`Attachments linked to this lead`,
     icon: 'IconFileImport',
     inverseSideTarget: () => AttachmentWorkspaceEntity,
@@ -141,7 +141,7 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: LEAD_STANDARD_FIELD_IDS.timelineActivities,
     type: RelationType.ONE_TO_MANY,
-    label: msg`Events`,
+    label: `События`,
     description: msg`Timeline activities for this lead`,
     icon: 'IconTimelineEvent',
     inverseSideTarget: () => TimelineActivityWorkspaceEntity,

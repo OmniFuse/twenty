@@ -15,7 +15,7 @@ import { WorkspaceIsNullable } from 'src/engine/twenty-orm/decorators/workspace-
 import { WorkspaceIsSystem } from 'src/engine/twenty-orm/decorators/workspace-is-system.decorator';
 import { WorkspaceJoinColumn } from 'src/engine/twenty-orm/decorators/workspace-join-column.decorator';
 import { WorkspaceRelation } from 'src/engine/twenty-orm/decorators/workspace-relation.decorator';
-import { BASE_OBJECT_STANDARD_FIELD_IDS, CALL_STANDARD_FIELD_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-field-ids';
+import { CALL_STANDARD_FIELD_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-field-ids';
 import { STANDARD_OBJECT_ICONS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-icons';
 import { STANDARD_OBJECT_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-ids';
 // search-vector utilities removed
@@ -27,25 +27,25 @@ import { TimelineActivityWorkspaceEntity } from 'src/modules/timeline/standard-o
 @WorkspaceEntity({
   standardId: STANDARD_OBJECT_IDS.call,
   namePlural: 'calls',
-  labelSingular: msg`Call`,
-  labelPlural: msg`Calls`,
+  labelSingular: `Звонок`,
+  labelPlural: `Звонки`,
   description: msg`A call made to a contact`,
   icon: STANDARD_OBJECT_ICONS.task, // Using task icon as placeholder
   shortcut: 'K',
-  labelIdentifierStandardId: BASE_OBJECT_STANDARD_FIELD_IDS.id,
+  labelIdentifierStandardId: CALL_STANDARD_FIELD_IDS.notes,
 })
 export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.status,
     type: FieldMetadataType.SELECT,
-    label: msg`Status`,
+    label: `Статус`,
     description: msg`Call status`,
     icon: 'IconCheckbox',
     options: [
-      { value: 'SCHEDULED', label: 'Scheduled', color: 'blue' },
-      { value: 'COMPLETED', label: 'Completed', color: 'green' },
-      { value: 'MISSED', label: 'Missed', color: 'red' },
-      { value: 'CANCELLED', label: 'Cancelled', color: 'gray' },
+      { value: 'SCHEDULED', label: 'Запланирован', color: 'blue' },
+      { value: 'COMPLETED', label: 'Выполнен', color: 'green' },
+      { value: 'MISSED', label: 'Пропущен', color: 'red' },
+      { value: 'CANCELLED', label: 'Отменён', color: 'gray' },
     ],
     defaultValue: "'SCHEDULED'",
   })
@@ -54,7 +54,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.notes,
     type: FieldMetadataType.TEXT,
-    label: msg`Notes`,
+    label: `Заметки`,
     description: msg`Call notes and details`,
     icon: 'IconNotes',
   })
@@ -64,7 +64,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.duration,
     type: FieldMetadataType.NUMBER,
-    label: msg`Duration`,
+    label: `Длительность`,
     description: msg`Call duration in minutes`,
     icon: 'IconClock',
   })
@@ -74,7 +74,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.scheduledAt,
     type: FieldMetadataType.DATE_TIME,
-    label: msg`Scheduled At`,
+    label: `Запланирован в`,
     description: msg`When the call is scheduled`,
     icon: 'IconCalendar',
   })
@@ -84,7 +84,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.completedAt,
     type: FieldMetadataType.DATE_TIME,
-    label: msg`Completed At`,
+    label: `Завершён в`,
     description: msg`When the call was completed`,
     icon: 'IconCalendar',
   })
@@ -94,7 +94,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.position,
     type: FieldMetadataType.POSITION,
-    label: msg`Position`,
+    label: `Позиция`,
     description: msg`Call record Position`,
     icon: 'IconHierarchy2',
     defaultValue: 0,
@@ -105,7 +105,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.createdBy,
     type: FieldMetadataType.ACTOR,
-    label: msg`Created by`,
+    label: `Создано`,
     icon: 'IconCreativeCommonsSa',
     description: msg`The creator of the record`,
   })
@@ -116,7 +116,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: CALL_STANDARD_FIELD_IDS.contact,
     type: RelationType.MANY_TO_ONE,
-    label: msg`Contact`,
+    label: `Контакт`,
     description: msg`Call contact`,
     icon: 'IconUser',
     inverseSideTarget: () => require('../../contact/standard-objects/contact.workspace-entity').ContactWorkspaceEntity,
@@ -132,7 +132,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: CALL_STANDARD_FIELD_IDS.timelineActivities,
     type: RelationType.ONE_TO_MANY,
-    label: msg`Events`,
+    label: `События`,
     description: msg`Timeline activities for this call`,
     icon: 'IconTimelineEvent',
     inverseSideTarget: () => TimelineActivityWorkspaceEntity,
@@ -144,7 +144,7 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: CALL_STANDARD_FIELD_IDS.attachments,
     type: RelationType.ONE_TO_MANY,
-    label: msg`Attachments`,
+    label: `Вложения`,
     description: msg`Attachments linked to this call`,
     icon: 'IconFileImport',
     inverseSideTarget: () => AttachmentWorkspaceEntity,
