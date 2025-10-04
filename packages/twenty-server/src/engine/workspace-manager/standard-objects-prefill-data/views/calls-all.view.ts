@@ -33,9 +33,18 @@ export const callsAllView = (
       {
         fieldMetadataId:
           callObjectMetadata.fields.find(
-            (field) => field.standardId === CALL_STANDARD_FIELD_IDS.status,
+            (field) => field.standardId === BASE_OBJECT_STANDARD_FIELD_IDS.id,
           )?.id ?? '',
         position: 0,
+        isVisible: true,
+        size: 180,
+      },
+      {
+        fieldMetadataId:
+          callObjectMetadata.fields.find(
+            (field) => field.standardId === CALL_STANDARD_FIELD_IDS.status,
+          )?.id ?? '',
+        position: 1,
         isVisible: true,
         size: 120,
       },
@@ -44,7 +53,7 @@ export const callsAllView = (
           callObjectMetadata.fields.find(
             (field) => field.standardId === CALL_STANDARD_FIELD_IDS.contact,
           )?.id ?? '',
-        position: 1,
+        position: 2,
         isVisible: true,
         size: DEFAULT_VIEW_FIELD_SIZE,
       },
@@ -53,7 +62,7 @@ export const callsAllView = (
           callObjectMetadata.fields.find(
             (field) => field.standardId === CALL_STANDARD_FIELD_IDS.scheduledAt,
           )?.id ?? '',
-        position: 2,
+        position: 3,
         isVisible: true,
         size: 150,
       },
@@ -62,7 +71,7 @@ export const callsAllView = (
           callObjectMetadata.fields.find(
             (field) => field.standardId === CALL_STANDARD_FIELD_IDS.duration,
           )?.id ?? '',
-        position: 3,
+        position: 4,
         isVisible: true,
         size: 100,
       },
@@ -72,7 +81,7 @@ export const callsAllView = (
             (field) =>
               field.standardId === BASE_OBJECT_STANDARD_FIELD_IDS.createdAt,
           )?.id ?? '',
-        position: 4,
+        position: 5,
         isVisible: true,
         size: 150,
       },

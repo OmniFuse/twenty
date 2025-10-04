@@ -14,16 +14,14 @@ import { WorkspaceIsNullable } from 'src/engine/twenty-orm/decorators/workspace-
 import { WorkspaceIsSystem } from 'src/engine/twenty-orm/decorators/workspace-is-system.decorator';
 import { WorkspaceJoinColumn } from 'src/engine/twenty-orm/decorators/workspace-join-column.decorator';
 import { WorkspaceRelation } from 'src/engine/twenty-orm/decorators/workspace-relation.decorator';
-import { CALL_STANDARD_FIELD_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-field-ids';
+import { BASE_OBJECT_STANDARD_FIELD_IDS, CALL_STANDARD_FIELD_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-field-ids';
 import { STANDARD_OBJECT_ICONS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-icons';
 import { STANDARD_OBJECT_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-ids';
-import { type FieldTypeAndNameMetadata } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
+// search-vector utilities removed
 import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
 import { TimelineActivityWorkspaceEntity } from 'src/modules/timeline/standard-objects/timeline-activity.workspace-entity';
 
-export const SEARCH_FIELDS_FOR_CALL: FieldTypeAndNameMetadata[] = [
-  // Intentionally left empty as calls are not text-searchable for now
-];
+// Calls have no searchable fields
 
 @WorkspaceEntity({
   standardId: STANDARD_OBJECT_IDS.call,
@@ -33,7 +31,7 @@ export const SEARCH_FIELDS_FOR_CALL: FieldTypeAndNameMetadata[] = [
   description: msg`A call made to a contact`,
   icon: STANDARD_OBJECT_ICONS.task, // Using task icon as placeholder
   shortcut: 'K',
-  labelIdentifierStandardId: CALL_STANDARD_FIELD_IDS.status,
+  labelIdentifierStandardId: BASE_OBJECT_STANDARD_FIELD_IDS.id,
 })
 export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
