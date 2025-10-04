@@ -21,7 +21,7 @@ export const SendEmailVerificationLinkEmail = ({
     <BaseEmail width={333} locale={locale}>
       <Title value={i18n._('Confirm your email address')} />
       <MainText>
-        <Trans id="Thanks for registering for an account on Twenty! Before we get started, we just need to confirm that this is you. Click below to verify your email address." />
+        <Trans id="Спасибо за регистрацию аккаунта в Liddex! Перед тем как начать, нам нужно подтвердить, что это действительно вы. Нажмите кнопку ниже, чтобы подтвердить ваш email адрес." />
       </MainText>
       <br />
       <CallToAction href={link} value={i18n._('Verify Email')} />
