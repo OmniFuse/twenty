@@ -51,7 +51,15 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   })
   status: string;
 
-  // Notes field removed
+  @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.notes,
+    type: FieldMetadataType.TEXT,
+    label: msg`Notes`,
+    description: msg`Call notes and details`,
+    icon: 'IconNotes',
+  })
+  @WorkspaceIsNullable()
+  notes: string | null;
 
   @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.duration,
