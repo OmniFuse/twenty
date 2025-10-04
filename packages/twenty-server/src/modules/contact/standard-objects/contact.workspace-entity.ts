@@ -22,8 +22,8 @@ import { CONTACT_STANDARD_FIELD_IDS } from 'src/engine/workspace-manager/workspa
 import { STANDARD_OBJECT_ICONS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-icons';
 import { STANDARD_OBJECT_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-ids';
 import {
-  type FieldTypeAndNameMetadata,
-  getTsVectorColumnExpressionFromFields,
+    type FieldTypeAndNameMetadata,
+    getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
 import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
 import { CallWorkspaceEntity } from 'src/modules/call/standard-objects/call.workspace-entity';
@@ -41,8 +41,8 @@ export const SEARCH_FIELDS_FOR_CONTACT: FieldTypeAndNameMetadata[] = [
 @WorkspaceEntity({
   standardId: STANDARD_OBJECT_IDS.contact,
   namePlural: 'contacts',
-  labelSingular: `Контакт`,
-  labelPlural: `Контакты`,
+  labelSingular: msg`Contact`,
+  labelPlural: msg`Contacts`,
   description: msg`A contact entry for lead management`,
   icon: STANDARD_OBJECT_ICONS.person,
   shortcut: 'C',
@@ -53,7 +53,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.name,
     type: FieldMetadataType.TEXT,
-    label: `Имя`,
+    label: msg`Name`,
     description: msg`Contact name`,
     icon: 'IconUser',
   })
@@ -62,7 +62,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.source,
     type: FieldMetadataType.TEXT,
-    label: `Источник`,
+    label: msg`Source`,
     description: msg`Contact source information`,
     icon: 'IconSource',
   })
@@ -72,7 +72,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.additionalInfo,
     type: FieldMetadataType.RAW_JSON,
-    label: `Доп. Информация`,
+    label: msg`Additional Info`,
     description: msg`Additional contact information in JSON format`,
     icon: 'IconInfoCircle',
   })
@@ -82,7 +82,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.processed,
     type: FieldMetadataType.BOOLEAN,
-    label: `Обработан`,
+    label: msg`Processed`,
     description: msg`Whether the contact has been processed`,
     icon: 'IconCheck',
     defaultValue: false,
@@ -92,7 +92,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.phones,
     type: FieldMetadataType.PHONES,
-    label: `Телефон`,
+    label: msg`Phones`,
     description: msg`Contact phone numbers`,
     icon: 'IconPhone',
   })
@@ -101,7 +101,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.position,
     type: FieldMetadataType.POSITION,
-    label: `Позиция`,
+    label: msg`Position`,
     description: msg`Contact record Position`,
     icon: 'IconHierarchy2',
     defaultValue: 0,
@@ -112,7 +112,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.createdBy,
     type: FieldMetadataType.ACTOR,
-    label: `Создан`,
+    label: msg`Created by`,
     icon: 'IconCreativeCommonsSa',
     description: msg`The creator of the record`,
   })
@@ -123,7 +123,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: CONTACT_STANDARD_FIELD_IDS.leads,
     type: RelationType.ONE_TO_MANY,
-    label: `Лиды`,
+    label: msg`Leads`,
     description: msg`Leads associated with this contact`,
     icon: 'IconTargetArrow',
     inverseSideTarget: () => LeadWorkspaceEntity,
@@ -136,7 +136,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: CONTACT_STANDARD_FIELD_IDS.calls,
     type: RelationType.ONE_TO_MANY,
-    label: `Звонки`,
+    label: msg`Calls`,
     description: msg`Calls made to this contact`,
     icon: 'IconPhone',
     inverseSideTarget: () => CallWorkspaceEntity,
@@ -149,7 +149,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: CONTACT_STANDARD_FIELD_IDS.attachments,
     type: RelationType.ONE_TO_MANY,
-    label: `Вложения`,
+    label: msg`Attachments`,
     description: msg`Attachments for this contact`,
     icon: 'IconFileImport',
     inverseSideTarget: () => AttachmentWorkspaceEntity,
@@ -161,7 +161,7 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   @WorkspaceRelation({
     standardId: CONTACT_STANDARD_FIELD_IDS.timelineActivities,
     type: RelationType.ONE_TO_MANY,
-    label: `События`,
+    label: msg`Events`,
     description: msg`Timeline activities for this contact`,
     icon: 'IconTimelineEvent',
     inverseSideTarget: () => TimelineActivityWorkspaceEntity,
