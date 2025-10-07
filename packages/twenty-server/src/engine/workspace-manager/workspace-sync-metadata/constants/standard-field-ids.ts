@@ -168,6 +168,7 @@ export const CONTACT_STANDARD_FIELD_IDS = {
   calls: '20202020-c008-48e5-a542-72570eee9a08',
   position: '20202020-c009-48e5-a542-72570eee9a09',
   searchVector: '20202020-c010-48e5-a542-72570eee9a10',
+  isLead: '20202020-c011-48e5-a542-72570eee9a11',
   attachments: '20202020-c0a1-4c01-8000-000000000001',
   timelineActivities: '20202020-c0a1-4c01-8000-000000000002',
 } as const;
@@ -183,6 +184,9 @@ export const LEAD_STANDARD_FIELD_IDS = {
   createdBy: '20202020-1a08-49dd-b2b2-883999db5b08',
   position: '20202020-1a09-49dd-b2b2-883999db5b09',
   searchVector: '20202020-1a10-49dd-b2b2-883999db5b10',
+  phone: '20202020-1a11-49dd-b2b2-883999db5b11',
+  product: '20202020-1a12-49dd-b2b2-883999db5b12',
+  description: '20202020-1a13-49dd-b2b2-883999db5b13',
   attachments: '20202020-1ead-4c01-8000-000000000001',
   timelineActivities: '20202020-1ead-4c01-8000-000000000002',
 } as const;

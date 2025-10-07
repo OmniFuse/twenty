@@ -89,6 +89,36 @@ export class LeadWorkspaceEntity extends BaseWorkspaceEntity {
   location: string | null;
 
   @WorkspaceField({
+    standardId: LEAD_STANDARD_FIELD_IDS.phone,
+    type: FieldMetadataType.TEXT,
+    label: msg`Phone`,
+    description: msg`Lead phone number`,
+    icon: 'IconPhone',
+  })
+  @WorkspaceIsNullable()
+  phone: string | null;
+
+  @WorkspaceField({
+    standardId: LEAD_STANDARD_FIELD_IDS.product,
+    type: FieldMetadataType.TEXT,
+    label: msg`Product`,
+    description: msg`Lead product interest`,
+    icon: 'IconPackage',
+  })
+  @WorkspaceIsNullable()
+  product: string | null;
+
+  @WorkspaceField({
+    standardId: LEAD_STANDARD_FIELD_IDS.description,
+    type: FieldMetadataType.TEXT,
+    label: msg`Description`,
+    description: msg`Lead description`,
+    icon: 'IconNotes',
+  })
+  @WorkspaceIsNullable()
+  description: string | null;
+
+  @WorkspaceField({
     standardId: LEAD_STANDARD_FIELD_IDS.position,
     type: FieldMetadataType.POSITION,
     label: msg`Position`,

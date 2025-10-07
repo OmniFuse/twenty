@@ -90,6 +90,17 @@ export class ContactWorkspaceEntity extends BaseWorkspaceEntity {
   processed: boolean;
 
   @WorkspaceField({
+    standardId: CONTACT_STANDARD_FIELD_IDS.isLead,
+    type: FieldMetadataType.BOOLEAN,
+    label: msg`Is Lead`,
+    description: msg`Whether the contact is a lead`,
+    icon: 'IconTargetArrow',
+    defaultValue: false,
+  })
+  @WorkspaceIsNullable()
+  isLead: boolean;
+
+  @WorkspaceField({
     standardId: CONTACT_STANDARD_FIELD_IDS.phones,
     type: FieldMetadataType.PHONES,
     label: msg`Phones`,

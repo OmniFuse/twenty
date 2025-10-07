@@ -58,6 +58,11 @@ msgstr "{fieldType} fields cannot be unique."
 msgid "{name} should be in camelCase"
 msgstr "{name} should be in camelCase"
 
+#. js-lingui-id: Y5S3Sa
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "A call made to a contact"
+msgstr "A call made to a contact"
+
 #. js-lingui-id: kZR6+h
 #: src/modules/company/standard-objects/company.workspace-entity.ts
 msgid "A company"
@@ -67,6 +72,11 @@ msgstr "A company"
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
 msgid "A connected account"
 msgstr "A connected account"
+
+#. js-lingui-id: WyXHRW
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "A contact entry for lead management"
+msgstr "A contact entry for lead management"
 
 #. js-lingui-id: cOSBjW
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
@@ -107,6 +117,11 @@ msgstr "A note target"
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 msgid "A person"
 msgstr "A person"
+
+#. js-lingui-id: SkJYCP
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "A potential customer interested in cooperation"
+msgstr "A potential customer interested in cooperation"
 
 #. js-lingui-id: Q2De+v
 #: src/engine/metadata-modules/role/role.service.ts
@@ -191,6 +206,22 @@ msgstr "Active fields cannot be deleted"
 msgid "Active objects cannot be deleted"
 msgstr "Active objects cannot be deleted"
 
+#. js-lingui-id: GP2iEy
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Additional contact information in JSON format"
+msgstr "Additional contact information in JSON format"
+
+#. js-lingui-id: Scx2Ba
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Additional Info"
+msgstr "Additional Info"
+
+#. js-lingui-id: WemqXD
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Additional lead information in JSON format"
+msgstr "Additional lead information in JSON format"
+
 #. js-lingui-id: Du6bPw
 #: src/modules/company/standard-objects/company.workspace-entity.ts
 msgid "Address"
@@ -230,14 +261,18 @@ msgstr "Aggregated / filtered event to be displayed on the timeline"
 #: src/engine/workspace-manager/standard-objects-prefill-data/views/people-all.view.ts
 #: src/engine/workspace-manager/standard-objects-prefill-data/views/opportunities-all.view.ts
 #: src/engine/workspace-manager/standard-objects-prefill-data/views/notes-all.view.ts
+#: src/engine/workspace-manager/standard-objects-prefill-data/views/leads-all.view.ts
 #: src/engine/workspace-manager/standard-objects-prefill-data/views/dashboards-all.view.ts
 #: src/engine/workspace-manager/standard-objects-prefill-data/views/custom-all.view.ts
+#: src/engine/workspace-manager/standard-objects-prefill-data/views/contacts-all.view.ts
 #: src/engine/workspace-manager/standard-objects-prefill-data/views/companies-all.view.ts
+#: src/engine/workspace-manager/standard-objects-prefill-data/views/calls-all.view.ts
 msgid "All {objectLabelPlural}"
 msgstr "All {objectLabelPlural}"
 
 #. js-lingui-id: hehnjM
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
 msgid "Amount"
 msgstr "Amount"
 
@@ -330,10 +365,20 @@ msgstr "Attachment"
 msgid "Attachment author"
 msgstr "Attachment author"
 
+#. js-lingui-id: h4I6gn
+#: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
+msgid "Attachment call"
+msgstr "Attachment call"
+
 #. js-lingui-id: bIaesZ
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 msgid "Attachment company"
 msgstr "Attachment company"
+
+#. js-lingui-id: n1JI8S
+#: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
+msgid "Attachment contact"
+msgstr "Attachment contact"
 
 #. js-lingui-id: wtcL/T
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -344,6 +389,11 @@ msgstr "Attachment dashboard"
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 msgid "Attachment full path"
 msgstr "Attachment full path"
+
+#. js-lingui-id: 1BD86M
+#: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
+msgid "Attachment lead"
+msgstr "Attachment lead"
 
 #. js-lingui-id: wjocwa
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -386,8 +436,11 @@ msgstr "Attachment workflow"
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 #: src/modules/note/standard-objects/note.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
 #: src/modules/company/standard-objects/company.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "Attachments"
@@ -397,6 +450,11 @@ msgstr "Attachments"
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
 msgid "Attachments created by the workspace member"
 msgstr "Attachments created by the workspace member"
+
+#. js-lingui-id: 1iNwKc
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Attachments for this contact"
+msgstr "Attachments for this contact"
 
 #. js-lingui-id: iVnA89
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -422,6 +480,16 @@ msgstr "Attachments linked to the opportunity"
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
 msgid "Attachments linked to the workflow"
 msgstr "Attachments linked to the workflow"
+
+#. js-lingui-id: eYeDCC
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Attachments linked to this call"
+msgstr "Attachments linked to this call"
+
+#. js-lingui-id: aOq6jE
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Attachments linked to this lead"
+msgstr "Attachments linked to this lead"
 
 #. js-lingui-id: fCbqr7
 #: src/engine/twenty-orm/custom.workspace-entity.ts
@@ -576,6 +644,49 @@ msgstr "Calendar Event Participants"
 msgid "Calendar events"
 msgstr "Calendar events"
 
+#. js-lingui-id: 8hvxGX
+#: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+#: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
+msgid "Call"
+msgstr "Call"
+
+#. js-lingui-id: 4pddfg
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Call contact"
+msgstr "Call contact"
+
+#. js-lingui-id: 8lO6oZ
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Call duration in minutes"
+msgstr "Call duration in minutes"
+
+#. js-lingui-id: M2+NsY
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Call notes and details"
+msgstr "Call notes and details"
+
+#. js-lingui-id: BWtL65
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Call record Position"
+msgstr "Call record Position"
+
+#. js-lingui-id: PME/2x
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Call status"
+msgstr "Call status"
+
+#. js-lingui-id: 9rnFEa
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Calls"
+msgstr "Calls"
+
+#. js-lingui-id: 0h1I71
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Calls made to this contact"
+msgstr "Calls made to this contact"
+
 #. js-lingui-id: eSaCR/
 #: src/engine/twenty-orm/relation-nested-queries/utils/formatConnectRecordNotFoundErrorMessage.util.ts
 msgid "Can't connect to {connectFieldName}. No unique record found with condition: {formattedConnectCondition}"
@@ -680,6 +791,11 @@ msgstr "Company"
 msgid "Company record position"
 msgstr "Company record position"
 
+#. js-lingui-id: KKlc8t
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Completed At"
+msgstr "Completed At"
+
 #. js-lingui-id: AgktVC
 #: src/modules/calendar/common/standard-objects/calendar-event.workspace-entity.ts
 #: src/modules/calendar/common/standard-objects/calendar-event.workspace-entity.ts
@@ -711,11 +827,40 @@ msgstr "Connected accounts"
 msgid "Connected Accounts"
 msgstr "Connected Accounts"
 
+#. js-lingui-id: jfC/xh
+#: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+#: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
+msgid "Contact"
+msgstr "Contact"
+
 #. js-lingui-id: bA6O5B
 #: src/modules/messaging/common/standard-objects/message-channel.workspace-entity.ts
 #: src/modules/calendar/common/standard-objects/calendar-channel.workspace-entity.ts
 msgid "Contact auto creation policy"
 msgstr "Contact auto creation policy"
+
+#. js-lingui-id: Z6JctO
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Contact name"
+msgstr "Contact name"
+
+#. js-lingui-id: 7BpXLR
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Contact phone numbers"
+msgstr "Contact phone numbers"
+
+#. js-lingui-id: jahiUq
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Contact record Position"
+msgstr "Contact record Position"
+
+#. js-lingui-id: WlGirU
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Contact source information"
+msgstr "Contact source information"
 
 #. js-lingui-id: RnsmQs
 #: src/modules/person/standard-objects/person.workspace-entity.ts
@@ -767,6 +912,11 @@ msgstr "Contact’s phone numbers"
 msgid "Contact’s X/Twitter account"
 msgstr "Contact’s X/Twitter account"
 
+#. js-lingui-id: gVfVfe
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Contacts"
+msgstr "Contacts"
+
 #. js-lingui-id: LZf/L8
 #: src/engine/core-modules/common/utils/find-flat-entity-by-id-in-flat-entity-maps-or-throw.util.ts
 msgid "Could not find flat entity in maps"
@@ -788,8 +938,11 @@ msgstr "Could not find index related object metadata"
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 #: src/modules/note/standard-objects/note.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
 #: src/modules/company/standard-objects/company.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "Created by"
 msgstr "Created by"
@@ -982,6 +1135,11 @@ msgstr "Due Date"
 msgid "Duplicated option {field}"
 msgstr "Duplicated option {field}"
 
+#. js-lingui-id: lkz6PL
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Duration"
+msgstr "Duration"
+
 #. js-lingui-id: BBXuRb
 #: src/engine/core-modules/email-verification/email-verification-exception-filter.util.ts
 msgid "Email already verified."
@@ -1025,10 +1183,20 @@ msgstr "End Date"
 msgid "Environment variable CLOUDFLARE_API_KEY must be defined to use this feature."
 msgstr "Environment variable CLOUDFLARE_API_KEY must be defined to use this feature."
 
+#. js-lingui-id: mbOZD5
+#: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
+msgid "Event call"
+msgstr "Event call"
+
 #. js-lingui-id: k//6Xs
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
 msgid "Event company"
 msgstr "Event company"
+
+#. js-lingui-id: DzkSuT
+#: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
+msgid "Event contact"
+msgstr "Event contact"
 
 #. js-lingui-id: CPhvC+
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -1053,6 +1221,11 @@ msgstr "Event external ID"
 #: src/modules/calendar/common/standard-objects/calendar-channel-event-association.workspace-entity.ts
 msgid "Event ID"
 msgstr "Event ID"
+
+#. js-lingui-id: 98mJp7
+#: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
+msgid "Event lead"
+msgstr "Event lead"
 
 #. js-lingui-id: PYs3rP
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -1109,6 +1282,9 @@ msgstr "Event workspace member"
 #. js-lingui-id: tst44n
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
 #: src/modules/person/standard-objects/person.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
 msgid "Events"
 msgstr "Events"
 
@@ -1722,8 +1898,8 @@ msgstr "Job Title"
 
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
-msgid "Join your team on Twenty"
-msgstr "Join your team on Twenty"
+#~ msgid "Join your team on Twenty"
+#~ msgstr "Join your team on Twenty"
 
 #. js-lingui-id: WNfJ8M
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -1812,6 +1988,49 @@ msgstr "Last time the record was changed"
 msgid "Last update"
 msgstr "Last update"
 
+#. js-lingui-id: IITbPp
+#: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
+msgid "Lead"
+msgstr "Lead"
+
+#. js-lingui-id: bUPuz1
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Lead contact"
+msgstr "Lead contact"
+
+#. js-lingui-id: Cl3EP0
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Lead location"
+msgstr "Lead location"
+
+#. js-lingui-id: WC+zj8
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Lead name"
+msgstr "Lead name"
+
+#. js-lingui-id: NLNIqW
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Lead opportunity amount"
+msgstr "Lead opportunity amount"
+
+#. js-lingui-id: qvA0UZ
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Lead record Position"
+msgstr "Lead record Position"
+
+#. js-lingui-id: LhgWCf
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Leads"
+msgstr "Leads"
+
+#. js-lingui-id: ZUIFB9
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Leads associated with this contact"
+msgstr "Leads associated with this contact"
+
 #. js-lingui-id: wR9USP
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -1841,6 +2060,7 @@ msgid "List of opportunities for which that person is the point of contact"
 msgstr "List of opportunities for which that person is the point of contact"
 
 #. js-lingui-id: wJijgU
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
 #: src/modules/calendar/common/standard-objects/calendar-event.workspace-entity.ts
 #: src/modules/calendar/common/standard-objects/calendar-event.workspace-entity.ts
 msgid "Location"
@@ -2064,7 +2284,9 @@ msgstr "Multiple records found with the same unique field values for {conflictin
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 #: src/modules/messaging/common/standard-objects/message-folder.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
 #: src/modules/favorite-folder/standard-objects/favorite-folder.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
 #: src/modules/company/standard-objects/company.workspace-entity.ts
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 #: src/engine/twenty-orm/custom.workspace-entity.ts
@@ -2217,6 +2439,7 @@ msgstr "Note title"
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 #: src/modules/note/standard-objects/note.workspace-entity.ts
 #: src/modules/company/standard-objects/company.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "Notes"
 msgstr "Notes"
@@ -2544,6 +2767,7 @@ msgstr "Phone"
 
 #. js-lingui-id: m2ivgq
 #: src/modules/person/standard-objects/person.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
 msgid "Phones"
 msgstr "Phones"
 
@@ -2564,10 +2788,13 @@ msgstr "Point of Contact"
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 #: src/modules/note/standard-objects/note.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
 #: src/modules/favorite-folder/standard-objects/favorite-folder.workspace-entity.ts
 #: src/modules/favorite/standard-objects/favorite.workspace-entity.ts
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
 #: src/modules/company/standard-objects/company.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "Position"
@@ -2603,6 +2830,11 @@ msgstr "Preferred language"
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 msgid "Probability"
 msgstr "Probability"
+
+#. js-lingui-id: zisYnV
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Processed"
+msgstr "Processed"
 
 #. js-lingui-id: dtGxRz
 #: src/engine/core-modules/record-transformer/utils/transform-phones-value.util.ts
@@ -2736,6 +2968,11 @@ msgstr "Route with same path already exists"
 msgid "Runs"
 msgstr "Runs"
 
+#. js-lingui-id: zieQHv
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Scheduled At"
+msgstr "Scheduled At"
+
 #. js-lingui-id: N/rFzD
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -2792,6 +3029,11 @@ msgstr "Settings"
 msgid "Size"
 msgstr "Size"
 
+#. js-lingui-id: wdxz7K
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Source"
+msgstr "Source"
+
 #. js-lingui-id: 3PRxO3
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 msgid "Stage"
@@ -2831,6 +3073,7 @@ msgstr "State of the workflow run"
 
 #. js-lingui-id: uAQUqI
 #: src/modules/task/standard-objects/task.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
 msgid "Status"
 msgstr "Status"
 
@@ -3062,8 +3305,11 @@ msgstr "The company website URL. We use this url to fetch the company icon"
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 #: src/modules/note/standard-objects/note.workspace-entity.ts
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
 #: src/modules/company/standard-objects/company.workspace-entity.ts
+#: src/modules/call/standard-objects/call.workspace-entity.ts
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "The creator of the record"
 msgstr "The creator of the record"
@@ -3195,6 +3441,21 @@ msgstr "Time zone"
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "Timeline Activities"
 msgstr "Timeline Activities"
+
+#. js-lingui-id: sHCUQk
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "Timeline activities for this call"
+msgstr "Timeline activities for this call"
+
+#. js-lingui-id: BC+aON
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Timeline activities for this contact"
+msgstr "Timeline activities for this contact"
+
+#. js-lingui-id: lJ/C//
+#: src/modules/lead/standard-objects/lead.workspace-entity.ts
+msgid "Timeline activities for this lead"
+msgstr "Timeline activities for this lead"
 
 #. js-lingui-id: fqKMpF
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -3731,8 +3992,23 @@ msgstr "We are experiencing a temporary issue with our database. Please try agai
 
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
-msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Welcome to Twenty: Please Confirm Your Email"
+#~ msgid "Welcome to Twenty: Please Confirm Your Email"
+#~ msgstr "Welcome to Twenty: Please Confirm Your Email"
+
+#. js-lingui-id: RsCuQ0
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "When the call is scheduled"
+msgstr "When the call is scheduled"
+
+#. js-lingui-id: shSY4L
+#: src/modules/call/standard-objects/call.workspace-entity.ts
+msgid "When the call was completed"
+msgstr "When the call was completed"
+
+#. js-lingui-id: 0S1+2f
+#: src/modules/contact/standard-objects/contact.workspace-entity.ts
+msgid "Whether the contact has been processed"
+msgstr "Whether the contact has been processed"
 
 #. js-lingui-id: bLt/0J
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
@@ -4005,3 +4281,13 @@ msgstr "Your team member responsible for managing the company account"
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts
 msgid "Your workspace has been updated with a new data model. Please refresh the page."
 msgstr "Your workspace has been updated with a new data model. Please refresh the page."
+
+#. js-lingui-id: NGNc24
+#: src/engine/core-modules/email-verification/services/email-verification.service.ts
+msgid "Подтвердите Вашу почту на Liddex"
+msgstr "Подтвердите Вашу почту на Liddex"
+
+#. js-lingui-id: sdteIt
+#: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
+msgid "Присоединяйтесь к вашей команде на Liddex"
+msgstr "Присоединяйтесь к вашей команде на Liddex"
