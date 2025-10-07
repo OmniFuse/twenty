@@ -1,5 +1,4 @@
 name: Changed files reusable workflow
-
 on:
   workflow_call:
     inputs:

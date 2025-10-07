@@ -3,13 +3,12 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { assertIsDefinedOrThrow, isDefined } from 'twenty-shared/utils';
 import { Repository } from 'typeorm';
 
-import { type WorkspacePostQueryHookInstance } from 'src/engine/api/graphql/workspace-query-runner/workspace-query-hook/interfaces/workspace-query-hook.interface';
+import { type WorkspacePreQueryHookInstance } from 'src/engine/api/graphql/workspace-query-runner/workspace-query-hook/interfaces/workspace-query-hook.interface';
+import { type DeleteOneResolverArgs } from 'src/engine/api/graphql/workspace-resolver-builder/interfaces/workspace-resolvers-builder.interface';
 
 import { WorkspaceQueryHook } from 'src/engine/api/graphql/workspace-query-runner/workspace-query-hook/decorators/workspace-query-hook.decorator';
-import { WorkspaceQueryHookType } from 'src/engine/api/graphql/workspace-query-runner/workspace-query-hook/types/workspace-query-hook.type';
 import { type AuthContext } from 'src/engine/core-modules/auth/types/auth-context.type';
 import { UserWorkspace } from 'src/engine/core-modules/user-workspace/user-workspace.entity';
-import { WorkspaceNotFoundDefaultError } from 'src/engine/core-modules/workspace/workspace.exception';
 import {
   PermissionsException,
   PermissionsExceptionCode,
@@ -18,13 +17,11 @@ import { TwentyORMManager } from 'src/engine/twenty-orm/twenty-orm.manager';
 import { type AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
 import { WorkspaceMemberPreQueryHookService } from 'src/modules/workspace-member/query-hooks/workspace-member-pre-query-hook.service';
 import { type WorkspaceMemberWorkspaceEntity } from 'src/modules/workspace-member/standard-objects/workspace-member.workspace-entity';
+import { WorkspaceNotFoundDefaultError } from 'src/engine/core-modules/workspace/workspace.exception';
 
-@WorkspaceQueryHook({
-  key: `workspaceMember.deleteOne`,
-  type: WorkspaceQueryHookType.POST_HOOK,
-})
-export class WorkspaceMemberDeleteOnePostQueryHook
-  implements WorkspacePostQueryHookInstance
+@WorkspaceQueryHook(`workspaceMember.deleteOne`)
+export class WorkspaceMemberDeleteOnePreQueryHook
+  implements WorkspacePreQueryHookInstance
 {
   constructor(
     private readonly twentyORMManager: TwentyORMManager,
@@ -36,14 +33,9 @@ export class WorkspaceMemberDeleteOnePostQueryHook
   async execute(
     authContext: AuthContext,
     _objectName: string,
-    payload: WorkspaceMemberWorkspaceEntity[],
-  ): Promise<void> {
-    if (!payload || payload.length === 0) {
-      return;
-    }
-
-    const deletedWorkspaceMember = payload[0];
-    const targettedWorkspaceMemberId = deletedWorkspaceMember.id;
+    payload: DeleteOneResolverArgs,
+  ): Promise<DeleteOneResolverArgs> {
+    const targettedWorkspaceMemberId = payload.id;
 
     const workspace = authContext.workspace;
 
@@ -79,10 +71,10 @@ export class WorkspaceMemberDeleteOnePostQueryHook
       where: {
         id: targettedWorkspaceMemberId,
       },
-      withDeleted: true,
     });
 
     if (!isDefined(workspaceMember)) {
+      // TODO: once this is migrated to userWorkspace service we should throw UserWorkspaceException
       throw new PermissionsException(
         'Workspace member not found',
         PermissionsExceptionCode.WORKSPACE_MEMBER_NOT_FOUND,
@@ -104,5 +96,7 @@ export class WorkspaceMemberDeleteOnePostQueryHook
     }
 
     await this.userWorkspaceRepository.delete(userWorkspace.id);
+
+    return payload;
   }
 }

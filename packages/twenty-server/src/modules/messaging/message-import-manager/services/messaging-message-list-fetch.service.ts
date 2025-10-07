@@ -257,7 +257,7 @@ export class MessagingMessageListFetchService {
     } catch (error) {
       await this.messageImportErrorHandlerService.handleDriverException(
         error,
-        MessageImportSyncStep.MESSAGE_LIST_FETCH,
+        MessageImportSyncStep.FULL_MESSAGE_LIST_FETCH,
         messageChannel,
         workspaceId,
       );

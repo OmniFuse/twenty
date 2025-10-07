@@ -1,13 +1,8 @@
 name: CD deploy tag
-
-permissions:
-  contents: read
-
 on:
   push:
     tags:
       - 'v*'
-
 jobs:
   deploy-tag:
     timeout-minutes: 3

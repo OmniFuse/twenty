@@ -10,7 +10,6 @@ import { isDefined } from 'twenty-shared/utils';
 export const useWorkflowWithCurrentVersion = (
   workflowId: string | undefined,
 ): WorkflowWithCurrentVersion | undefined => {
-  // TODO: we should only load the data for the current version
   const { record: workflow } = useFindOneRecord<Workflow>({
     objectNameSingular: CoreObjectNameSingular.Workflow,
     objectRecordId: workflowId,

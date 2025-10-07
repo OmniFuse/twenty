@@ -3,16 +3,16 @@ import { FormFieldInputInnerContainer } from '@/object-record/record-field/ui/fo
 import { FormFieldInputRowContainer } from '@/object-record/record-field/ui/form-types/components/FormFieldInputRowContainer';
 import { VariableChipStandalone } from '@/object-record/record-field/ui/form-types/components/VariableChipStandalone';
 import { type VariablePickerComponent } from '@/object-record/record-field/ui/form-types/types/VariablePickerComponent';
+import { BooleanInput } from '@/ui/field/input/components/BooleanInput';
 import { InputLabel } from '@/ui/input/components/InputLabel';
-import { Select } from '@/ui/input/components/Select';
-import { GenericDropdownContentWidth } from '@/ui/layout/dropdown/constants/GenericDropdownContentWidth';
-import { useRemoveFocusItemFromFocusStackById } from '@/ui/utilities/focus/hooks/useRemoveFocusItemFromFocusStackById';
 import { isStandaloneVariableString } from '@/workflow/utils/isStandaloneVariableString';
-import { useTheme } from '@emotion/react';
-import { useLingui } from '@lingui/react/macro';
+import styled from '@emotion/styled';
 import { useId, useState } from 'react';
 import { isDefined } from 'twenty-shared/utils';
-import { IconCheck, IconCircleOff, IconX } from 'twenty-ui/display';
+
+const StyledBooleanInputContainer = styled.div`
+  padding-inline: ${({ theme }) => theme.spacing(2)};
+`;
 
 type FormBooleanFieldInputProps = {
   label?: string;
@@ -22,22 +22,6 @@ type FormBooleanFieldInputProps = {
   readonly?: boolean;
 };
 
-const parseStringifiedBooleanToBoolean = (value: string) => {
-  if (value === 'true') {
-    return true;
-  }
-
-  return false;
-};
-
-const castBooleanToStringifiedBoolean = (value: boolean | undefined) => {
-  if (value === undefined) {
-    return '';
-  }
-
-  return value ? 'true' : 'false';
-};
-
 export const FormBooleanFieldInput = ({
   label,
   defaultValue,
@@ -45,19 +29,12 @@ export const FormBooleanFieldInput = ({
   readonly,
   VariablePicker,
 }: FormBooleanFieldInputProps) => {
-  const theme = useTheme();
-  const { t } = useLingui();
-
   const instanceId = useId();
-
-  const { removeFocusItemFromFocusStackById } =
-    useRemoveFocusItemFromFocusStackById();
 
   const [draftValue, setDraftValue] = useState<
     | {
         type: 'static';
-        value: boolean | undefined;
-        editingMode: 'view' | 'edit';
+        value: boolean;
       }
     | {
         type: 'variable';
@@ -71,29 +48,17 @@ export const FormBooleanFieldInput = ({
         }
       : {
           type: 'static',
-          value: defaultValue,
-          editingMode: 'view',
+          value: Boolean(defaultValue),
         },
   );
 
-  const defaultEmptyOption = {
-    label: t`Select a value`,
-    value: '',
-    icon: IconCircleOff,
-  };
-
-  const onSelect = (option: string) => {
-    const optionAsBoolean = parseStringifiedBooleanToBoolean(option);
-
+  const handleChange = (newValue: boolean) => {
     setDraftValue({
       type: 'static',
-      value: optionAsBoolean,
-      editingMode: 'view',
+      value: newValue,
     });
 
-    removeFocusItemFromFocusStackById({ focusId: instanceId });
-
-    onChange(optionAsBoolean);
+    onChange(newValue);
   };
 
   const handleVariableTagInsert = (variableName: string) => {
@@ -109,7 +74,6 @@ export const FormBooleanFieldInput = ({
     setDraftValue({
       type: 'static',
       value: false,
-      editingMode: 'view',
     });
 
     onChange(false);
@@ -120,40 +84,32 @@ export const FormBooleanFieldInput = ({
       {label ? <InputLabel>{label}</InputLabel> : null}
 
       <FormFieldInputRowContainer>
-        {draftValue.type === 'static' ? (
-          <Select
-            dropdownId={`${instanceId}-select-display`}
-            options={[
-              { label: 'True', value: 'true', Icon: IconCheck },
-              { label: 'False', value: 'false', Icon: IconX },
-            ]}
-            value={castBooleanToStringifiedBoolean(draftValue.value)}
-            onChange={onSelect}
-            emptyOption={defaultEmptyOption}
-            fullWidth
-            hasRightElement={isDefined(VariablePicker) && !readonly}
-            disabled={readonly}
-            dropdownWidth={GenericDropdownContentWidth.ExtraLarge}
-            dropdownOffset={{ y: parseInt(theme.spacing(1), 10) }}
-          />
-        ) : (
-          <FormFieldInputInnerContainer
-            formFieldInputInstanceId={instanceId}
-            hasRightElement={isDefined(VariablePicker) && !readonly}
-          >
+        <FormFieldInputInnerContainer
+          formFieldInputInstanceId={instanceId}
+          hasRightElement={isDefined(VariablePicker) && !readonly}
+        >
+          {draftValue.type === 'static' ? (
+            <StyledBooleanInputContainer>
+              <BooleanInput
+                value={draftValue.value}
+                readonly={readonly}
+                onToggle={handleChange}
+              />
+            </StyledBooleanInputContainer>
+          ) : (
             <VariableChipStandalone
               rawVariableName={draftValue.value}
               onRemove={readonly ? undefined : handleUnlinkVariable}
             />
-          </FormFieldInputInnerContainer>
-        )}
+          )}
+        </FormFieldInputInnerContainer>
 
-        {isDefined(VariablePicker) && !readonly && (
+        {VariablePicker && !readonly ? (
           <VariablePicker
             instanceId={instanceId}
             onVariableSelect={handleVariableTagInsert}
           />
-        )}
+        ) : null}
       </FormFieldInputRowContainer>
     </FormFieldInputContainer>
   );

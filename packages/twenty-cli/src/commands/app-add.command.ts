@@ -104,11 +104,7 @@ export class AppAddCommand {
         name: 'entity',
         message: `What entity do you want to create?`,
         default: '',
-        choices: [
-          SyncableEntity.SERVERLESS_FUNCTION,
-          SyncableEntity.OBJECT,
-          SyncableEntity.TRIGGER,
-        ],
+        choices: [SyncableEntity.SERVERLESS_FUNCTION, SyncableEntity.TRIGGER],
       },
     ]);
 

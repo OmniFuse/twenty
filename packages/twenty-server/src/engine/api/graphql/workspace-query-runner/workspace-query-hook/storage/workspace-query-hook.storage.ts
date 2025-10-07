@@ -98,8 +98,6 @@ export class WorkspaceQueryHookStorage {
       wildcardInstances = wildcardPosthooksInstance;
     }
 
-    const specificInstances = this.postHookInstances.get(key) ?? [];
-
-    return [...wildcardInstances, ...specificInstances];
+    return [...wildcardInstances, ...(this.postHookInstances.get(key) ?? [])];
   }
 }

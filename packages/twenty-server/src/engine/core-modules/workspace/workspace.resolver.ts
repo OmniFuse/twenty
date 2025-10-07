@@ -65,12 +65,7 @@ import { streamToBuffer } from 'src/utils/stream-to-buffer';
 import { Workspace } from 'src/engine/core-modules/workspace/workspace.entity';
 import { WorkspaceService } from 'src/engine/core-modules/workspace/services/workspace.service';
 import { DomainValidRecords } from 'src/engine/core-modules/dns-manager/dtos/domain-valid-records';
-import {
-  WorkspaceException,
-  WorkspaceExceptionCode,
-  WorkspaceNotFoundDefaultError,
-} from 'src/engine/core-modules/workspace/workspace.exception';
-import { DnsManagerService } from 'src/engine/core-modules/dns-manager/services/dns-manager.service';
+import { WorkspaceNotFoundDefaultError } from 'src/engine/core-modules/workspace/workspace.exception';
 
 const OriginHeader = createParamDecorator(
   (_: unknown, ctx: ExecutionContext) => {
@@ -99,7 +94,6 @@ export class WorkspaceResolver {
     private readonly roleService: RoleService,
     private readonly agentService: AgentService,
     private readonly viewService: ViewService,
-    private readonly dnsManagerService: DnsManagerService,
   ) {}
 
   @Query(() => Workspace)
@@ -394,21 +388,6 @@ export class WorkspaceResolver {
   async checkCustomDomainValidRecords(
     @AuthWorkspace() workspace: Workspace,
   ): Promise<DomainValidRecords | undefined> {
-    assertIsDefinedOrThrow(
-      workspace.customDomain,
-      new WorkspaceException(
-        `Custom domain not found`,
-        WorkspaceExceptionCode.CUSTOM_DOMAIN_NOT_FOUND,
-      ),
-    );
-
-    const domainValidRecords = await this.dnsManagerService.refreshHostname(
-      workspace.customDomain,
-    );
-
-    return this.workspaceService.checkCustomDomainValidRecords(
-      workspace,
-      domainValidRecords,
-    );
+    return this.workspaceService.checkCustomDomainValidRecords(workspace);
   }
 }
