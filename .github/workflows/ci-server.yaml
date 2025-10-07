@@ -1,5 +1,4 @@
 name: CI Server
-
 on:
   push:
     branches:

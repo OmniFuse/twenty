@@ -8,6 +8,7 @@ import { SERVERLESS_TMPDIR_FOLDER } from 'src/engine/core-modules/serverless/dri
 export const NODE_LAYER_SUBFOLDER = 'nodejs';
 
 const TEMPORARY_LAMBDA_FOLDER = 'lambda-build';
+const TEMPORARY_LAMBDA_SOURCE_FOLDER = 'src';
 const LAMBDA_ZIP_FILE_NAME = 'lambda.zip';
 
 export class LambdaBuildDirectoryManager {
@@ -17,7 +18,10 @@ export class LambdaBuildDirectoryManager {
   );
 
   async init() {
-    const sourceTemporaryDir = join(this.temporaryDir);
+    const sourceTemporaryDir = join(
+      this.temporaryDir,
+      TEMPORARY_LAMBDA_SOURCE_FOLDER,
+    );
     const lambdaZipPath = join(this.temporaryDir, LAMBDA_ZIP_FILE_NAME);
 
     await fs.mkdir(sourceTemporaryDir, { recursive: true });

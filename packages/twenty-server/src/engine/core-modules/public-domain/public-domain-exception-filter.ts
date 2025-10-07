@@ -6,10 +6,7 @@ import {
   PublicDomainException,
   PublicDomainExceptionCode,
 } from 'src/engine/core-modules/public-domain/public-domain.exception';
-import {
-  NotFoundError,
-  UserInputError,
-} from 'src/engine/core-modules/graphql/utils/graphql-errors.util';
+import { UserInputError } from 'src/engine/core-modules/graphql/utils/graphql-errors.util';
 
 @Catch(PublicDomainException)
 export class PublicDomainExceptionFilter implements ExceptionFilter {
@@ -18,8 +15,6 @@ export class PublicDomainExceptionFilter implements ExceptionFilter {
       case PublicDomainExceptionCode.PUBLIC_DOMAIN_ALREADY_REGISTERED:
       case PublicDomainExceptionCode.DOMAIN_ALREADY_REGISTERED_AS_CUSTOM_DOMAIN:
         throw new UserInputError(exception);
-      case PublicDomainExceptionCode.PUBLIC_DOMAIN_NOT_FOUND:
-        throw new NotFoundError(exception);
       default:
         assertUnreachable(exception.code);
     }

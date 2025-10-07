@@ -69,7 +69,7 @@ export class ImpersonationService {
 
     const hasServerLevelImpersonatePermission =
       impersonatorUserWorkspace.user.canImpersonate === true &&
-      toImpersonateUserWorkspace.workspace.allowImpersonation === true;
+      impersonatorUserWorkspace.workspace.allowImpersonation === true;
 
     if (isServerLevelImpersonation) {
       if (!hasServerLevelImpersonatePermission) {

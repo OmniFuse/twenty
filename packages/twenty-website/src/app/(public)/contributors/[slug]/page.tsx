@@ -13,25 +13,27 @@ import { PullRequests } from '@/app/_components/contributors/PullRequests';
 import { ThankYou } from '@/app/_components/contributors/ThankYou';
 import { Background } from '@/app/_components/oss-friends/Background';
 
-export async function generateMetadata(props: PageProps<'/contributors/[slug]'>): Promise<Metadata> {
-  const { slug } = await props.params;
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
   return {
     metadataBase: new URL(`https://twenty.com`),
-    title: 'Twenty - ' + slug,
+    title: 'Twenty - ' + params.slug,
     description:
       'Explore the impactful contributions of ' +
-      slug +
+      params.slug +
       ' on the Twenty Github Repo. Discover their merged pull requests, ongoing work, and top ranking. Join and contribute to the #1 Open-Source CRM thriving community!',
     openGraph: {
-      images: [`https://twenty.com/api/contributors/${slug}/og.png`],
+      images: [`https://twenty.com/api/contributors/${params.slug}/og.png`],
     },
   };
 }
 
-export default async function Page(props: PageProps<'/contributors/[slug]'>) {
-  const { slug } = await props.params;
+export default async function ({ params }: { params: { slug: string } }) {
   try {
-    const contributorActivity = await getContributorActivity(slug);
+    const contributorActivity = await getContributorActivity(params.slug);
     if (contributorActivity) {
       const {
         firstContributionAt,

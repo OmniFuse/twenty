@@ -217,10 +217,6 @@ export class UserWorkspaceService extends TypeOrmQueryService<UserWorkspace> {
     return workspace;
   }
 
-  async countUserWorkspaces(userId: string): Promise<number> {
-    return await this.userWorkspaceRepository.count({ where: { userId } });
-  }
-
   async findAvailableWorkspacesByEmail(email: string) {
     const user = await this.userRepository.findOne({
       where: {

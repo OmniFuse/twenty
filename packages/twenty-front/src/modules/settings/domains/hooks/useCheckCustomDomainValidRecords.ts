@@ -1,22 +1,20 @@
 import { useCheckCustomDomainValidRecordsMutation } from '~/generated-metadata/graphql';
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilState } from 'recoil';
 import { isDefined } from 'twenty-shared/utils';
 import { useSnackBar } from '@/ui/feedback/snack-bar-manager/hooks/useSnackBar';
 import { customDomainRecordsState } from '@/settings/domains/states/customDomainRecordsState';
-import { currentWorkspaceState } from '@/auth/states/currentWorkspaceState';
 
 export const useCheckCustomDomainValidRecords = () => {
   const [checkCustomDomainValidRecords] =
     useCheckCustomDomainValidRecordsMutation();
   const { enqueueErrorSnackBar } = useSnackBar();
-  const currentWorkspace = useRecoilValue(currentWorkspaceState);
 
   const [{ isLoading }, setCustomDomainRecords] = useRecoilState(
     customDomainRecordsState,
   );
 
   const checkCustomDomainRecords = () => {
-    if (isLoading || !currentWorkspace?.customDomain) {
+    if (isLoading) {
       return;
     }
     setCustomDomainRecords((currentState) => ({

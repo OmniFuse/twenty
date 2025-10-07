@@ -7,7 +7,7 @@ import { InjectCacheStorage } from 'src/engine/core-modules/cache-storage/decora
 import { CacheStorageService } from 'src/engine/core-modules/cache-storage/services/cache-storage.service';
 import { CacheStorageNamespace } from 'src/engine/core-modules/cache-storage/types/cache-storage-namespace.enum';
 import { type UserWorkspaceRoleMap } from 'src/engine/metadata-modules/workspace-permissions-cache/types/user-workspace-role-map.type';
-import { WORKSPACE_CACHE_KEYS } from 'src/engine/workspace-cache-storage/workspace-cache-storage.service';
+import { WorkspaceCacheKeys } from 'src/engine/workspace-cache-storage/workspace-cache-storage.service';
 
 const TTL_INFINITE = 0;
 
@@ -24,7 +24,7 @@ export class WorkspacePermissionsCacheStorageService {
     const rolesPermissionsVersion = v4();
 
     await this.cacheStorageService.set<string>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsRolesPermissionsVersion}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsRolesPermissionsVersion}:${workspaceId}`,
       rolesPermissionsVersion,
       TTL_INFINITE,
     );
@@ -40,7 +40,7 @@ export class WorkspacePermissionsCacheStorageService {
   }> {
     const [, newRolesPermissionsVersion] = await Promise.all([
       this.cacheStorageService.set<ObjectsPermissionsByRoleIdDeprecated>(
-        `${WORKSPACE_CACHE_KEYS.MetadataPermissionsRolesPermissions}:${workspaceId}`,
+        `${WorkspaceCacheKeys.MetadataPermissionsRolesPermissions}:${workspaceId}`,
         permissions,
         TTL_INFINITE,
       ),
@@ -54,13 +54,13 @@ export class WorkspacePermissionsCacheStorageService {
     workspaceId: string,
   ): Promise<ObjectsPermissionsByRoleIdDeprecated | undefined> {
     return this.cacheStorageService.get<ObjectsPermissionsByRoleIdDeprecated>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsRolesPermissions}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsRolesPermissions}:${workspaceId}`,
     );
   }
 
   getRolesPermissionsVersion(workspaceId: string): Promise<string | undefined> {
     return this.cacheStorageService.get<string>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsRolesPermissionsVersion}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsRolesPermissionsVersion}:${workspaceId}`,
     );
   }
 
@@ -70,7 +70,7 @@ export class WorkspacePermissionsCacheStorageService {
   ): Promise<void> {
     await Promise.all([
       this.cacheStorageService.set<UserWorkspaceRoleMap>(
-        `${WORKSPACE_CACHE_KEYS.MetadataPermissionsUserWorkspaceRoleMap}:${workspaceId}`,
+        `${WorkspaceCacheKeys.MetadataPermissionsUserWorkspaceRoleMap}:${workspaceId}`,
         userWorkspaceRoleMap,
         TTL_INFINITE,
       ),
@@ -82,7 +82,7 @@ export class WorkspacePermissionsCacheStorageService {
     const userWorkspaceRoleMapVersion = v4();
 
     await this.cacheStorageService.set<string>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsUserWorkspaceRoleMapVersion}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsUserWorkspaceRoleMapVersion}:${workspaceId}`,
       userWorkspaceRoleMapVersion,
       TTL_INFINITE,
     );
@@ -94,7 +94,7 @@ export class WorkspacePermissionsCacheStorageService {
     workspaceId: string,
   ): Promise<Record<string, string> | undefined> {
     return this.cacheStorageService.get<Record<string, string>>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsUserWorkspaceRoleMap}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsUserWorkspaceRoleMap}:${workspaceId}`,
     );
   }
 
@@ -102,13 +102,13 @@ export class WorkspacePermissionsCacheStorageService {
     workspaceId: string,
   ): Promise<string | undefined> {
     return this.cacheStorageService.get<string>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsUserWorkspaceRoleMapVersion}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsUserWorkspaceRoleMapVersion}:${workspaceId}`,
     );
   }
 
   removeUserWorkspaceRoleMap(workspaceId: string) {
     return this.cacheStorageService.del(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsUserWorkspaceRoleMap}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsUserWorkspaceRoleMap}:${workspaceId}`,
     );
   }
 
@@ -118,7 +118,7 @@ export class WorkspacePermissionsCacheStorageService {
   ): Promise<void> {
     await Promise.all([
       this.cacheStorageService.set<Record<string, string>>(
-        `${WORKSPACE_CACHE_KEYS.MetadataPermissionsApiKeyRoleMap}:${workspaceId}`,
+        `${WorkspaceCacheKeys.MetadataPermissionsApiKeyRoleMap}:${workspaceId}`,
         apiKeyRoleMap,
         TTL_INFINITE,
       ),
@@ -130,7 +130,7 @@ export class WorkspacePermissionsCacheStorageService {
     workspaceId: string,
   ): Promise<Record<string, string> | undefined> {
     return this.cacheStorageService.get<Record<string, string>>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsApiKeyRoleMap}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsApiKeyRoleMap}:${workspaceId}`,
     );
   }
 
@@ -138,17 +138,17 @@ export class WorkspacePermissionsCacheStorageService {
     workspaceId: string,
   ): Promise<string | undefined> {
     return this.cacheStorageService.get<string>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsApiKeyRoleMapVersion}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsApiKeyRoleMapVersion}:${workspaceId}`,
     );
   }
 
   async removeApiKeyRoleMap(workspaceId: string): Promise<void> {
     await Promise.all([
       this.cacheStorageService.del(
-        `${WORKSPACE_CACHE_KEYS.MetadataPermissionsApiKeyRoleMap}:${workspaceId}`,
+        `${WorkspaceCacheKeys.MetadataPermissionsApiKeyRoleMap}:${workspaceId}`,
       ),
       this.cacheStorageService.del(
-        `${WORKSPACE_CACHE_KEYS.MetadataPermissionsApiKeyRoleMapVersion}:${workspaceId}`,
+        `${WorkspaceCacheKeys.MetadataPermissionsApiKeyRoleMapVersion}:${workspaceId}`,
       ),
     ]);
   }
@@ -157,7 +157,7 @@ export class WorkspacePermissionsCacheStorageService {
     const apiKeyRoleMapVersion = v4();
 
     await this.cacheStorageService.set<string>(
-      `${WORKSPACE_CACHE_KEYS.MetadataPermissionsApiKeyRoleMapVersion}:${workspaceId}`,
+      `${WorkspaceCacheKeys.MetadataPermissionsApiKeyRoleMapVersion}:${workspaceId}`,
       apiKeyRoleMapVersion,
       TTL_INFINITE,
     );

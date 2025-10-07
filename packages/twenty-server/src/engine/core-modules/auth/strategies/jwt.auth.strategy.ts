@@ -124,7 +124,10 @@ export class JwtAuthStrategy extends PassportStrategy(Strategy, 'jwt') {
     }
 
     if (payload.isImpersonating === true) {
-      context.impersonationContext = await this.validateImpersonation(payload);
+      context.impersonationContext = await this.validateImpersonation(
+        payload,
+        workspace,
+      );
     }
 
     const userId = payload.sub ?? payload.userId;
@@ -176,7 +179,10 @@ export class JwtAuthStrategy extends PassportStrategy(Strategy, 'jwt') {
     return context;
   }
 
-  private async validateImpersonation(payload: AccessTokenJwtPayload) {
+  private async validateImpersonation(
+    payload: AccessTokenJwtPayload,
+    workspace: Workspace,
+  ) {
     // Validate required impersonation fields
     if (
       !payload.impersonatorUserWorkspaceId ||
@@ -233,7 +239,7 @@ export class JwtAuthStrategy extends PassportStrategy(Strategy, 'jwt') {
 
     const hasServerLevelImpersonatePermission =
       impersonatorUserWorkspace.user.canImpersonate === true &&
-      impersonatedUserWorkspace.workspace.allowImpersonation === true;
+      workspace.allowImpersonation === true;
 
     if (isServerLevelImpersonation) {
       if (!hasServerLevelImpersonatePermission)

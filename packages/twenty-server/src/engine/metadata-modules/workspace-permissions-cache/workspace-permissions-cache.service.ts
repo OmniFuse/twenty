@@ -109,9 +109,6 @@ export class WorkspacePermissionsCacheService {
         workspaceId,
         freshUserWorkspaceRoleMap,
       );
-      await this.workspacePermissionsCacheStorageService.setUserWorkspaceRoleMapVersion(
-        workspaceId,
-      );
     } catch {
       // Flush stale userWorkspaceRoleMap
       await this.workspacePermissionsCacheStorageService.removeUserWorkspaceRoleMap(

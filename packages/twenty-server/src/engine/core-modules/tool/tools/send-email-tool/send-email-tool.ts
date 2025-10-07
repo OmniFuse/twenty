@@ -50,14 +50,8 @@ export class SendEmailTool implements Tool {
         workspaceId,
         'connectedAccount',
       );
-
-    const connectedAccount = await connectedAccountRepository.findOne({
-      where: { id: connectedAccountId },
-      relations: {
-        messageChannels: {
-          messageFolders: true,
-        },
-      },
+    const connectedAccount = await connectedAccountRepository.findOneBy({
+      id: connectedAccountId,
     });
 
     if (!isDefined(connectedAccount)) {

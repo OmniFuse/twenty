@@ -3,10 +3,6 @@
 
 name: 'Pull translations from Crowdin'
 
-permissions:
-  contents: write
-  pull-requests: write
-
 on:
   schedule:
     - cron: '0 */2 * * *' # Every two hours.
@@ -33,6 +29,10 @@ jobs:
   pull_translations:
     name: Pull translations
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
