@@ -66,6 +66,7 @@ export class WorkspaceSyncAgentService {
           const flatAgentData = removePropertiesFromRecord(agentToCreate, [
             'universalIdentifier',
             'id',
+            'createHandoffFromDefaultAgent',
           ]);
 
           const createdAgent = await agentRepository.save({
@@ -120,6 +121,7 @@ export class WorkspaceSyncAgentService {
             'universalIdentifier',
             'workspaceId',
             'standardRoleId' as keyof typeof agentToUpdate,
+            'createHandoffFromDefaultAgent',
           ]);
 
           await agentRepository.update({ id: agentToUpdate.id }, flatAgentData);
