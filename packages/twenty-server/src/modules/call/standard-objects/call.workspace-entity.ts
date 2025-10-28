@@ -72,6 +72,66 @@ export class CallWorkspaceEntity extends BaseWorkspaceEntity {
   duration: number | null;
 
   @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.durationFormatted,
+    type: FieldMetadataType.TEXT,
+    label: msg`Duration Formatted`,
+    description: msg`Formatted call duration`,
+    icon: 'IconClock',
+  })
+  @WorkspaceIsNullable()
+  durationFormatted: string | null;
+
+  @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.phone,
+    type: FieldMetadataType.TEXT,
+    label: msg`Phone`,
+    description: msg`Phone number for the call`,
+    icon: 'IconPhone',
+  })
+  @WorkspaceIsNullable()
+  phone: string | null;
+
+  @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.completionReason,
+    type: FieldMetadataType.TEXT,
+    label: msg`Completion Reason`,
+    description: msg`Reason for call completion`,
+    icon: 'IconInfoCircle',
+  })
+  @WorkspaceIsNullable()
+  completionReason: string | null;
+
+  @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.agreements,
+    type: FieldMetadataType.TEXT,
+    label: msg`Agreements`,
+    description: msg`Agreements reached`,
+    icon: 'IconHandshake',
+  })
+  @WorkspaceIsNullable()
+  agreements: string | null;
+
+  @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.rejectionReason,
+    type: FieldMetadataType.TEXT,
+    label: msg`Rejection Reason`,
+    description: msg`Client rejection reason`,
+    icon: 'IconX',
+  })
+  @WorkspaceIsNullable()
+  rejectionReason: string | null;
+
+  @WorkspaceField({
+    standardId: CALL_STANDARD_FIELD_IDS.callList,
+    type: FieldMetadataType.TEXT,
+    label: msg`Call List`,
+    description: msg`Call list name`,
+    icon: 'IconList',
+  })
+  @WorkspaceIsNullable()
+  callList: string | null;
+
+  @WorkspaceField({
     standardId: CALL_STANDARD_FIELD_IDS.scheduledAt,
     type: FieldMetadataType.DATE_TIME,
     label: msg`Scheduled At`,

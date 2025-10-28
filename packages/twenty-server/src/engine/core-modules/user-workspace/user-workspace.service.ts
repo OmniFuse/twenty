@@ -1,7 +1,7 @@
 import { InjectRepository } from '@nestjs/typeorm';
 
 import { TypeOrmQueryService } from '@ptc-org/nestjs-query-typeorm';
-import { type APP_LOCALES, SOURCE_LOCALE } from 'twenty-shared/translations';
+import { type APP_LOCALES } from 'twenty-shared/translations';
 import { assertIsDefinedOrThrow, isDefined } from 'twenty-shared/utils';
 import { IsNull, Not, Repository } from 'typeorm';
 
@@ -104,7 +104,7 @@ export class UserWorkspaceService extends TypeOrmQueryService<UserWorkspace> {
       userId: user.id,
       userEmail: user.email,
       avatarUrl: userWorkspace.defaultAvatarUrl ?? '',
-      locale: (user.locale ?? SOURCE_LOCALE) as keyof typeof APP_LOCALES,
+      locale: (user.locale ?? 'ru-RU') as keyof typeof APP_LOCALES,
     });
 
     const workspaceMember = await workspaceMemberRepository.find({

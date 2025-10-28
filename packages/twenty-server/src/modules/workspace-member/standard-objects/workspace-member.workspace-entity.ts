@@ -1,7 +1,7 @@
 import { registerEnumType } from '@nestjs/graphql';
 
 import { msg } from '@lingui/core/macro';
-import { type APP_LOCALES, SOURCE_LOCALE } from 'twenty-shared/translations';
+import { type APP_LOCALES } from 'twenty-shared/translations';
 import { FieldMetadataType } from 'twenty-shared/types';
 
 import { NumberDataType } from 'src/engine/metadata-modules/field-metadata/interfaces/field-metadata-settings.interface';
@@ -25,8 +25,8 @@ import { WORKSPACE_MEMBER_STANDARD_FIELD_IDS } from 'src/engine/workspace-manage
 import { STANDARD_OBJECT_ICONS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-icons';
 import { STANDARD_OBJECT_IDS } from 'src/engine/workspace-manager/workspace-sync-metadata/constants/standard-object-ids';
 import {
-  type FieldTypeAndNameMetadata,
-  getTsVectorColumnExpressionFromFields,
+    type FieldTypeAndNameMetadata,
+    getTsVectorColumnExpressionFromFields,
 } from 'src/engine/workspace-manager/workspace-sync-metadata/utils/get-ts-vector-column-expression.util';
 import { AttachmentWorkspaceEntity } from 'src/modules/attachment/standard-objects/attachment.workspace-entity';
 import { BlocklistWorkspaceEntity } from 'src/modules/blocklist/standard-objects/blocklist.workspace-entity';
@@ -133,7 +133,7 @@ export class WorkspaceMemberWorkspaceEntity extends BaseWorkspaceEntity {
     label: msg`Language`,
     description: msg`Preferred language`,
     icon: 'IconLanguage',
-    defaultValue: `'${SOURCE_LOCALE}'`,
+    defaultValue: `'ru-RU'`,
   })
   @WorkspaceIsSystem()
   locale: keyof typeof APP_LOCALES;
