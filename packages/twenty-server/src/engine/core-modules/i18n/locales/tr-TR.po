@@ -58,6 +58,11 @@ msgstr "{fieldName} ve {fieldName}Id aynı anda sağlanamaz."
 msgid "{fieldType} fields cannot be unique."
 msgstr "{fieldType} alanları benzersiz olamaz."
 
+#. js-lingui-id: iEZavm
+#: src/engine/core-modules/dns-manager/services/dns-manager.service.ts
+msgid "{hostnameCount} hostnames found for domain '{domainName}'. Expect 1"
+msgstr "'{domainName}' alan adı için {hostnameCount} hostname bulundu. 1 bekleniyor"
+
 #. js-lingui-id: 8haj+G
 #: src/engine/metadata-modules/utils/validate-metadata-name-is-camel-case.utils.ts
 msgid "{name} should be in camelCase"
@@ -251,8 +256,12 @@ msgstr "Miktar"
 msgid "An attachment"
 msgstr "Bir ek"
 
+#. js-lingui-id: Q7akko
+#: src/modules/messaging/message-import-manager/drivers/microsoft/exceptions/microsoft-import-driver.exception.ts
+msgid "An error occurred during message import"
+msgstr "Mesaj içe aktarımı sırasında bir hata oluştu"
+
 #. js-lingui-id: XyOToQ
-#: src/engine/core-modules/graphql/utils/generate-graphql-error-from-error.util.ts
 #: src/engine/core-modules/graphql/utils/generate-graphql-error-from-error.util.ts
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts
 msgid "An error occurred."
@@ -261,7 +270,7 @@ msgstr "Bir hata oluştu."
 #. js-lingui-id: +MvnxO
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "An index must contain at least one field"
-msgstr ""
+msgstr "Bir dizin en az bir alan içermelidir"
 
 #. js-lingui-id: bZq8rL
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
@@ -282,7 +291,7 @@ msgstr "Herhangi bir alan filtresi değeri"
 #. js-lingui-id: mU5fvk
 #: src/engine/core-modules/approved-access-domain/services/approved-access-domain.service.ts
 msgid "Approved access domain already registered."
-msgstr ""
+msgstr "Onaylı erişim alanı zaten kaydedildi."
 
 #. js-lingui-id: DGW5iN
 #: src/engine/core-modules/approved-access-domain/services/approved-access-domain.service.ts
@@ -294,6 +303,11 @@ msgstr "Onaylanmış erişim alanı e-posta alanıyla eşleşmiyor"
 #: src/engine/core-modules/approved-access-domain/services/approved-access-domain.service.ts
 msgid "Approved access domain has already been validated"
 msgstr "Onaylanmış erişim alanı zaten doğrulandı."
+
+#. js-lingui-id: naCW6Z
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "April"
+msgstr "Nisan"
 
 #. js-lingui-id: 3EiOLz
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -343,7 +357,7 @@ msgstr "Ek şirketi"
 #. js-lingui-id: wtcL/T
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 msgid "Attachment dashboard"
-msgstr ""
+msgstr "Ek kontrol paneli"
 
 #. js-lingui-id: gfGYcl
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -383,7 +397,7 @@ msgstr "Ek tipi"
 #. js-lingui-id: tH6L3e
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 msgid "Attachment workflow"
-msgstr ""
+msgstr "Ek belge iş akışı"
 
 #. js-lingui-id: w/Sphq
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
@@ -416,7 +430,7 @@ msgstr "İletişime bağlı ekler."
 #. js-lingui-id: 2AEUIb
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Attachments linked to the dashboard"
-msgstr ""
+msgstr "Gösterge paneline bağlı ekler"
 
 #. js-lingui-id: kw0mLu
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
@@ -426,12 +440,17 @@ msgstr "Fırsata bağlı ekler"
 #. js-lingui-id: 83l3Yd
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
 msgid "Attachments linked to the workflow"
-msgstr ""
+msgstr "İş akışına bağlı ekler"
 
 #. js-lingui-id: fCbqr7
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "Attachments tied to the {label}"
 msgstr "{label} ile bağlı ekler"
+
+#. js-lingui-id: DBHTm/
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "August"
+msgstr "Ağustos"
 
 #. js-lingui-id: cNBqH+
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -443,6 +462,11 @@ msgstr "Yetkilendirme başarısız oldu"
 #: src/engine/core-modules/auth/utils/auth-graphql-api-exception-handler.util.ts
 msgid "Authentication is not enabled with this provider."
 msgstr "Kimlik doğrulama bu sağlayıcı ile etkin değil."
+
+#. js-lingui-id: Tsx+z2
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+msgid "Authentication is required to access this feature. Please sign in and try again."
+msgstr "Bu özelliğe erişim için kimlik doğrulaması gereklidir. Lütfen giriş yapın ve tekrar deneyin."
 
 #. js-lingui-id: VbeIOx
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -586,6 +610,11 @@ msgstr "Takvim etkinlikleri"
 msgid "Can't connect to {connectFieldName}. No unique record found with condition: {formattedConnectCondition}"
 msgstr "{connectFieldName} ile bağlantı yapılamıyor. Koşula uygun benzersiz bir kayıt bulunamadı: {formattedConnectCondition}"
 
+#. js-lingui-id: 2oVE+z
+#: src/engine/guards/impersonate-permission.guard.ts
+msgid "Can't impersonate user via api key"
+msgstr "Kullanıcı api anahtarı üzerinden taklit edilemiyor"
+
 #. js-lingui-id: vxbVwc
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
 msgid "Cannot activate non-draft or non-last-published version"
@@ -600,6 +629,11 @@ msgstr "Aynı iş akışı için birden fazla taslak sürüm oluşturulamaz."
 #: src/modules/workflow/common/workspace-services/workflow-version-validation.workspace-service.ts
 msgid "Cannot create workflow version with status other than draft"
 msgstr "Taslak dışında bir durumla iş akışı sürümü oluşturulamaz."
+
+#. js-lingui-id: VPXcr5
+#: src/engine/core-modules/user/services/user.service.ts
+msgid "Cannot delete account: you are the only admin. Assign another admin or delete the workspace(s) first."
+msgstr "Hesap silinemiyor: tek yöneticisiniz. Başka bir yönetici atayın veya önce çalışma alan(lar)ını silin."
 
 #. js-lingui-id: AQyr9X
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
@@ -772,20 +806,25 @@ msgstr "Kişinin telefon numaraları"
 msgid "Contact’s X/Twitter account"
 msgstr "Kişinin X/Twitter hesabı"
 
+#. js-lingui-id: gdbojg
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "Contradicting field permissions have been detected on a relation field ({fieldName})."
+msgstr "İlişki alanında çelişen alan izinleri tespit edilmiştir ({fieldName})."
+
 #. js-lingui-id: LZf/L8
 #: src/engine/core-modules/common/utils/find-flat-entity-by-id-in-flat-entity-maps-or-throw.util.ts
 msgid "Could not find flat entity in maps"
-msgstr ""
+msgstr "Haritalarda düz varlık bulunamadı"
 
 #. js-lingui-id: jBrX/g
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Could not find index field related field metadata"
-msgstr ""
+msgstr "Dizin alanı ile ilgili alan meta verisi bulunamadı"
 
 #. js-lingui-id: HVajHk
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Could not find index related object metadata"
-msgstr ""
+msgstr "Dizinle ilgili nesne meta verisi bulunamadı"
 
 #. js-lingui-id: NCIYDF
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
@@ -826,7 +865,7 @@ msgstr "Cron deseni '{pattern}' geçersiz"
 #. js-lingui-id: GuyjcQ
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Cron trigger already exists"
-msgstr ""
+msgstr "Cron tetikleyici zaten mevcut"
 
 #. js-lingui-id: Ej90Yp
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
@@ -834,12 +873,12 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Cron trigger not found"
-msgstr ""
+msgstr "Cron tetikleyici bulunamadı"
 
 #. js-lingui-id: vz7B0E
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Cron trigger with same id already exists"
-msgstr ""
+msgstr "Aynı ID'ye sahip cron tetikleyici zaten mevcut"
 
 #. js-lingui-id: Mikszu
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -862,7 +901,7 @@ msgstr "Gösterge paneli sayfa düzeni"
 #. js-lingui-id: FrOkwR
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Dashboard record Position"
-msgstr ""
+msgstr "Gösterge paneli kayıt pozisyonu"
 
 #. js-lingui-id: xGgnPh
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
@@ -877,7 +916,7 @@ msgstr "Panolar"
 #. js-lingui-id: K2CQHf
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 msgid "Database event trigger already exists"
-msgstr ""
+msgstr "Veritabanı olay tetikleyici zaten mevcut"
 
 #. js-lingui-id: iS6kjG
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
@@ -885,12 +924,12 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 msgid "Database event trigger not found"
-msgstr ""
+msgstr "Veri tabanı olay tetikleyici bulunamadı"
 
 #. js-lingui-id: 0vtv+s
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 msgid "Database event trigger with same id already exists"
-msgstr ""
+msgstr "Aynı ID'ye sahip veri tabanı olay tetikleyici zaten mevcut"
 
 #. js-lingui-id: Lhd0oQ
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -902,8 +941,14 @@ msgstr "Tarih formatı"
 msgid "Date when the record was deleted"
 msgstr "Kaydın silindiği tarih"
 
+#. js-lingui-id: r6zgGo
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "December"
+msgstr "Aralık"
+
 #. js-lingui-id: GGNmm+
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Default value \"{defaultValue}\" must be one of the option values"
 msgstr "Varsayılan değer \"{defaultValue}\", seçenek değerlerinden biri olmalıdır"
 
@@ -914,11 +959,13 @@ msgstr "Varsayılan değer bir dize olmalıdır"
 
 #. js-lingui-id: sv9P4Q
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Default value should be as quoted string"
 msgstr "Varsayılan değer, tırnak içine alınmış bir dize olmalıdır"
 
 #. js-lingui-id: 6pJV03
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Default values must be unique"
 msgstr "Varsayılan değerler benzersiz olmalıdır"
 
@@ -965,12 +1012,17 @@ msgstr "Görüntü Değeri"
 #. js-lingui-id: IymH4t
 #: src/engine/core-modules/public-domain/public-domain.service.ts
 msgid "Domain already used for workspace custom domain"
-msgstr ""
+msgstr "Alan adı zaten çalışma alanı özel alanı için kullanılıyor."
+
+#. js-lingui-id: 2sIVDj
+#: src/engine/core-modules/dns-manager/services/dns-manager.service.ts
+msgid "Domain is already registered"
+msgstr "Alan adı zaten kayıtlı."
 
 #. js-lingui-id: PfJswy
 #: src/engine/core-modules/workspace/services/workspace.service.ts
 msgid "Domain is already registered as public domain"
-msgstr ""
+msgstr "Alan adı zaten genel alan olarak kaydedildi."
 
 #. js-lingui-id: wMncXq
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -984,6 +1036,7 @@ msgstr "Bitiş Tarihi"
 
 #. js-lingui-id: BXtAxc
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Duplicated option {field}"
 msgstr "Çift seçenek {field}"
 
@@ -1028,7 +1081,7 @@ msgstr "Bitiş Tarihi"
 #. js-lingui-id: EzGlkq
 #: src/engine/core-modules/dns-manager/validator/dns-manager.validate.ts
 msgid "Environment variable CLOUDFLARE_API_KEY must be defined to use this feature."
-msgstr ""
+msgstr "Bu özelliği kullanmak için CLOUDFLARE_API_KEY ortam değişkeni tanımlanmalıdır."
 
 #. js-lingui-id: k//6Xs
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -1038,7 +1091,7 @@ msgstr "Etkinlik şirketi"
 #. js-lingui-id: CPhvC+
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
 msgid "Event dashboard"
-msgstr ""
+msgstr "Etkinlik gösterge paneli"
 
 #. js-lingui-id: kJDmsI
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -1168,7 +1221,7 @@ msgstr "Favori şirket"
 #. js-lingui-id: Aj026i
 #: src/modules/favorite/standard-objects/favorite.workspace-entity.ts
 msgid "Favorite dashboard"
-msgstr ""
+msgstr "Favori gösterge paneli"
 
 #. js-lingui-id: TDlZ/o
 #: src/modules/favorite-folder/standard-objects/favorite-folder.workspace-entity.ts
@@ -1266,7 +1319,7 @@ msgstr "İletişimle İlişkili Favoriler"
 #. js-lingui-id: 5zuBdE
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Favorites linked to the dashboard"
-msgstr ""
+msgstr "Gösterge paneline bağlı favoriler"
 
 #. js-lingui-id: GOfcBt
 #: src/modules/note/standard-objects/note.workspace-entity.ts
@@ -1308,6 +1361,11 @@ msgstr "Çalışma Alanı Üyesiyle İlişkili Favoriler"
 msgid "Favorites tied to the {label}"
 msgstr "<b>{label}</b> ile Bağlantılı Favoriler"
 
+#. js-lingui-id: 4lgLew
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "February"
+msgstr "Şubat"
+
 #. js-lingui-id: vngnhF
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
 msgid "Field already exists"
@@ -1316,7 +1374,7 @@ msgstr "Alan zaten mevcut"
 #. js-lingui-id: ugu505
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field cannot be indexed as it belongs to a different object"
-msgstr ""
+msgstr "Alan farklı bir nesneye ait olduğu için indekslenemez"
 
 #. js-lingui-id: Hg95ys
 #: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-identifiers.util.ts
@@ -1336,12 +1394,17 @@ msgstr "Etiket tanımlayıcı olarak ilan edilen alan bulunamadı"
 #. js-lingui-id: qelyBB
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field does not belong to the indexed object"
-msgstr ""
+msgstr "Alan, indekslenmiş nesneye ait değil"
 
 #. js-lingui-id: DXxcTd
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field ID is already used in another index"
-msgstr ""
+msgstr "Alan ID'si başka bir dizinde zaten kullanılıyor"
+
+#. js-lingui-id: AgbRjM
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
+msgid "Field label identifier is required"
+msgstr "Alan etiket tanımlayıcısı gereklidir"
 
 #. js-lingui-id: nSFFML
 #: src/modules/view/standard-objects/view-sort.workspace-entity.ts
@@ -1352,15 +1415,19 @@ msgid "Field Metadata Id"
 msgstr "Alan Metadata Id"
 
 #. js-lingui-id: MPt365
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "Field metadata not found"
-msgstr ""
+msgstr "Alan meta verisi bulunamadı"
 
 #. js-lingui-id: uTPwH1
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
 msgid "Field metadata to delete not found"
-msgstr ""
+msgstr "Silinecek alan metadatası bulunamadı"
 
 #. js-lingui-id: Ljqo/T
 #: src/engine/metadata-modules/flat-field-metadata/utils/from-update-field-input-to-flat-field-metadata.util.ts
@@ -1378,10 +1445,15 @@ msgstr "Toplu İşlem için Kullanılan Alan Metadata"
 msgid "Field name is not synced with field label"
 msgstr "Alan ismi, alan etiketiyle senkronize değil"
 
+#. js-lingui-id: QXuG8C
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "Field permissions can only be used to restrict access, not to grant additional permissions."
+msgstr "Alan izinleri yalnızca erişimi kısıtlamak için kullanılabilir, ek izinler sağlamak için değil."
+
 #. js-lingui-id: S+y2Wg
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field referenced in index does not exist"
-msgstr ""
+msgstr "Indeksde referans verilen alan mevcut değil"
 
 #. js-lingui-id: cK8ILP
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
@@ -1404,32 +1476,32 @@ msgid "Field Value"
 msgstr "Alan Değeri"
 
 #. js-lingui-id: s3HtdT
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "FieldMetadataId is required"
 msgstr "FieldMetadataId gereklidir"
 
 #. js-lingui-id: Sof2+k
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "FieldMetadataId is required to create a view field."
 msgstr "Bir görünüm alanı oluşturmak için AlanMetaVeriKimliği gereklidir."
 
 #. js-lingui-id: NTyTR5
-#: src/engine/core-modules/view/exceptions/view-filter-group.exception.ts
+#: src/engine/metadata-modules/view-filter-group/exceptions/view-filter-group.exception.ts
 msgid "FieldMetadataId is required to create a view filter group."
 msgstr "Bir görünüm filtre grubu oluşturmak için AlanMetaVeriKimliği gereklidir."
 
 #. js-lingui-id: Ya6oU7
-#: src/engine/core-modules/view/exceptions/view-filter.exception.ts
+#: src/engine/metadata-modules/view-filter/exceptions/view-filter.exception.ts
 msgid "FieldMetadataId is required to create a view filter."
 msgstr "Bir görünüm filtresi oluşturmak için AlanMetaVeriKimliği gereklidir."
 
 #. js-lingui-id: DU4jcg
-#: src/engine/core-modules/view/exceptions/view-group.exception.ts
+#: src/engine/metadata-modules/view-group/exceptions/view-group.exception.ts
 msgid "FieldMetadataId is required to create a view group."
 msgstr "Bir görünüm grubu oluşturmak için AlanMetaVeriKimliği gereklidir."
 
 #. js-lingui-id: snEXuU
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "FieldMetadataId is required to create a view sort."
 msgstr "Bir görünüm sıralaması oluşturmak için AlanMetaVeriKimliği gereklidir."
 
@@ -1462,6 +1534,11 @@ msgstr "Form eylem alanları benzersiz isimlere sahip olmalıdır"
 #: src/modules/workflow/workflow-trigger/utils/assert-form-step-is-valid.util.ts
 msgid "Form action must have at least one field"
 msgstr "Form eylem en az bir alan içermelidir"
+
+#. js-lingui-id: 39y5bn
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Friday"
+msgstr "Cuma"
 
 #. js-lingui-id: oQA+cA
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -1532,54 +1609,55 @@ msgstr "Ideal Müşteri Profili: Şirketin sizin için en uygun ve değerli mü�
 
 #. js-lingui-id: YcVn4w
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "If defined default value must contain at least one value"
 msgstr "Tanımlanmışsa, varsayılan değer en az bir değer içermelidir"
 
 #. js-lingui-id: Kfy/ML
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index already exists"
-msgstr ""
+msgstr "Dizin zaten mevcut"
 
 #. js-lingui-id: EwXumf
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index field has an invalid reference"
-msgstr ""
+msgstr "Dizin alanının geçersiz bir referansı var"
 
 #. js-lingui-id: +hk7cY
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index field ID already exists in another index"
-msgstr ""
+msgstr "Dizin alan ID'si başka bir dizinde zaten mevcut"
 
 #. js-lingui-id: ITue4V
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index field references incorrect index metadata"
-msgstr ""
+msgstr "Dizin alanı, yanlış dizin meta verisine referans veriyor"
 
 #. js-lingui-id: K1hWwv
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index must have at least one field"
-msgstr ""
+msgstr "Dizin en az bir alan içermelidir"
 
 #. js-lingui-id: Hl6cv2
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index related object not found"
-msgstr ""
+msgstr "Dizinle ilişkili nesne bulunamadı"
 
 #. js-lingui-id: fY2zUQ
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index to delete not found"
-msgstr ""
+msgstr "Silinecek dizin bulunamadı"
 
 #. js-lingui-id: qgBN4Y
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index with same id already exists"
-msgstr ""
+msgstr "Aynı ID'ye sahip dizin zaten mevcut"
 
 #. js-lingui-id: a+k+8J
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index with same name already exists"
-msgstr ""
+msgstr "Aynı ada sahip dizin zaten mevcut"
 
 #. js-lingui-id: 71VJzG
 #: src/engine/metadata-modules/utils/validate-metadata-name-is-not-too-short.utils.ts
@@ -1600,6 +1678,11 @@ msgstr "Geçersiz Captcha, lütfen başka bir cihaz deneyin"
 #: src/engine/core-modules/record-transformer/utils/transform-phones-value.util.ts
 msgid "Invalid country code {countryCode}"
 msgstr "Ülke kodu {countryCode} geçersiz"
+
+#. js-lingui-id: AMeEDO
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "Invalid credentials. Please check your username and password."
+msgstr "Geçersiz kimlik bilgileri. Lütfen kullanıcı adınızı ve şifrenizi kontrol edin."
 
 #. js-lingui-id: 4EtFrA
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
@@ -1639,6 +1722,11 @@ msgstr "Geçersiz dakika değeri. 1'den büyük bir tamsayı olmalıdır"
 msgid "Invalid morph relation input"
 msgstr "Geçersiz morph ilişki girişi"
 
+#. js-lingui-id: VvhAS2
+#: src/engine/metadata-modules/object-metadata/utils/validate-object-metadata-input.util.ts
+msgid "Invalid object metadata input"
+msgstr "Geçersiz nesne meta verisi girişi."
+
 #. js-lingui-id: AXZsy/
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-relation-creation-payload.util.ts
 msgid "Invalid relation creation payload"
@@ -1665,12 +1753,12 @@ msgid "Invalid verification code. Please try again."
 msgstr "Geçersiz doğrulama kodu. Lütfen tekrar deneyin."
 
 #. js-lingui-id: 8xkULN
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "Invalid view sort data"
 msgstr "Geçersiz görünüm sıralama verisi"
 
 #. js-lingui-id: I0OzaR
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "Invalid view sort data for view sort id: {id}"
 msgstr "Görünüm sıralama id'si için geçersiz sıralama verisi: {id}"
 
@@ -1720,6 +1808,11 @@ msgstr "Senkronizasyon Etkin"
 msgid "Is Synced"
 msgstr "Senkronize Edildi"
 
+#. js-lingui-id: rjyWPb
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "January"
+msgstr "Ocak"
+
 #. js-lingui-id: 27z+FV
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 msgid "Job Title"
@@ -1750,6 +1843,16 @@ msgstr "Tetikleyici sağlamak için Json nesnesi"
 msgid "Json value for event details"
 msgstr "Etkinlik detayları için Json değeri"
 
+#. js-lingui-id: u4ex5r
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "July"
+msgstr "Temmuz"
+
+#. js-lingui-id: zeEQd/
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "June"
+msgstr "Haziran"
+
 #. js-lingui-id: qmarO2
 #: src/modules/view/standard-objects/view.workspace-entity.ts
 msgid "kanbanfieldMetadataId"
@@ -1759,6 +1862,24 @@ msgstr "kanban alanıMetaveriId"
 #: src/modules/view/standard-objects/view.workspace-entity.ts
 msgid "Key"
 msgstr "Anahtar"
+
+#. js-lingui-id: ACUSmL
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+msgid "Label identifier view field cannot be deleted"
+msgstr "Etiket tanımlayıcı görünüm alanı silinemez"
+
+#. js-lingui-id: rI+dAx
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+msgid "Label identifier view field has to be in the lowest position"
+msgstr "Etiket tanımlayıcı görünüm alanı en alttaki pozisyonda olmalı"
+
+#. js-lingui-id: PqTWJf
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+msgid "Label identifier view field has to be visible"
+msgstr "Etiket tanımlayıcı görünüm alanı görünür olmalı"
 
 #. js-lingui-id: w8Rv8T
 #: src/engine/metadata-modules/utils/compute-metadata-name-from-label.util.ts
@@ -1861,10 +1982,20 @@ msgstr "Mantıksal Operatör"
 msgid "Logical operator for the filter group"
 msgstr "Filtre grubu için mantıksal operatör"
 
+#. js-lingui-id: hg6l4j
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "March"
+msgstr "Mart"
+
 #. js-lingui-id: hw7Mwk
 #: src/engine/api/graphql/graphql-query-runner/resolvers/graphql-query-create-many-resolver.service.ts
 msgid "Maximum number of records to upsert is {QUERY_MAX_RECORDS}."
-msgstr ""
+msgstr "Güncellenecek maksimum kayıt sayısı {QUERY_MAX_RECORDS}."
+
+#. js-lingui-id: 3JzsDb
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "May"
+msgstr "Mayıs"
 
 #. js-lingui-id: EnfPm2
 #: src/modules/calendar/common/standard-objects/calendar-event.workspace-entity.ts
@@ -1935,7 +2066,7 @@ msgstr "Mesaj Klasörü"
 #: src/modules/messaging/common/standard-objects/message-channel.workspace-entity.ts
 #: src/modules/messaging/common/standard-objects/message-channel.workspace-entity.ts
 msgid "Message folder import policy"
-msgstr ""
+msgstr "Mesaj klasörü içe aktarma politikası"
 
 #. js-lingui-id: p4ANpY
 #: src/modules/messaging/common/standard-objects/message-folder.workspace-entity.ts
@@ -2030,6 +2161,11 @@ msgstr "Mesaj sağlayıcı yenileme tokeni"
 msgid "Missing required fields: at least one unique constraint have to be fully populated for '{connectFieldName}'."
 msgstr "Gerekli alanlar eksik: '{connectFieldName}' için en az bir benzersiz kısıtlamanın tam olarak doldurulması gerekir."
 
+#. js-lingui-id: hty0d5
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Monday"
+msgstr "Pazartesi"
+
 #. js-lingui-id: FqzlX4
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-morph-relation-creation-payload.util.ts
 msgid "Morph relation creation payloads must have the same relation type"
@@ -2058,7 +2194,7 @@ msgstr "Çoklu seçim alanı varsayılan değeri bir dizi olmalıdır"
 #. js-lingui-id: 6rLmLu
 #: src/engine/api/graphql/graphql-query-runner/resolvers/graphql-query-create-many-resolver.service.ts
 msgid "Multiple records found with the same unique field values for {conflictingFieldsValues}. Cannot determine which record to update."
-msgstr ""
+msgstr "{conflictingFieldsValues} için aynı benzersiz alan değerlerine sahip birden fazla kayıt bulundu. Hangi kaydın güncelleneceği belirlenemiyor."
 
 #. js-lingui-id: 6YtxFj
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -2091,6 +2227,11 @@ msgstr "İsim \"{flatFieldMetadataName}\" mevcut değil"
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-flat-field-metadata-name-availability.util.ts
 msgid "Name \"{flatFieldMetadataName}\" is not available as it is already used by another field"
 msgstr "İsim \"{flatFieldMetadataName}\" başka bir alan tarafından kullanıldığından mevcut değil"
+
+#. js-lingui-id: Q2loDF
+#: src/engine/metadata-modules/object-metadata/services/object-metadata-field-relation.service.ts
+msgid "Name \"{name}\" is not available."
+msgstr "İsim \"{name}\" mevcut değil."
 
 #. js-lingui-id: RGz1nY
 #: src/engine/metadata-modules/field-metadata/services/field-metadata-validation.service.ts
@@ -2133,8 +2274,8 @@ msgid "Name should be in camelCase"
 msgstr "İsim camelCase olmalı"
 
 #. js-lingui-id: Dr0xtb
-#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
-#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
+#: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-name-and-labels.util.ts
+#: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-name-and-labels.util.ts
 msgid "Names are not synced with labels"
 msgstr "İsimler, etiketlerle senkronize değil"
 
@@ -2152,6 +2293,11 @@ msgstr "Form adımında giriş sağlanmadı."
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
 msgid "No pattern provided in CUSTOM cron trigger"
 msgstr "ÖZEL cron tetikleyicisinde desen sağlanmadı"
+
+#. js-lingui-id: 2iURlq
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "No permissions are set for this role on the selected object. Please set object permissions first."
+msgstr "Bu rol için seçilen nesne üzerinde izinler ayarlanmamış. Lütfen önce nesne izinleri ayarlayın."
 
 #. js-lingui-id: pOu4u/
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
@@ -2172,6 +2318,11 @@ msgstr "İş akışı sürümünde adımlar sağlanmadı"
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
 msgid "No trigger type provided"
 msgstr "Tetikleyici türü sağlanmadı"
+
+#. js-lingui-id: /BipSk
+#: src/engine/metadata-modules/permissions/utils/permission-graphql-api-exception-handler.util.ts
+msgid "No valid authentication context found."
+msgstr "Geçerli bir kimlik doğrulama bağlamı bulunamadı."
 
 #. js-lingui-id: KiJn9B
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -2266,10 +2417,15 @@ msgstr "NoteTarget fırsatı"
 msgid "NoteTarget person"
 msgstr "NoteTarget kişi"
 
+#. js-lingui-id: t9QlBd
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "November"
+msgstr "Kasım"
+
 #. js-lingui-id: bR2sEm
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
 msgid "Number format"
-msgstr ""
+msgstr "Sayı formatı"
 
 #. js-lingui-id: ioJFzx
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -2277,8 +2433,8 @@ msgid "Number of employees in the company"
 msgstr "Şirkette çalışanların sayısı"
 
 #. js-lingui-id: ECRKYR
-#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
 #: src/engine/metadata-modules/utils/validate-no-other-object-with-same-name-exists-or-throw.util.ts
+#: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-name-and-labels.util.ts
 msgid "Object already exists"
 msgstr "Nesne zaten mevcut"
 
@@ -2301,7 +2457,7 @@ msgstr "Nesne Metaveri Kimliği"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "Object metadata not found"
-msgstr ""
+msgstr "Nesne meta verisi bulunamadı"
 
 #. js-lingui-id: E8vJ0A
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
@@ -2342,9 +2498,19 @@ msgid "Object with same id already exists"
 msgstr "Aynı ID'ye sahip nesne zaten mevcut"
 
 #. js-lingui-id: 53pIyA
-#: src/engine/core-modules/view/exceptions/view.exception.ts
+#: src/engine/metadata-modules/view/exceptions/view.exception.ts
 msgid "ObjectMetadataId is required to create a view."
 msgstr "Bir görünüm oluşturmak için ObjeMetaVeriKimliği gereklidir."
+
+#. js-lingui-id: dzQfDY
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "October"
+msgstr "Ekim"
+
+#. js-lingui-id: eWQQpx
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+msgid "One or more objects you are trying to set permissions for could not be found. They may have been deleted."
+msgstr "İzin ayarlamaya çalıştığınız bir veya daha fazla nesne bulunamadı. Silinmiş olabilirler."
 
 #. js-lingui-id: r/A6pA
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -2415,11 +2581,13 @@ msgstr "Fırsat aşaması"
 
 #. js-lingui-id: 2mFkfl
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Option id is invalid"
 msgstr "Seçenek kimliği geçersiz"
 
 #. js-lingui-id: MniXaX
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Option id is required"
 msgstr "Seçenek kimliği gerekli"
 
@@ -2552,6 +2720,27 @@ msgstr "Telefon"
 msgid "Phones"
 msgstr "Telefonlar"
 
+#. js-lingui-id: rxi3R2
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
+msgid "Please check your connection settings. Make sure the server host, port, and password are correct."
+msgstr "Bağlantı ayarlarınızı kontrol edin. Sunucu ana bilgisayarının, portun ve şifrenin doğru olduğundan emin olun."
+
+#. js-lingui-id: v0iiWr
+#: src/engine/core-modules/webhook/webhook.service.ts
+#: src/engine/core-modules/webhook/webhook.service.ts
+msgid "Please provide a valid HTTP or HTTPS URL."
+msgstr "Geçerli bir HTTP veya HTTPS URL sağlayın."
+
+#. js-lingui-id: RDvKTq
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
+msgid "Please provide connection details to configure your email account."
+msgstr "E-posta hesabınızı yapılandırmak için bağlantı bilgilerini sağlayın."
+
+#. js-lingui-id: 0ldKS0
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "Please select a valid connection type (IMAP, SMTP, or CalDAV) and try again."
+msgstr "Geçerli bir bağlantı türü seçin (IMAP, SMTP veya CalDAV) ve tekrar deneyin."
+
 #. js-lingui-id: P04j61
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 msgid "Point of Contact"
@@ -2637,12 +2826,28 @@ msgstr "sağlayıcı"
 #. js-lingui-id: OL88cI
 #: src/engine/core-modules/public-domain/public-domain.service.ts
 msgid "Public domain already registered"
-msgstr ""
+msgstr "Genel alan adı zaten kayıtlı."
+
+#. js-lingui-id: Capzni
+#: src/engine/core-modules/dns-manager/services/dns-manager.service.ts
+msgid "Public domain URL is not defined. Please set the PUBLIC_DOMAIN_URL environment variable"
+msgstr "Genel alan adı URL tanımlı değil. Lütfen PUBLIC_DOMAIN_URL ortam değişkenini ayarlayın."
 
 #. js-lingui-id: YfbwOB
 #: src/modules/messaging/common/standard-objects/message.workspace-entity.ts
 msgid "Received At"
 msgstr "Alındığı Zaman"
+
+#. js-lingui-id: x93onj
+#: src/engine/metadata-modules/view-field/services/view-field.service.ts
+#: src/engine/metadata-modules/view-field/services/view-field.service.ts
+msgid "Record text must be in first position of the view."
+msgstr "Kayıt metni görünümün ilk pozisyonunda olmalıdır."
+
+#. js-lingui-id: KGmwY/
+#: src/engine/metadata-modules/view-field/services/view-field.service.ts
+msgid "Record text must stay visible."
+msgstr "Kayıt metni görünür kalmalıdır."
 
 #. js-lingui-id: 9gXJw8
 #: src/modules/calendar/common/standard-objects/calendar-channel-event-association.workspace-entity.ts
@@ -2710,7 +2915,7 @@ msgstr "Rol"
 #. js-lingui-id: MFW30/
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route already exists"
-msgstr ""
+msgstr "Rota zaten mevcut"
 
 #. js-lingui-id: ldQZkA
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
@@ -2718,28 +2923,33 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route not found"
-msgstr ""
+msgstr "Rota bulunamadı"
 
 #. js-lingui-id: NCQS+K
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route path already exists"
-msgstr ""
+msgstr "Rota yolu zaten mevcut"
 
 #. js-lingui-id: v5H7VS
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route with same id already exists"
-msgstr ""
+msgstr "Aynı ID'ye sahip rota zaten mevcut"
 
 #. js-lingui-id: c10Yre
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route with same path already exists"
-msgstr ""
+msgstr "Aynı yola sahip rota zaten mevcut"
 
 #. js-lingui-id: Tpm2G9
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
 #: src/modules/workflow/common/standard-objects/workflow-version.workspace-entity.ts
 msgid "Runs"
 msgstr "Çalışmalar"
+
+#. js-lingui-id: +5kO8P
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Saturday"
+msgstr "Cumartesi"
 
 #. js-lingui-id: N/rFzD
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -2752,10 +2962,15 @@ msgstr "Kapsamlar"
 msgid "Search vector"
 msgstr "Arama vektörü"
 
+#. js-lingui-id: hgvbYY
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "September"
+msgstr "Eylül"
+
 #. js-lingui-id: F3+i2a
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-serverless-function-validator.service.ts
 msgid "Serverless function already exists"
-msgstr ""
+msgstr "Sunucusuz işlev zaten mevcut"
 
 #. js-lingui-id: MSgd2w
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-serverless-function-validator.service.ts
@@ -2775,17 +2990,17 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Serverless function not found"
-msgstr ""
+msgstr "Sunucusuz işlev bulunamadı"
 
 #. js-lingui-id: jNhvmj
 #: src/engine/metadata-modules/serverless-function/utils/from-update-serverless-function-input-to-flat-serverless-function-to-update-or-throw.util.ts
 msgid "Serverless function to update not found"
-msgstr ""
+msgstr "Güncellenecek sunucusuz işlev bulunamadı"
 
 #. js-lingui-id: zoBkIJ
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-serverless-function-validator.service.ts
 msgid "Serverless function with same id already exists"
-msgstr ""
+msgstr "Aynı ID'ye sahip sunucusuz işlev zaten mevcut"
 
 #. js-lingui-id: Tz0i8g
 #: src/modules/workflow/common/standard-objects/workflow-automated-trigger.workspace-entity.ts
@@ -2796,6 +3011,16 @@ msgstr "Ayarlar"
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
 msgid "Size"
 msgstr "Boyut"
+
+#. js-lingui-id: RyE+Of
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "Some of the information provided is invalid. Please check your input and try again."
+msgstr "Sağlanan bilgilerin bir kısmı geçersiz. Lütfen girdinizi kontrol edin ve tekrar deneyin."
+
+#. js-lingui-id: 01Sxb6
+#: src/engine/metadata-modules/permission-flag/permission-flag.service.ts
+msgid "Some of the permissions you selected are not valid. Please try again with valid permission settings."
+msgstr "Seçilen izinlerin bir kısmı geçerli değil. Lütfen geçerli izin ayarlarıyla tekrar deneyin."
 
 #. js-lingui-id: 3PRxO3
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
@@ -2870,6 +3095,11 @@ msgstr "Alt alan adı"
 #: src/modules/messaging/common/standard-objects/message.workspace-entity.ts
 msgid "Subject"
 msgstr "Konu"
+
+#. js-lingui-id: DBC3t5
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Sunday"
+msgstr "Pazar"
 
 #. js-lingui-id: oyJYg7
 #: src/modules/messaging/common/standard-objects/message-folder.workspace-entity.ts
@@ -3041,6 +3271,11 @@ msgstr "Hesap tanıtıcı (e-posta, kullanıcı adı, telefon numarası vb.)"
 msgid "The account provider"
 msgstr "Hesap sağlayıcısı"
 
+#. js-lingui-id: eC8p5b
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+msgid "The API key does not have a valid role assigned. Please check your API key configuration."
+msgstr "API anahtarı için geçerli bir rol atanmadı. Lütfen API anahtarı yapılandırmanızı kontrol edin."
+
 #. js-lingui-id: qnNFrW
 #: src/modules/company/standard-objects/company.workspace-entity.ts
 msgid "The company Linkedin account"
@@ -3083,10 +3318,25 @@ msgstr "İş akışı sürümlerinin mevcut durumları"
 msgid "The date the message was received"
 msgstr "Mesajın alındığı tarih"
 
+#. js-lingui-id: nCXfEw
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "The default role cannot be deleted as it is required for the workspace to function properly."
+msgstr "Varsayılan rol silinemez, çünkü çalışma alanının düzgün çalışması için gereklidir."
+
+#. js-lingui-id: 6BBrjb
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "The default role for this workspace could not be found. Please contact support for assistance."
+msgstr "Bu çalışma alanı için varsayılan rol bulunamadı. Yardım için destekle iletişime geçin."
+
 #. js-lingui-id: 8h4mhq
 #: src/modules/workflow/common/standard-objects/workflow-run.workspace-entity.ts
 msgid "The executor of the workflow"
 msgstr "İş akışını yürüten kişi"
+
+#. js-lingui-id: LdhPiK
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "The field you are trying to set permissions for could not be found. It may have been deleted."
+msgstr "İzin ayarlamaya çalıştığınız alan bulunamadı. Silinmiş olabilir."
 
 #. js-lingui-id: W3raza
 #: src/modules/favorite/standard-objects/favorite.workspace-entity.ts
@@ -3103,10 +3353,34 @@ msgstr "Bir iş akışının ilk sürümü silinemez"
 msgid "The name is not available"
 msgstr "Bu isim mevcut değil"
 
+#. js-lingui-id: hx2IZ4
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "The object you are trying to set permissions for could not be found. It may have been deleted."
+msgstr "İzin ayarlamaya çalıştığınız nesne bulunamadı. Silinmiş olabilir."
+
 #. js-lingui-id: DbWmKZ
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 msgid "The opportunity name"
 msgstr "Fırsat adı"
+
+#. js-lingui-id: Zi9X+u
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "The role you are looking for could not be found. It may have been deleted or you may not have access to it."
+msgstr "Aradığınız rol bulunamadı. Silinmiş olabilir ya da erişiminiz olmayabilir."
+
+#. js-lingui-id: 5h4Nxe
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "The role you are trying to assign could not be found. It may have been deleted."
+msgstr "Atamaya çalıştığınız rol bulunamadı. Silinmiş olabilir."
+
+#. js-lingui-id: HRcugS
+#: src/engine/metadata-modules/permission-flag/permission-flag.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "The role you are trying to modify could not be found. It may have been deleted or you may not have access to it."
+msgstr "Düzenlemeye çalıştığınız rol bulunamadı. Silinmiş olabilir ya da erişiminiz olmayabilir."
 
 #. js-lingui-id: H1tAJD
 #: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-label.util.ts
@@ -3148,6 +3422,36 @@ msgstr "İş akışı sürüm adı"
 msgid "The workflow version status"
 msgstr "İş akışı sürüm durumu"
 
+#. js-lingui-id: Kfwq7n
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
+msgid "There was an issue with your connection settings. Please try again."
+msgstr "Bağlantı ayarlarınızda bir sorun vardı. Lütfen tekrar deneyin."
+
+#. js-lingui-id: Bm40Ow
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This {fieldName} is already taken. Please choose a different value."
+msgstr "Bu {fieldName} zaten alınmış. Lütfen farklı bir değer seçin."
+
+#. js-lingui-id: CYyoPc
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This {fieldName} with value {duplicatedValues} is already taken. Please choose a different value."
+msgstr "Değeri {duplicatedValues} olan bu {fieldName} zaten alınmış. Lütfen farklı bir değer seçin."
+
+#. js-lingui-id: Izdz+Y
+#: src/engine/core-modules/api-key/api-key.service.ts
+msgid "This API Key has been revoked and can no longer be used."
+msgstr "Bu API Anahtarı iptal edilmiştir ve artık kullanılamaz."
+
+#. js-lingui-id: Jmzgho
+#: src/engine/core-modules/api-key/api-key.service.ts
+msgid "This API Key has expired. Please create a new one."
+msgstr "Bu API Anahtarı süresi dolmuştur. Yeni bir tane oluşturun."
+
+#. js-lingui-id: r/Z8XK
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This combination of {fieldNames} already exists. Please use different values."
+msgstr "Bu {fieldNames} kombinasyonu zaten mevcut. Lütfen farklı değerler kullanın."
+
 #. js-lingui-id: mAs70Y
 #: src/engine/metadata-modules/utils/validate-field-name-availability.utils.ts
 msgid "This name is not available as it is already used by another field."
@@ -3158,6 +3462,29 @@ msgstr "Bu isim başka bir alan tarafından kullanılmaktadır ve kullanılamaz.
 #: src/engine/metadata-modules/utils/validate-field-name-availability.utils.ts
 msgid "This name is not available."
 msgstr "Bu isim mevcut değil."
+
+#. js-lingui-id: eitC3W
+#: src/engine/workspace-datasource/workspace-datasource.service.ts
+msgid "This operation is not allowed. Please try a different approach or contact support if you need assistance."
+msgstr "Bu işlem izin verilmez. Farklı bir yol deneyin veya yardıma ihtiyacınız varsa destekle iletişime geçin."
+
+#. js-lingui-id: TjUnO1
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This record already exists. Please check your data and try again."
+msgstr "Bu kayıt zaten mevcut. Lütfen verilerinizi kontrol edin ve tekrar deneyin."
+
+#. js-lingui-id: +L9yxk
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "This role cannot be assigned to users. Please select a different role."
+msgstr "Bu rol kullanıcılara atanamaz. Lütfen farklı bir rol seçin."
+
+#. js-lingui-id: KoDdqN
+#: src/engine/metadata-modules/role/role.service.ts
+#: src/engine/metadata-modules/permission-flag/permission-flag.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "This role cannot be modified because it is a system role. Only custom roles can be edited."
+msgstr "Bu rol sistem rolü olduğu için değiştirilemez. Sadece özel roller düzenlenebilir."
 
 #. js-lingui-id: Zl0BJl
 #: src/modules/messaging/common/standard-objects/message-channel-message-association.workspace-entity.ts
@@ -3176,6 +3503,11 @@ msgstr "Mesajlaşma sağlayıcısından iplik kimliği"
 #: src/modules/calendar/common/standard-objects/calendar-channel.workspace-entity.ts
 msgid "Throttle Failure Count"
 msgstr "Sınırlama Başarısızlık Sayımı"
+
+#. js-lingui-id: kkDQ8m
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Thursday"
+msgstr "Perşembe"
 
 #. js-lingui-id: n9nSNJ
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3209,7 +3541,7 @@ msgstr "Şirketle bağlantılı Zaman Çizelgesi Aktiviteleri"
 #. js-lingui-id: CNev+0
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Timeline activities linked to the dashboard"
-msgstr ""
+msgstr "Gösterge paneline bağlı Zaman Çizelgesi faaliyetleri"
 
 #. js-lingui-id: 4/UzU5
 #: src/modules/note/standard-objects/note.workspace-entity.ts
@@ -3260,6 +3592,11 @@ msgstr "Zaman Çizelgesi Aktivitesi"
 msgid "Title"
 msgstr "Başlık"
 
+#. js-lingui-id: G3myU+
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Tuesday"
+msgstr "Salı"
+
 #. js-lingui-id: +zy2Nq
 #: src/modules/view/standard-objects/view.workspace-entity.ts
 #: src/modules/messaging/common/standard-objects/message-channel.workspace-entity.ts
@@ -3294,11 +3631,21 @@ msgstr "Güncelleme Tarihi Saati"
 msgid "Updated field name is not synced with label"
 msgstr "Güncellenen alan ismi, etiketle senkronize değil"
 
+#. js-lingui-id: GkcfmO
+#: src/engine/core-modules/auth/services/sign-in-up.service.ts
+msgid "User already exists"
+msgstr "Kullanıcı zaten mevcut"
+
 #. js-lingui-id: l9dlVi
 #: src/engine/core-modules/auth/strategies/jwt.auth.strategy.ts
 #: src/engine/core-modules/auth/services/auth.service.ts
 msgid "User does not have access to this workspace"
 msgstr "Kullanıcı bu çalışma alanına erişime sahip değil"
+
+#. js-lingui-id: Sl1ElS
+#: src/engine/metadata-modules/permissions/utils/permission-graphql-api-exception-handler.util.ts
+msgid "User does not have permission."
+msgstr "Kullanıcı izinlere sahip değil."
 
 #. js-lingui-id: YFciqL
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3314,6 +3661,11 @@ msgstr "Kullanıcı Kimliği"
 #: src/engine/core-modules/auth/services/sign-in-up.service.ts
 msgid "User is not part of the workspace"
 msgstr "Kullanıcı çalışma alanının bir parçası değil"
+
+#. js-lingui-id: g5Z6no
+#: src/engine/core-modules/admin-panel/admin-panel.service.ts
+msgid "User not found. Please check the email or ID."
+msgstr "Kullanıcı bulunamadı. Lütfen e-posta adresini veya kimliği kontrol edin."
 
 #. js-lingui-id: 4juE7s
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3333,7 +3685,7 @@ msgstr "Kullanıcının tercih ettiği tarih biçimi"
 #. js-lingui-id: PLfanm
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
 msgid "User's preferred number format"
-msgstr ""
+msgstr "Kullanıcının tercih ettiği sayı formatı"
 
 #. js-lingui-id: Uce+A8
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3348,7 +3700,7 @@ msgstr "Kullanıcının tercih ettiği saat biçimi"
 #. js-lingui-id: xInMK/
 #: src/engine/workspace-manager/workspace-migration-v2/interceptors/workspace-migration-builder-exception-v2-formatter.ts
 msgid "Validation failed for 0 object(s) and 0 field(s)"
-msgstr ""
+msgstr "0 nesne(ler) ve 0 alan(lar) için doğrulama başarısız oldu"
 
 #. js-lingui-id: wMHvYH
 #: src/modules/view/standard-objects/view-filter.workspace-entity.ts
@@ -3357,6 +3709,7 @@ msgstr "Değer"
 
 #. js-lingui-id: UBPzFQ
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Value must be in UPPER_CASE and follow snake_case \"{sanitizedValue}\""
 msgstr "Değer \"{sanitizedValue}\" UPPER_CASE olmalı ve snake_case kurallarına uymalıdır."
 
@@ -3394,7 +3747,7 @@ msgstr "Görünüm"
 #. js-lingui-id: HhN1Bv
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "View already exists"
-msgstr ""
+msgstr "Görünüm zaten mevcut"
 
 #. js-lingui-id: cZPDyy
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
@@ -3404,22 +3757,22 @@ msgstr "Görünüm Alanı"
 #. js-lingui-id: pTvQqf
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field already exists"
-msgstr ""
+msgstr "Alan görünümü zaten mevcut"
 
 #. js-lingui-id: Xm6R6B
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "View field already exists."
 msgstr "Alan görünümü zaten mevcut."
 
 #. js-lingui-id: 7jUWQ+
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field metadata already exists"
-msgstr ""
+msgstr "Görünüm alanı meta verisi zaten mevcut"
 
 #. js-lingui-id: Yvf7WL
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field metadata with id {flatViewFieldId} already exists"
-msgstr ""
+msgstr "Kimlik {flatViewFieldId} ile alan görünümü meta verisi zaten mevcut"
 
 #. js-lingui-id: 6jpoH4
 #: src/modules/view/standard-objects/view-group.workspace-entity.ts
@@ -3427,10 +3780,22 @@ msgstr ""
 msgid "View Field position"
 msgstr "Görünüm Alanı pozisyonu"
 
+#. js-lingui-id: 7LMaUn
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field position cannot be lower than label identifier view field position"
+msgstr "Görünüm alanı pozisyonu, etiket tanımlayıcı görünüm alanı pozisyonundan daha düşük olamaz"
+
 #. js-lingui-id: Ju6gri
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
 msgid "View Field related view"
 msgstr "İlgili Alan görünümü"
+
+#. js-lingui-id: WZzm3R
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field related view object metadata not found"
+msgstr "Görünüm alanıyla ilgili görünüm nesnesi metadatası bulunamadı"
 
 #. js-lingui-id: tvTr2y
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
@@ -3446,26 +3811,38 @@ msgstr "Hedef alan görünümü"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field to delete has not been soft deleted"
-msgstr ""
+msgstr "Silinecek alan görünümü 'yumuşak silinme' olarak işaretlenmemiş"
 
 #. js-lingui-id: XJlyZS
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
-#: src/engine/core-modules/view/flat-view/utils/from-delete-view-field-input-to-flat-view-field-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view-field/utils/from-delete-view-field-input-to-flat-view-field-or-throw.util.ts
 msgid "View field to delete not found"
-msgstr ""
+msgstr "Silinecek görünüm alanı bulunamadı"
 
 #. js-lingui-id: DXyYuh
-#: src/engine/core-modules/view/flat-view/utils/from-destroy-view-field-input-to-flat-view-field-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view-field/utils/from-destroy-view-field-input-to-flat-view-field-or-throw.util.ts
 msgid "View field to destroy not found"
-msgstr ""
+msgstr "Yok edilecek görünüm alanı bulunamadı"
 
 #. js-lingui-id: Fpy/K1
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
-#: src/engine/core-modules/view/flat-view/utils/from-update-view-field-input-to-flat-view-field-to-update-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view-field/utils/from-update-view-field-input-to-flat-view-field-to-update-or-throw.util.ts
 msgid "View field to update not found"
-msgstr ""
+msgstr "Güncellenecek alanı görüntüle bulunamadı"
+
+#. js-lingui-id: AprfQL
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field to update parent view not found"
+msgstr "Ebeveyn görünümü güncellemek için görünüm alanı bulunamadı"
+
+#. js-lingui-id: sqzMKR
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field to update parent view object not found"
+msgstr "Ebeveyn görünüm nesnesini güncellemek için görünüm alanı bulunamadı"
 
 #. js-lingui-id: Gd/LzL
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
@@ -3475,7 +3852,7 @@ msgstr "Alan görünürlüğü görünümü"
 #. js-lingui-id: 89Wiy+
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field with same fieldmetadataId and viewId already exists"
-msgstr ""
+msgstr "Aynı fieldmetadataId ve viewId'ye sahip görünüm alanı zaten mevcut"
 
 #. js-lingui-id: GUFYyq
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3512,6 +3889,20 @@ msgstr "Görünüm Filtre Grubu Id"
 msgid "View Filter Groups"
 msgstr "Görünüm Filtre Grupları"
 
+#. js-lingui-id: DjGFaP
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+msgid "View filter has to be soft deleted first"
+msgstr "Görünüm filtresi önce yumuşak olarak silinmelidir"
+
+#. js-lingui-id: 1KSqGE
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+msgid "View filter not found"
+msgstr "Görünüm filtresi bulunamadı"
+
 #. js-lingui-id: 4MG8+B
 #: src/modules/view/standard-objects/view-filter.workspace-entity.ts
 msgid "View Filter operand"
@@ -3527,10 +3918,31 @@ msgstr "İlgili görünüm filtresi"
 msgid "View Filter target field"
 msgstr "Hedef alan filtresi görünümü"
 
+#. js-lingui-id: 3l1ppY
+#: src/engine/metadata-modules/flat-view-filter/utils/from-delete-view-filter-input-to-flat-view-filter-or-throw.util.ts
+msgid "View filter to delete not found"
+msgstr "Silinecek görünüm filtresi bulunamadı"
+
+#. js-lingui-id: 9gedIx
+#: src/engine/metadata-modules/flat-view-filter/utils/from-destroy-view-filter-input-to-flat-view-filter-or-throw.util.ts
+msgid "View filter to destroy not found"
+msgstr "Yok edilecek görünüm filtresi bulunamadı"
+
+#. js-lingui-id: GzthLy
+#: src/engine/metadata-modules/flat-view-filter/utils/from-update-view-filter-input-to-flat-view-filter-to-update-or-throw.util.ts
+msgid "View filter to update not found"
+msgstr "Güncellenecek görünüm filtresi bulunamadı"
+
 #. js-lingui-id: 3KzkxN
 #: src/modules/view/standard-objects/view-filter.workspace-entity.ts
 msgid "View Filter value"
 msgstr "Görünüm Filtresi değeri"
+
+#. js-lingui-id: LnNgrI
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+msgid "View filter with this id already exists"
+msgstr "Bu kimliğe sahip görünüm filtresi zaten mevcut"
 
 #. js-lingui-id: vj5JsR
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3591,10 +4003,12 @@ msgstr "Görünüm adı"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View not found"
-msgstr ""
+msgstr "Görünüm bulunamadı"
 
 #. js-lingui-id: rhO8zp
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3607,7 +4021,7 @@ msgid "View Sort"
 msgstr "Görünüm Sıralaması"
 
 #. js-lingui-id: znNExx
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "View sort (id: {id}) not found"
 msgstr "Görünüm sıralama (id: {id}) bulunamadı"
 
@@ -3617,7 +4031,7 @@ msgid "View Sort direction"
 msgstr "Görünüm sıralama yönü"
 
 #. js-lingui-id: 3zMs+f
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "View sort not found"
 msgstr "Görünüm sıralama bulunamadı"
 
@@ -3647,22 +4061,22 @@ msgstr "Hedef nesne görünümü"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "View to delete has not been soft deleted"
-msgstr ""
+msgstr "Silinecek görünüm yumuşak silinmedi"
 
 #. js-lingui-id: toB/08
-#: src/engine/core-modules/view/flat-view/utils/from-delete-view-input-to-flat-view-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view/utils/from-delete-view-input-to-flat-view-or-throw.util.ts
 msgid "View to delete not found"
-msgstr ""
+msgstr "Silinecek görünüm bulunamadı"
 
 #. js-lingui-id: NnD3Ti
-#: src/engine/core-modules/view/flat-view/utils/from-destroy-view-input-to-flat-view-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view/utils/from-destroy-view-input-to-flat-view-or-throw.util.ts
 msgid "View to destroy not found"
-msgstr ""
+msgstr "Yok edilecek görünüm bulunamadı"
 
 #. js-lingui-id: 3+GbNY
-#: src/engine/core-modules/view/flat-view/utils/from-update-view-input-to-flat-view-to-update-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view/utils/from-update-view-input-to-flat-view-to-update-or-throw.util.ts
 msgid "View to update not found"
-msgstr ""
+msgstr "Güncellenecek görünüm bulunamadı"
 
 #. js-lingui-id: bJAIqT
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3672,7 +4086,7 @@ msgstr "Görünüm tipi"
 #. js-lingui-id: ZgRtC4
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "View with same id is already exists"
-msgstr ""
+msgstr "Aynı ID'ye sahip görünüm zaten mevcut"
 
 #. js-lingui-id: aeqysn
 #: src/modules/favorite/standard-objects/favorite.workspace-entity.ts
@@ -3681,32 +4095,32 @@ msgid "ViewId"
 msgstr "GörünümId"
 
 #. js-lingui-id: kpQRY2
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "ViewId is required"
 msgstr "ViewId gereklidir"
 
 #. js-lingui-id: l88nXn
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "ViewId is required to create a view field."
 msgstr "Bir görünüm alanı oluşturmak için GörünümKimliği gereklidir."
 
 #. js-lingui-id: 9XMTpT
-#: src/engine/core-modules/view/exceptions/view-filter-group.exception.ts
+#: src/engine/metadata-modules/view-filter-group/exceptions/view-filter-group.exception.ts
 msgid "ViewId is required to create a view filter group."
 msgstr "Bir görünüm filtre grubu oluşturmak için GörünümKimliği gereklidir."
 
 #. js-lingui-id: pCCxli
-#: src/engine/core-modules/view/exceptions/view-filter.exception.ts
+#: src/engine/metadata-modules/view-filter/exceptions/view-filter.exception.ts
 msgid "ViewId is required to create a view filter."
 msgstr "Bir görünüm filtresi oluşturmak için GörünümKimliği gereklidir."
 
 #. js-lingui-id: 1X1RW5
-#: src/engine/core-modules/view/exceptions/view-group.exception.ts
+#: src/engine/metadata-modules/view-group/exceptions/view-group.exception.ts
 msgid "ViewId is required to create a view group."
 msgstr "Bir görünüm grubu oluşturmak için GörünümKimliği gereklidir."
 
 #. js-lingui-id: uGUFcy
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "ViewId is required to create a view sort."
 msgstr "Bir görünüm sıralaması oluşturmak için GörünümKimliği gereklidir."
 
@@ -3733,6 +4147,36 @@ msgstr "Görünür"
 #: src/engine/twenty-orm/error-handling/compute-twenty-orm-exception.ts
 msgid "We are experiencing a temporary issue with our database. Please try again later."
 msgstr "Veritabanımızla ilgili geçici bir sorun yaşıyoruz. Lütfen daha sonra tekrar deneyiniz."
+
+#. js-lingui-id: B3CG/U
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't connect to your CalDAV server. Please check your server settings and try again."
+msgstr "CalDAV sunucunuza bağlanamadık. Lütfen sunucu ayarlarını kontrol edin ve tekrar deneyin."
+
+#. js-lingui-id: ax8unE
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't connect to your email server. Please check your server settings and try again."
+msgstr "E-posta sunucunuza bağlanamadık. Lütfen sunucu ayarlarını kontrol edin ve tekrar deneyin."
+
+#. js-lingui-id: g4rOV3
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't connect to your outgoing email server. Please check your SMTP settings and try again."
+msgstr "Çıkış e-posta sunucunuza bağlanamadık. Lütfen SMTP ayarlarınızı kontrol edin ve tekrar deneyin."
+
+#. js-lingui-id: v8UNEA
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't log in to your email account. Please check your email address and password, then try again."
+msgstr "E-posta hesabınıza giriş yapamadık. Lütfen e-posta adresinizi ve şifrenizi kontrol edin, sonra tekrar deneyin."
+
+#. js-lingui-id: YxBvFz
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We encountered an issue connecting to your email account. Please check your settings and try again."
+msgstr "E-posta hesabınıza bağlanırken bir sorunla karşılaştık. Ayarlarınızı kontrol edin ve tekrar deneyin."
+
+#. js-lingui-id: VAcXNz
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Wednesday"
+msgstr "Çarşamba"
 
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
@@ -3896,7 +4340,7 @@ msgstr "WorkflowVersion iş akışı"
 #. js-lingui-id: XsSVrR
 #: src/engine/core-modules/auth/services/sign-in-up.service.ts
 msgid "Workspace creation is restricted to admins"
-msgstr ""
+msgstr "Çalışma alanı oluşturma yalnızca yöneticilerle sınırlıdır"
 
 #. js-lingui-id: rklt6M
 #: src/engine/core-modules/auth/services/sign-in-up.service.ts
@@ -3939,37 +4383,37 @@ msgid "Workspace Members"
 msgstr "Çalışma Alanı Üyeleri"
 
 #. js-lingui-id: bBr+RW
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "WorkspaceId is required"
 msgstr "WorkspaceId gereklidir"
 
 #. js-lingui-id: kjLpTn
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "WorkspaceId is required to create a view field."
 msgstr "Bir görünüm alanı oluşturmak için ÇalışmaAlanıKimliği gereklidir."
 
 #. js-lingui-id: zWj6VZ
-#: src/engine/core-modules/view/exceptions/view-filter-group.exception.ts
+#: src/engine/metadata-modules/view-filter-group/exceptions/view-filter-group.exception.ts
 msgid "WorkspaceId is required to create a view filter group."
 msgstr "Bir görünüm filtre grubu oluşturmak için ÇalışmaAlanıKimliği gereklidir."
 
 #. js-lingui-id: jQMXtD
-#: src/engine/core-modules/view/exceptions/view-filter.exception.ts
+#: src/engine/metadata-modules/view-filter/exceptions/view-filter.exception.ts
 msgid "WorkspaceId is required to create a view filter."
 msgstr "Bir görünüm filtresi oluşturmak için ÇalışmaAlanıKimliği gereklidir."
 
 #. js-lingui-id: NAoJAX
-#: src/engine/core-modules/view/exceptions/view-group.exception.ts
+#: src/engine/metadata-modules/view-group/exceptions/view-group.exception.ts
 msgid "WorkspaceId is required to create a view group."
 msgstr "Bir görünüm grubu oluşturmak için ÇalışmaAlanıKimliği gereklidir."
 
 #. js-lingui-id: hU1QaN
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "WorkspaceId is required to create a view sort."
 msgstr "Bir görünüm sıralaması oluşturmak için ÇalışmaAlanıKimliği gereklidir."
 
 #. js-lingui-id: jtb/lI
-#: src/engine/core-modules/view/exceptions/view.exception.ts
+#: src/engine/metadata-modules/view/exceptions/view.exception.ts
 msgid "WorkspaceId is required to create a view."
 msgstr "Bir görünüm oluşturmak için ÇalışmaAlanıKimliği gereklidir."
 
@@ -3991,6 +4435,52 @@ msgstr "Yanlış şifre"
 msgid "X"
 msgstr "X"
 
+#. js-lingui-id: 1SQnFB
+#: src/engine/metadata-modules/role/role.resolver.ts
+msgid "You cannot change your own role. Please ask another administrator to update your role."
+msgstr "Kendi rolünüzü değiştiremezsiniz. Lütfen başka bir yöneticiden rolünüzü güncellemesini isteyin."
+
+#. js-lingui-id: y5haJ4
+#: src/engine/metadata-modules/role/role.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+msgid "You cannot grant edit permissions without also granting read permissions. Please enable read access first."
+msgstr "Okuma izinlerini vermeden düzenleme izinlerini veremezsiniz. Lütfen önce okuma erişimini etkinleştirin."
+
+#. js-lingui-id: 8wovNr
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "You cannot remove the admin role from the last administrator. Please assign another administrator first."
+msgstr "Son yöneticiden yönetici rolünü kaldıramazsınız. Lütfen önce başka bir yönetici atayın."
+
+#. js-lingui-id: WUcQVb
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "You cannot set field permissions on system objects as they are managed by the platform."
+msgstr "Sistem nesnelerinde alan izinleri ayarlanamaz, çünkü platform tarafından yönetilmektedirler."
+
+#. js-lingui-id: SI6USg
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+msgid "You cannot set permissions on system objects as they are managed by the platform."
+msgstr "Sistem nesneleri üzerinde izinler ayarlanamaz, çünkü platform tarafından yönetilmektedirler."
+
+#. js-lingui-id: EFQeXU
+#: src/engine/guards/settings-permissions.guard.ts
+msgid "You do not have permission to access this feature. Please contact your workspace administrator for access."
+msgstr "Bu özelliğe erişim izniniz yok. Erişim için çalışma alanı yöneticinizle iletişime geçin."
+
+#. js-lingui-id: +2vVRB
+#: src/engine/guards/impersonate-permission.guard.ts
+msgid "You do not have permission to impersonate users. Please contact your workspace administrator for access."
+msgstr "Kullanıcıları taklit etmek için izniniz yok. Erişim için çalışma alanı yöneticinizle iletişime geçin."
+
+#. js-lingui-id: k7P8yU
+#: src/engine/core-modules/workspace/services/workspace.service.ts
+msgid "You do not have permission to manage security settings. Please contact your workspace administrator."
+msgstr "Güvenlik ayarlarını yönetmek için izniniz yok. Lütfen çalışma alanı yöneticinizle iletişime geçin."
+
+#. js-lingui-id: svchJc
+#: src/engine/core-modules/workspace/services/workspace.service.ts
+msgid "You do not have permission to manage workspace settings. Please contact your workspace administrator."
+msgstr "Çalışma alanı ayarlarını yönetmek için izniniz yok. Lütfen çalışma alanı yöneticinizle iletişime geçin."
+
 #. js-lingui-id: z+7x/s
 #: src/engine/core-modules/auth/utils/auth-graphql-api-exception-handler.util.ts
 msgid "You must be authenticated to perform this action."
@@ -4001,10 +4491,22 @@ msgstr "Bu işlemi gerçekleştirmek için kimliğiniz doğrulanmış olmalıdı
 msgid "Your app version is out of date. Please refresh the page to continue."
 msgstr "Uygulama sürümünüz güncel değil. Devam etmek için lütfen sayfayı yenileyin."
 
+#. js-lingui-id: J5Vm4Q
+#: src/engine/core-modules/billing/billing.validate.ts
+msgid "Your billing subscription is corrupted. Please contact support."
+msgstr "Fatura aboneliğiniz bozulmuş. Lütfen desteğe başvurun."
+
 #. js-lingui-id: bTyBrW
 #: src/engine/core-modules/auth/services/auth.service.ts
 msgid "Your Password Has Been Successfully Changed"
 msgstr "Şifreniz Başarıyla Değiştirildi"
+
+#. js-lingui-id: XxkUFT
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+msgid "Your role in this workspace could not be found. Please contact your workspace administrator."
+msgstr "Bu çalışma alanındaki rolünüz bulunamadı. Lütfen çalışma alanı yöneticinizle iletişime geçin."
 
 #. js-lingui-id: vPccnr
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -4015,3 +4517,8 @@ msgstr "Şirket hesabını yönetmekten sorumlu ekip üyeniz"
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts
 msgid "Your workspace has been updated with a new data model. Please refresh the page."
 msgstr "Çalışma alanınız yeni bir veri modeli ile güncellendi. Lütfen sayfayı yenileyin."
+
+#. js-lingui-id: ZukXiD
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "Your workspace membership could not be found. You may no longer have access to this workspace."
+msgstr "Çalışma alanı üyeliğiniz bulunamadı. Bu çalışma alanına artık erişiminiz olmayabilir."

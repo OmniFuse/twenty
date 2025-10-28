@@ -2,19 +2,20 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 
 import { type Request } from 'express';
 import isEmpty from 'lodash.isempty';
+import { type ObjectRecord } from 'twenty-shared/types';
 import { In } from 'typeorm';
 
-import { type ObjectRecord } from 'src/engine/api/graphql/workspace-query-builder/interfaces/object-record.interface';
 import {
   type FormatResult,
   RestApiBaseHandler,
 } from 'src/engine/api/rest/core/interfaces/rest-api-base.handler';
 
+import { AuthenticatedRequest } from 'src/engine/api/rest/types/authenticated-request';
 import { buildDuplicateConditions } from 'src/engine/api/utils/build-duplicate-conditions.utils';
 
 @Injectable()
 export class RestApiFindDuplicatesHandler extends RestApiBaseHandler {
-  async handle(request: Request) {
+  async handle(request: AuthenticatedRequest) {
     this.validate(request);
 
     const {

@@ -58,6 +58,11 @@ msgstr "{fieldName} と {fieldName}Id の両方を提供することはできま
 msgid "{fieldType} fields cannot be unique."
 msgstr "{fieldType} フィールドは一意であることを許可されていません。"
 
+#. js-lingui-id: iEZavm
+#: src/engine/core-modules/dns-manager/services/dns-manager.service.ts
+msgid "{hostnameCount} hostnames found for domain '{domainName}'. Expect 1"
+msgstr "{hostnameCount} ホスト名がドメイン '{domainName}' に見つかりました。1 を予期します。"
+
 #. js-lingui-id: 8haj+G
 #: src/engine/metadata-modules/utils/validate-metadata-name-is-camel-case.utils.ts
 msgid "{name} should be in camelCase"
@@ -251,8 +256,12 @@ msgstr "金額"
 msgid "An attachment"
 msgstr "添付ファイル"
 
+#. js-lingui-id: Q7akko
+#: src/modules/messaging/message-import-manager/drivers/microsoft/exceptions/microsoft-import-driver.exception.ts
+msgid "An error occurred during message import"
+msgstr "メッセージのインポート中にエラーが発生しました"
+
 #. js-lingui-id: XyOToQ
-#: src/engine/core-modules/graphql/utils/generate-graphql-error-from-error.util.ts
 #: src/engine/core-modules/graphql/utils/generate-graphql-error-from-error.util.ts
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts
 msgid "An error occurred."
@@ -261,7 +270,7 @@ msgstr "エラーが発生しました。"
 #. js-lingui-id: +MvnxO
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "An index must contain at least one field"
-msgstr ""
+msgstr "インデックスには少なくとも1つのフィールドが必要です"
 
 #. js-lingui-id: bZq8rL
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
@@ -282,7 +291,7 @@ msgstr "任意のフィールドフィルタの値"
 #. js-lingui-id: mU5fvk
 #: src/engine/core-modules/approved-access-domain/services/approved-access-domain.service.ts
 msgid "Approved access domain already registered."
-msgstr ""
+msgstr "承認済みのアクセスドメインはすでに登録されています。"
 
 #. js-lingui-id: DGW5iN
 #: src/engine/core-modules/approved-access-domain/services/approved-access-domain.service.ts
@@ -294,6 +303,11 @@ msgstr "承認されたアクセスドメインがメールドメインと一致
 #: src/engine/core-modules/approved-access-domain/services/approved-access-domain.service.ts
 msgid "Approved access domain has already been validated"
 msgstr "承認済みのアクセスドメインはすでに検証されています"
+
+#. js-lingui-id: naCW6Z
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "April"
+msgstr "4月"
 
 #. js-lingui-id: 3EiOLz
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -343,7 +357,7 @@ msgstr "添付ファイルの会社"
 #. js-lingui-id: wtcL/T
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 msgid "Attachment dashboard"
-msgstr ""
+msgstr "添付ファイルダッシュボード"
 
 #. js-lingui-id: gfGYcl
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -383,7 +397,7 @@ msgstr "添付ファイルの種類"
 #. js-lingui-id: tH6L3e
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
 msgid "Attachment workflow"
-msgstr ""
+msgstr "添付ファイルのワークフロー"
 
 #. js-lingui-id: w/Sphq
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
@@ -416,7 +430,7 @@ msgstr "連絡先に関連する添付ファイル"
 #. js-lingui-id: 2AEUIb
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Attachments linked to the dashboard"
-msgstr ""
+msgstr "ダッシュボードに関連する添付ファイル"
 
 #. js-lingui-id: kw0mLu
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
@@ -426,12 +440,17 @@ msgstr "商談に関連する添付ファイル"
 #. js-lingui-id: 83l3Yd
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
 msgid "Attachments linked to the workflow"
-msgstr ""
+msgstr "ワークフローに関連する添付ファイル"
 
 #. js-lingui-id: fCbqr7
 #: src/engine/twenty-orm/custom.workspace-entity.ts
 msgid "Attachments tied to the {label}"
 msgstr "{label}に関連する添付ファイル"
+
+#. js-lingui-id: DBHTm/
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "August"
+msgstr "8月"
 
 #. js-lingui-id: cNBqH+
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -443,6 +462,11 @@ msgstr "認証失敗"
 #: src/engine/core-modules/auth/utils/auth-graphql-api-exception-handler.util.ts
 msgid "Authentication is not enabled with this provider."
 msgstr "このプロバイダーでは認証が有効になっていません。"
+
+#. js-lingui-id: Tsx+z2
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+msgid "Authentication is required to access this feature. Please sign in and try again."
+msgstr "この機能にアクセスするには認証が必要です。サインインしてもう一度お試しください。"
 
 #. js-lingui-id: VbeIOx
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -586,6 +610,11 @@ msgstr "カレンダーイベント"
 msgid "Can't connect to {connectFieldName}. No unique record found with condition: {formattedConnectCondition}"
 msgstr "{connectFieldName}に接続できません。条件: {formattedConnectCondition}に一致する一意のレコードが見つかりません"
 
+#. js-lingui-id: 2oVE+z
+#: src/engine/guards/impersonate-permission.guard.ts
+msgid "Can't impersonate user via api key"
+msgstr "APIキーを介してユーザーを偽装することはできません。"
+
 #. js-lingui-id: vxbVwc
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
 msgid "Cannot activate non-draft or non-last-published version"
@@ -600,6 +629,11 @@ msgstr "同じワークフローに対して複数の草稿バージョンを作
 #: src/modules/workflow/common/workspace-services/workflow-version-validation.workspace-service.ts
 msgid "Cannot create workflow version with status other than draft"
 msgstr "草稿以外のステータスでワークフローバージョンを作成することはできません"
+
+#. js-lingui-id: VPXcr5
+#: src/engine/core-modules/user/services/user.service.ts
+msgid "Cannot delete account: you are the only admin. Assign another admin or delete the workspace(s) first."
+msgstr "アカウントを削除できません: あなたは唯一の管理者です。別の管理者を割り当てるか、最初にワークスペースを削除してください。"
 
 #. js-lingui-id: AQyr9X
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
@@ -772,20 +806,25 @@ msgstr "連絡先の電話番号"
 msgid "Contact’s X/Twitter account"
 msgstr "連絡先のX/Twitterアカウント"
 
+#. js-lingui-id: gdbojg
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "Contradicting field permissions have been detected on a relation field ({fieldName})."
+msgstr "相反するフィールドアクセス権が関係フィールド ({fieldName}) に検出されました。"
+
 #. js-lingui-id: LZf/L8
 #: src/engine/core-modules/common/utils/find-flat-entity-by-id-in-flat-entity-maps-or-throw.util.ts
 msgid "Could not find flat entity in maps"
-msgstr ""
+msgstr "マップでフラットなエンティティが見つかりませんでした"
 
 #. js-lingui-id: jBrX/g
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Could not find index field related field metadata"
-msgstr ""
+msgstr "インデックスフィールドに関連するフィールドメタデータが見つかりませんでした"
 
 #. js-lingui-id: HVajHk
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Could not find index related object metadata"
-msgstr ""
+msgstr "インデックス関連オブジェクトメタデータが見つかりませんでした"
 
 #. js-lingui-id: NCIYDF
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
@@ -826,7 +865,7 @@ msgstr "Cron パターン '{pattern}' は無効です"
 #. js-lingui-id: GuyjcQ
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Cron trigger already exists"
-msgstr ""
+msgstr "Cronトリガーはすでに存在します"
 
 #. js-lingui-id: Ej90Yp
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
@@ -834,12 +873,12 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Cron trigger not found"
-msgstr ""
+msgstr "Cronトリガーが見つかりません"
 
 #. js-lingui-id: vz7B0E
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Cron trigger with same id already exists"
-msgstr ""
+msgstr "同じIDを持つCronトリガーはすでに存在します"
 
 #. js-lingui-id: Mikszu
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -862,7 +901,7 @@ msgstr "ダッシュボードページレイアウト"
 #. js-lingui-id: FrOkwR
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Dashboard record Position"
-msgstr ""
+msgstr "ダッシュボードレコードの位置"
 
 #. js-lingui-id: xGgnPh
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
@@ -877,7 +916,7 @@ msgstr "ダッシュボード"
 #. js-lingui-id: K2CQHf
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 msgid "Database event trigger already exists"
-msgstr ""
+msgstr "データベースイベントトリガーはすでに存在します"
 
 #. js-lingui-id: iS6kjG
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
@@ -885,12 +924,12 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 msgid "Database event trigger not found"
-msgstr ""
+msgstr "データベースイベントトリガーが見つかりません"
 
 #. js-lingui-id: 0vtv+s
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-database-event-trigger-validator.service.ts
 msgid "Database event trigger with same id already exists"
-msgstr ""
+msgstr "同じIDを持つデータベースイベントトリガーは既に存在します"
 
 #. js-lingui-id: Lhd0oQ
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -902,8 +941,14 @@ msgstr "日付形式"
 msgid "Date when the record was deleted"
 msgstr "レコードが削除された日付"
 
+#. js-lingui-id: r6zgGo
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "December"
+msgstr "12月"
+
 #. js-lingui-id: GGNmm+
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Default value \"{defaultValue}\" must be one of the option values"
 msgstr "デフォルト値 \"{defaultValue}\" はオプションの値の一つでなければなりません"
 
@@ -914,11 +959,13 @@ msgstr "デフォルト値は文字列でなければなりません"
 
 #. js-lingui-id: sv9P4Q
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Default value should be as quoted string"
 msgstr "デフォルト値は引用符で囲まれた文字列である必要があります"
 
 #. js-lingui-id: 6pJV03
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Default values must be unique"
 msgstr "デフォルト値は一意でなければなりません"
 
@@ -965,12 +1012,17 @@ msgstr "表示値"
 #. js-lingui-id: IymH4t
 #: src/engine/core-modules/public-domain/public-domain.service.ts
 msgid "Domain already used for workspace custom domain"
-msgstr ""
+msgstr "ドメインはワークスペースのカスタムドメインとして既に使用されています。"
+
+#. js-lingui-id: 2sIVDj
+#: src/engine/core-modules/dns-manager/services/dns-manager.service.ts
+msgid "Domain is already registered"
+msgstr "ドメインはすでに登録されています。"
 
 #. js-lingui-id: PfJswy
 #: src/engine/core-modules/workspace/services/workspace.service.ts
 msgid "Domain is already registered as public domain"
-msgstr ""
+msgstr "ドメインは既に公開ドメインとして登録されています。"
 
 #. js-lingui-id: wMncXq
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -984,6 +1036,7 @@ msgstr "期日"
 
 #. js-lingui-id: BXtAxc
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Duplicated option {field}"
 msgstr "重複したオプション {field}"
 
@@ -1028,7 +1081,7 @@ msgstr "終了日"
 #. js-lingui-id: EzGlkq
 #: src/engine/core-modules/dns-manager/validator/dns-manager.validate.ts
 msgid "Environment variable CLOUDFLARE_API_KEY must be defined to use this feature."
-msgstr ""
+msgstr "CLOUDFLARE_API_KEYという環境変数はこの機能を使用するために定義する必要があります。"
 
 #. js-lingui-id: k//6Xs
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -1038,7 +1091,7 @@ msgstr "イベント会社"
 #. js-lingui-id: CPhvC+
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
 msgid "Event dashboard"
-msgstr ""
+msgstr "イベントダッシュボード"
 
 #. js-lingui-id: kJDmsI
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -1168,7 +1221,7 @@ msgstr "お気に入りの会社"
 #. js-lingui-id: Aj026i
 #: src/modules/favorite/standard-objects/favorite.workspace-entity.ts
 msgid "Favorite dashboard"
-msgstr ""
+msgstr "お気に入りダッシュボード"
 
 #. js-lingui-id: TDlZ/o
 #: src/modules/favorite-folder/standard-objects/favorite-folder.workspace-entity.ts
@@ -1266,7 +1319,7 @@ msgstr "連絡先に関連するお気に入り"
 #. js-lingui-id: 5zuBdE
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Favorites linked to the dashboard"
-msgstr ""
+msgstr "ダッシュボードに関連するお気に入り"
 
 #. js-lingui-id: GOfcBt
 #: src/modules/note/standard-objects/note.workspace-entity.ts
@@ -1308,6 +1361,11 @@ msgstr "ワークスペースメンバーに関連するお気に入り"
 msgid "Favorites tied to the {label}"
 msgstr "{label}に関連するお気に入り"
 
+#. js-lingui-id: 4lgLew
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "February"
+msgstr "2月"
+
 #. js-lingui-id: vngnhF
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
 msgid "Field already exists"
@@ -1316,7 +1374,7 @@ msgstr "フィールドは既に存在します"
 #. js-lingui-id: ugu505
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field cannot be indexed as it belongs to a different object"
-msgstr ""
+msgstr "フィールドは異なるオブジェクトに属するため、インデックス化できません"
 
 #. js-lingui-id: Hg95ys
 #: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-identifiers.util.ts
@@ -1336,12 +1394,17 @@ msgstr "ラベル識別子として宣言されたフィールドが見つかり
 #. js-lingui-id: qelyBB
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field does not belong to the indexed object"
-msgstr ""
+msgstr "フィールドはインデックス化されたオブジェクトに属していません"
 
 #. js-lingui-id: DXxcTd
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field ID is already used in another index"
-msgstr ""
+msgstr "フィールドIDは別のインデックスですでに使用されています"
+
+#. js-lingui-id: AgbRjM
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
+msgid "Field label identifier is required"
+msgstr "フィールドラベル識別子は必須です"
 
 #. js-lingui-id: nSFFML
 #: src/modules/view/standard-objects/view-sort.workspace-entity.ts
@@ -1352,15 +1415,19 @@ msgid "Field Metadata Id"
 msgstr "フィールドメタデータID"
 
 #. js-lingui-id: MPt365
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "Field metadata not found"
-msgstr ""
+msgstr "フィールドメタデータが見つかりません"
 
 #. js-lingui-id: uTPwH1
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
 msgid "Field metadata to delete not found"
-msgstr ""
+msgstr "削除するフィールドメタデータが見つかりません"
 
 #. js-lingui-id: Ljqo/T
 #: src/engine/metadata-modules/flat-field-metadata/utils/from-update-field-input-to-flat-field-metadata.util.ts
@@ -1378,10 +1445,15 @@ msgstr "集計操作に使用するフィールドメタデータ"
 msgid "Field name is not synced with field label"
 msgstr "フィールド名がフィールドラベルと同期していません"
 
+#. js-lingui-id: QXuG8C
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "Field permissions can only be used to restrict access, not to grant additional permissions."
+msgstr "フィールドアクセス権はアクセス制限のみを目的としており、追加の権限の付与には使用できません。"
+
 #. js-lingui-id: S+y2Wg
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Field referenced in index does not exist"
-msgstr ""
+msgstr "インデックスで参照されたフィールドは存在しません"
 
 #. js-lingui-id: cK8ILP
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
@@ -1404,32 +1476,32 @@ msgid "Field Value"
 msgstr "フィールド値"
 
 #. js-lingui-id: s3HtdT
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "FieldMetadataId is required"
 msgstr "FieldMetadataIdが必要です"
 
 #. js-lingui-id: Sof2+k
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "FieldMetadataId is required to create a view field."
 msgstr "ビュー フィールドを作成するには FieldMetadataId が必要です。"
 
 #. js-lingui-id: NTyTR5
-#: src/engine/core-modules/view/exceptions/view-filter-group.exception.ts
+#: src/engine/metadata-modules/view-filter-group/exceptions/view-filter-group.exception.ts
 msgid "FieldMetadataId is required to create a view filter group."
 msgstr "ビュー フィルター グループを作成するには FieldMetadataId が必要です。"
 
 #. js-lingui-id: Ya6oU7
-#: src/engine/core-modules/view/exceptions/view-filter.exception.ts
+#: src/engine/metadata-modules/view-filter/exceptions/view-filter.exception.ts
 msgid "FieldMetadataId is required to create a view filter."
 msgstr "ビュー フィルターを作成するには FieldMetadataId が必要です。"
 
 #. js-lingui-id: DU4jcg
-#: src/engine/core-modules/view/exceptions/view-group.exception.ts
+#: src/engine/metadata-modules/view-group/exceptions/view-group.exception.ts
 msgid "FieldMetadataId is required to create a view group."
 msgstr "ビュー グループを作成するには FieldMetadataId が必要です。"
 
 #. js-lingui-id: snEXuU
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "FieldMetadataId is required to create a view sort."
 msgstr "ビュー ソートを作成するには FieldMetadataId が必要です。"
 
@@ -1462,6 +1534,11 @@ msgstr "フォームアクションフィールドはユニークな名前を持
 #: src/modules/workflow/workflow-trigger/utils/assert-form-step-is-valid.util.ts
 msgid "Form action must have at least one field"
 msgstr "フォームアクションには少なくとも1つのフィールドが必要です"
+
+#. js-lingui-id: 39y5bn
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Friday"
+msgstr "金曜日"
 
 #. js-lingui-id: oQA+cA
 #: src/modules/attachment/standard-objects/attachment.workspace-entity.ts
@@ -1532,54 +1609,55 @@ msgstr "理想的な顧客プロフィール：会社が最も適切で価値の
 
 #. js-lingui-id: YcVn4w
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "If defined default value must contain at least one value"
 msgstr "定義されている場合、デフォルト値には少なくとも1つの値が含まれている必要があります"
 
 #. js-lingui-id: Kfy/ML
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index already exists"
-msgstr ""
+msgstr "インデックスはすでに存在します"
 
 #. js-lingui-id: EwXumf
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index field has an invalid reference"
-msgstr ""
+msgstr "インデックスフィールドには無効な参照があります"
 
 #. js-lingui-id: +hk7cY
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index field ID already exists in another index"
-msgstr ""
+msgstr "インデックスフィールドIDは別のインデックスですでに存在しています"
 
 #. js-lingui-id: ITue4V
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index field references incorrect index metadata"
-msgstr ""
+msgstr "インデックスフィールドが誤ったインデックスメタデータを参照しています"
 
 #. js-lingui-id: K1hWwv
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index must have at least one field"
-msgstr ""
+msgstr "インデックスには少なくとも1つのフィールドが必要です"
 
 #. js-lingui-id: Hl6cv2
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index related object not found"
-msgstr ""
+msgstr "インデックス関連オブジェクトが見つかりませんでした"
 
 #. js-lingui-id: fY2zUQ
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index to delete not found"
-msgstr ""
+msgstr "削除するインデックスが見つかりません"
 
 #. js-lingui-id: qgBN4Y
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index with same id already exists"
-msgstr ""
+msgstr "同じIDを持つインデックスはすでに存在します"
 
 #. js-lingui-id: a+k+8J
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Index with same name already exists"
-msgstr ""
+msgstr "同じ名前のインデックスはすでに存在します"
 
 #. js-lingui-id: 71VJzG
 #: src/engine/metadata-modules/utils/validate-metadata-name-is-not-too-short.utils.ts
@@ -1600,6 +1678,11 @@ msgstr "無効なキャプチャです。他のデバイスを試してくださ
 #: src/engine/core-modules/record-transformer/utils/transform-phones-value.util.ts
 msgid "Invalid country code {countryCode}"
 msgstr "無効な国コード {countryCode}"
+
+#. js-lingui-id: AMeEDO
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "Invalid credentials. Please check your username and password."
+msgstr "認証情報が無効です。ユーザー名とパスワードを確認してください。"
 
 #. js-lingui-id: 4EtFrA
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
@@ -1639,6 +1722,11 @@ msgstr "無効な分の値。1 を超える整数であるべきです"
 msgid "Invalid morph relation input"
 msgstr "無効なモーフ関連入力"
 
+#. js-lingui-id: VvhAS2
+#: src/engine/metadata-modules/object-metadata/utils/validate-object-metadata-input.util.ts
+msgid "Invalid object metadata input"
+msgstr "オブジェクトメタデータ入力が無効です。"
+
 #. js-lingui-id: AXZsy/
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-relation-creation-payload.util.ts
 msgid "Invalid relation creation payload"
@@ -1665,12 +1753,12 @@ msgid "Invalid verification code. Please try again."
 msgstr "無効な認証コードです。もう一度お試しください。"
 
 #. js-lingui-id: 8xkULN
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "Invalid view sort data"
 msgstr "無効なビューソートデータ"
 
 #. js-lingui-id: I0OzaR
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "Invalid view sort data for view sort id: {id}"
 msgstr "ビューソートID：{id} の無効なビューソートデータ"
 
@@ -1720,6 +1808,11 @@ msgstr "同期が有効か"
 msgid "Is Synced"
 msgstr "同期されています"
 
+#. js-lingui-id: rjyWPb
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "January"
+msgstr "1月"
+
 #. js-lingui-id: 27z+FV
 #: src/modules/person/standard-objects/person.workspace-entity.ts
 msgid "Job Title"
@@ -1750,6 +1843,16 @@ msgstr "トリガーを提供するJSONオブジェクト"
 msgid "Json value for event details"
 msgstr "イベント詳細のJSON値"
 
+#. js-lingui-id: u4ex5r
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "July"
+msgstr "7月"
+
+#. js-lingui-id: zeEQd/
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "June"
+msgstr "6月"
+
 #. js-lingui-id: qmarO2
 #: src/modules/view/standard-objects/view.workspace-entity.ts
 msgid "kanbanfieldMetadataId"
@@ -1759,6 +1862,24 @@ msgstr "カンバンフィールドメタデータID"
 #: src/modules/view/standard-objects/view.workspace-entity.ts
 msgid "Key"
 msgstr "キー"
+
+#. js-lingui-id: ACUSmL
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+msgid "Label identifier view field cannot be deleted"
+msgstr "ラベル識別子ビュー項目は削除できません"
+
+#. js-lingui-id: rI+dAx
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+msgid "Label identifier view field has to be in the lowest position"
+msgstr "ラベル識別子ビュー項目は最下位の位置である必要があります"
+
+#. js-lingui-id: PqTWJf
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/utils/validate-label-identifier-field-metadata-id-flat-view-field.util.ts
+msgid "Label identifier view field has to be visible"
+msgstr "ラベル識別子ビュー項目は表示されている必要があります"
 
 #. js-lingui-id: w8Rv8T
 #: src/engine/metadata-modules/utils/compute-metadata-name-from-label.util.ts
@@ -1861,10 +1982,20 @@ msgstr "論理演算子"
 msgid "Logical operator for the filter group"
 msgstr "フィルターグループの論理演算子"
 
+#. js-lingui-id: hg6l4j
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "March"
+msgstr "3月"
+
 #. js-lingui-id: hw7Mwk
 #: src/engine/api/graphql/graphql-query-runner/resolvers/graphql-query-create-many-resolver.service.ts
 msgid "Maximum number of records to upsert is {QUERY_MAX_RECORDS}."
-msgstr ""
+msgstr "アップサートできるレコードの最大数は {QUERY_MAX_RECORDS} です。"
+
+#. js-lingui-id: 3JzsDb
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "May"
+msgstr "5月"
 
 #. js-lingui-id: EnfPm2
 #: src/modules/calendar/common/standard-objects/calendar-event.workspace-entity.ts
@@ -1935,7 +2066,7 @@ msgstr "メッセージフォルダ"
 #: src/modules/messaging/common/standard-objects/message-channel.workspace-entity.ts
 #: src/modules/messaging/common/standard-objects/message-channel.workspace-entity.ts
 msgid "Message folder import policy"
-msgstr ""
+msgstr "メッセージフォルダのインポートポリシー"
 
 #. js-lingui-id: p4ANpY
 #: src/modules/messaging/common/standard-objects/message-folder.workspace-entity.ts
@@ -2030,6 +2161,11 @@ msgstr "メッセージングプロバイダーのリフレッシュトークン
 msgid "Missing required fields: at least one unique constraint have to be fully populated for '{connectFieldName}'."
 msgstr "必要なフィールドがありません: 少なくとも一つのユニーク制約が完全に指定されている必要があります '{connectFieldName}'。"
 
+#. js-lingui-id: hty0d5
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Monday"
+msgstr "月曜日"
+
 #. js-lingui-id: FqzlX4
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-morph-relation-creation-payload.util.ts
 msgid "Morph relation creation payloads must have the same relation type"
@@ -2058,7 +2194,7 @@ msgstr "マルチセレクトフィールドのデフォルト値は配列であ
 #. js-lingui-id: 6rLmLu
 #: src/engine/api/graphql/graphql-query-runner/resolvers/graphql-query-create-many-resolver.service.ts
 msgid "Multiple records found with the same unique field values for {conflictingFieldsValues}. Cannot determine which record to update."
-msgstr ""
+msgstr "{ConflictingFieldsValues} のために同一フィールド値を持つ複数のレコードが見つかりました。どのレコードを更新するか判断できません。"
 
 #. js-lingui-id: 6YtxFj
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -2091,6 +2227,11 @@ msgstr "名前 \"{flatFieldMetadataName}\" は使用できません"
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-flat-field-metadata-name-availability.util.ts
 msgid "Name \"{flatFieldMetadataName}\" is not available as it is already used by another field"
 msgstr "名前 \"{flatFieldMetadataName}\" は他のフィールドで既に使用されているため利用できません"
+
+#. js-lingui-id: Q2loDF
+#: src/engine/metadata-modules/object-metadata/services/object-metadata-field-relation.service.ts
+msgid "Name \"{name}\" is not available."
+msgstr "名前 \"{name}\" は使用できません."
 
 #. js-lingui-id: RGz1nY
 #: src/engine/metadata-modules/field-metadata/services/field-metadata-validation.service.ts
@@ -2133,8 +2274,8 @@ msgid "Name should be in camelCase"
 msgstr "名前はキャメルケースでなければなりません"
 
 #. js-lingui-id: Dr0xtb
-#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
-#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
+#: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-name-and-labels.util.ts
+#: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-name-and-labels.util.ts
 msgid "Names are not synced with labels"
 msgstr "名前がラベルと同期していません。"
 
@@ -2152,6 +2293,11 @@ msgstr "フォームステップに入力が提供されていません"
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
 msgid "No pattern provided in CUSTOM cron trigger"
 msgstr "CUSTOM cron トリガーにパターンが提供されていません"
+
+#. js-lingui-id: 2iURlq
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "No permissions are set for this role on the selected object. Please set object permissions first."
+msgstr "選択したオブジェクトにこのロールの権限が設定されていません。最初にオブジェクト権限を設定してください。"
 
 #. js-lingui-id: pOu4u/
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
@@ -2172,6 +2318,11 @@ msgstr "ワークフローバージョンにはステップが提供されてい
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
 msgid "No trigger type provided"
 msgstr "トリガータイプが提供されていません"
+
+#. js-lingui-id: /BipSk
+#: src/engine/metadata-modules/permissions/utils/permission-graphql-api-exception-handler.util.ts
+msgid "No valid authentication context found."
+msgstr "有効な認証コンテキストが見つかりません。"
 
 #. js-lingui-id: KiJn9B
 #: src/modules/timeline/standard-objects/timeline-activity.workspace-entity.ts
@@ -2266,10 +2417,15 @@ msgstr "ノートターゲット商談"
 msgid "NoteTarget person"
 msgstr "ノートターゲット人物"
 
+#. js-lingui-id: t9QlBd
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "November"
+msgstr "11月"
+
 #. js-lingui-id: bR2sEm
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
 msgid "Number format"
-msgstr ""
+msgstr "数値形式"
 
 #. js-lingui-id: ioJFzx
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -2277,8 +2433,8 @@ msgid "Number of employees in the company"
 msgstr "会社の従業員数"
 
 #. js-lingui-id: ECRKYR
-#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-object-metadata-validator.service.ts
 #: src/engine/metadata-modules/utils/validate-no-other-object-with-same-name-exists-or-throw.util.ts
+#: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-name-and-labels.util.ts
 msgid "Object already exists"
 msgstr "オブジェクトは既に存在します"
 
@@ -2301,7 +2457,7 @@ msgstr "オブジェクトメタデータID"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "Object metadata not found"
-msgstr ""
+msgstr "オブジェクトメタデータが見つかりません"
 
 #. js-lingui-id: E8vJ0A
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-field-metadata-validator.service.ts
@@ -2342,9 +2498,19 @@ msgid "Object with same id already exists"
 msgstr "オブジェクトは同じIDで既に存在します"
 
 #. js-lingui-id: 53pIyA
-#: src/engine/core-modules/view/exceptions/view.exception.ts
+#: src/engine/metadata-modules/view/exceptions/view.exception.ts
 msgid "ObjectMetadataId is required to create a view."
 msgstr "ビューを作成するには ObjectMetadataId が必要です。"
+
+#. js-lingui-id: dzQfDY
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "October"
+msgstr "10月"
+
+#. js-lingui-id: eWQQpx
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+msgid "One or more objects you are trying to set permissions for could not be found. They may have been deleted."
+msgstr "権限を設定しようとしているオブジェクトの1つ以上が見つかりません。削除された可能性があります。"
 
 #. js-lingui-id: r/A6pA
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -2415,11 +2581,13 @@ msgstr "\"商談ステージ\""
 
 #. js-lingui-id: 2mFkfl
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Option id is invalid"
 msgstr "オプションIDが無効です"
 
 #. js-lingui-id: MniXaX
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Option id is required"
 msgstr "オプションIDが必要です"
 
@@ -2552,6 +2720,27 @@ msgstr "\"電話\""
 msgid "Phones"
 msgstr "\"電話番号\""
 
+#. js-lingui-id: rxi3R2
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
+msgid "Please check your connection settings. Make sure the server host, port, and password are correct."
+msgstr "接続設定を確認してください。サーバーホスト、ポート、およびパスワードが正しいことを確認してください。"
+
+#. js-lingui-id: v0iiWr
+#: src/engine/core-modules/webhook/webhook.service.ts
+#: src/engine/core-modules/webhook/webhook.service.ts
+msgid "Please provide a valid HTTP or HTTPS URL."
+msgstr "有効なHTTPまたはHTTPS URLを提供してください。"
+
+#. js-lingui-id: RDvKTq
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
+msgid "Please provide connection details to configure your email account."
+msgstr "メールアカウントを設定するために接続詳細を提供してください。"
+
+#. js-lingui-id: 0ldKS0
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "Please select a valid connection type (IMAP, SMTP, or CalDAV) and try again."
+msgstr "有効な接続タイプ (IMAP、SMTP、またはCalDAV) を選択し、もう一度お試しください。"
+
 #. js-lingui-id: P04j61
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 msgid "Point of Contact"
@@ -2637,12 +2826,28 @@ msgstr "\"プロバイダ\""
 #. js-lingui-id: OL88cI
 #: src/engine/core-modules/public-domain/public-domain.service.ts
 msgid "Public domain already registered"
-msgstr ""
+msgstr "公開ドメインはすでに登録されています"
+
+#. js-lingui-id: Capzni
+#: src/engine/core-modules/dns-manager/services/dns-manager.service.ts
+msgid "Public domain URL is not defined. Please set the PUBLIC_DOMAIN_URL environment variable"
+msgstr "公開ドメインURLが定義されていません。PUBLIC_DOMAIN_URL環境変数を設定してください。"
 
 #. js-lingui-id: YfbwOB
 #: src/modules/messaging/common/standard-objects/message.workspace-entity.ts
 msgid "Received At"
 msgstr "\"受信日時\""
+
+#. js-lingui-id: x93onj
+#: src/engine/metadata-modules/view-field/services/view-field.service.ts
+#: src/engine/metadata-modules/view-field/services/view-field.service.ts
+msgid "Record text must be in first position of the view."
+msgstr "レコードテキストはビューフィールドの最初の位置に配置する必要があります。"
+
+#. js-lingui-id: KGmwY/
+#: src/engine/metadata-modules/view-field/services/view-field.service.ts
+msgid "Record text must stay visible."
+msgstr "レコードテキストは表示され続ける必要があります。"
 
 #. js-lingui-id: 9gXJw8
 #: src/modules/calendar/common/standard-objects/calendar-channel-event-association.workspace-entity.ts
@@ -2710,7 +2915,7 @@ msgstr "役割"
 #. js-lingui-id: MFW30/
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route already exists"
-msgstr ""
+msgstr "ルートはすでに存在します"
 
 #. js-lingui-id: ldQZkA
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
@@ -2718,28 +2923,33 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route not found"
-msgstr ""
+msgstr "ルートが見つかりません"
 
 #. js-lingui-id: NCQS+K
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route path already exists"
-msgstr ""
+msgstr "ルートパスはすでに存在します"
 
 #. js-lingui-id: v5H7VS
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route with same id already exists"
-msgstr ""
+msgstr "同じIDを持つルートはすでに存在します"
 
 #. js-lingui-id: c10Yre
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-route-trigger-validator.service.ts
 msgid "Route with same path already exists"
-msgstr ""
+msgstr "同じパスを持つルートはすでに存在します"
 
 #. js-lingui-id: Tpm2G9
 #: src/modules/workflow/common/standard-objects/workflow.workspace-entity.ts
 #: src/modules/workflow/common/standard-objects/workflow-version.workspace-entity.ts
 msgid "Runs"
 msgstr "実行回数"
+
+#. js-lingui-id: +5kO8P
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Saturday"
+msgstr "土曜日"
 
 #. js-lingui-id: N/rFzD
 #: src/modules/connected-account/standard-objects/connected-account.workspace-entity.ts
@@ -2752,10 +2962,15 @@ msgstr "スコープ"
 msgid "Search vector"
 msgstr "検索ベクトル"
 
+#. js-lingui-id: hgvbYY
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "September"
+msgstr "9月"
+
 #. js-lingui-id: F3+i2a
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-serverless-function-validator.service.ts
 msgid "Serverless function already exists"
-msgstr ""
+msgstr "サーバーレス機能は既に存在します"
 
 #. js-lingui-id: MSgd2w
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-serverless-function-validator.service.ts
@@ -2775,17 +2990,17 @@ msgstr ""
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-cron-trigger-validator.service.ts
 msgid "Serverless function not found"
-msgstr ""
+msgstr "サーバーレス機能が見つかりません"
 
 #. js-lingui-id: jNhvmj
 #: src/engine/metadata-modules/serverless-function/utils/from-update-serverless-function-input-to-flat-serverless-function-to-update-or-throw.util.ts
 msgid "Serverless function to update not found"
-msgstr ""
+msgstr "更新するサーバーレス機能が見つかりません"
 
 #. js-lingui-id: zoBkIJ
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-serverless-function-validator.service.ts
 msgid "Serverless function with same id already exists"
-msgstr ""
+msgstr "同じIDを持つサーバーレス機能は既に存在します"
 
 #. js-lingui-id: Tz0i8g
 #: src/modules/workflow/common/standard-objects/workflow-automated-trigger.workspace-entity.ts
@@ -2796,6 +3011,16 @@ msgstr "設定"
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
 msgid "Size"
 msgstr "サイズ"
+
+#. js-lingui-id: RyE+Of
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "Some of the information provided is invalid. Please check your input and try again."
+msgstr "提供された情報の一部が無効です。入力を確認してもう一度お試しください。"
+
+#. js-lingui-id: 01Sxb6
+#: src/engine/metadata-modules/permission-flag/permission-flag.service.ts
+msgid "Some of the permissions you selected are not valid. Please try again with valid permission settings."
+msgstr "選択した権限の一部が無効です。 有効な権限設定を試してください。"
 
 #. js-lingui-id: 3PRxO3
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
@@ -2870,6 +3095,11 @@ msgstr "サブフィールド名"
 #: src/modules/messaging/common/standard-objects/message.workspace-entity.ts
 msgid "Subject"
 msgstr "件名"
+
+#. js-lingui-id: DBC3t5
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Sunday"
+msgstr "日曜日"
 
 #. js-lingui-id: oyJYg7
 #: src/modules/messaging/common/standard-objects/message-folder.workspace-entity.ts
@@ -3041,6 +3271,11 @@ msgstr "アカウントのハンドル（メール、ユーザーネーム、電
 msgid "The account provider"
 msgstr "アカウントプロバイダー"
 
+#. js-lingui-id: eC8p5b
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+msgid "The API key does not have a valid role assigned. Please check your API key configuration."
+msgstr "APIキーに有効なロールが割り当てられていません。APIキーの設定を確認してください。"
+
 #. js-lingui-id: qnNFrW
 #: src/modules/company/standard-objects/company.workspace-entity.ts
 msgid "The company Linkedin account"
@@ -3083,10 +3318,25 @@ msgstr "ワークフローバージョンの現在のステータス"
 msgid "The date the message was received"
 msgstr "メッセージ受信日"
 
+#. js-lingui-id: nCXfEw
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "The default role cannot be deleted as it is required for the workspace to function properly."
+msgstr "デフォルトロールはワークスペースの正しい機能に必要なため削除することはできません。"
+
+#. js-lingui-id: 6BBrjb
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "The default role for this workspace could not be found. Please contact support for assistance."
+msgstr "このワークスペースのデフォルトロールが見つかりませんでした。サポートに連絡してアシスタンスをお求めください。"
+
 #. js-lingui-id: 8h4mhq
 #: src/modules/workflow/common/standard-objects/workflow-run.workspace-entity.ts
 msgid "The executor of the workflow"
 msgstr "ワークフローの実行者"
+
+#. js-lingui-id: LdhPiK
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "The field you are trying to set permissions for could not be found. It may have been deleted."
+msgstr "権限を設定しようとしているフィールドが見つかりません。それは削除された可能性があります。"
 
 #. js-lingui-id: W3raza
 #: src/modules/favorite/standard-objects/favorite.workspace-entity.ts
@@ -3103,10 +3353,34 @@ msgstr "ワークフローの最初のバージョンは削除できません"
 msgid "The name is not available"
 msgstr "この名前は使用できません。"
 
+#. js-lingui-id: hx2IZ4
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "The object you are trying to set permissions for could not be found. It may have been deleted."
+msgstr "権限を設定しようとしているオブジェクトが見つかりません。それは削除された可能性があります。"
+
 #. js-lingui-id: DbWmKZ
 #: src/modules/opportunity/standard-objects/opportunity.workspace-entity.ts
 msgid "The opportunity name"
 msgstr "商談名"
+
+#. js-lingui-id: Zi9X+u
+#: src/engine/metadata-modules/role/role.service.ts
+msgid "The role you are looking for could not be found. It may have been deleted or you may not have access to it."
+msgstr "探しているロールが見つかりませんでした。それは削除されたか、アクセスできない可能性があります。"
+
+#. js-lingui-id: 5h4Nxe
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "The role you are trying to assign could not be found. It may have been deleted."
+msgstr "割り当てようとしているロールが見つかりませんでした。それは削除された可能性があります。"
+
+#. js-lingui-id: HRcugS
+#: src/engine/metadata-modules/permission-flag/permission-flag.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "The role you are trying to modify could not be found. It may have been deleted or you may not have access to it."
+msgstr "修正しようとしているロールが見つかりませんでした。それは削除されたか、アクセスできない可能性があります。"
 
 #. js-lingui-id: H1tAJD
 #: src/engine/metadata-modules/flat-object-metadata/validators/utils/validate-flat-object-metadata-label.util.ts
@@ -3148,6 +3422,36 @@ msgstr "ワークフローバージョン名"
 msgid "The workflow version status"
 msgstr "ワークフローバージョンのステータス"
 
+#. js-lingui-id: Kfwq7n
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
+msgid "There was an issue with your connection settings. Please try again."
+msgstr "接続設定に問題がありました。もう一度お試しください。"
+
+#. js-lingui-id: Bm40Ow
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This {fieldName} is already taken. Please choose a different value."
+msgstr "この{fieldName}はすでに使用されています。異なる値を選択してください。"
+
+#. js-lingui-id: CYyoPc
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This {fieldName} with value {duplicatedValues} is already taken. Please choose a different value."
+msgstr "この{fieldName}に値{duplicatedValues}がすでに使用されています。異なる値を選択してください。"
+
+#. js-lingui-id: Izdz+Y
+#: src/engine/core-modules/api-key/api-key.service.ts
+msgid "This API Key has been revoked and can no longer be used."
+msgstr "このAPIキーは取り消され、もう使用できません。"
+
+#. js-lingui-id: Jmzgho
+#: src/engine/core-modules/api-key/api-key.service.ts
+msgid "This API Key has expired. Please create a new one."
+msgstr "このAPIキーは期限切れです。新しいものを作成してください。"
+
+#. js-lingui-id: r/Z8XK
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This combination of {fieldNames} already exists. Please use different values."
+msgstr "この{fieldNames}の組み合わせはすでに存在します。別の値を使用してください。"
+
 #. js-lingui-id: mAs70Y
 #: src/engine/metadata-modules/utils/validate-field-name-availability.utils.ts
 msgid "This name is not available as it is already used by another field."
@@ -3158,6 +3462,29 @@ msgstr "この名前は他のフィールドで既に使用されているため
 #: src/engine/metadata-modules/utils/validate-field-name-availability.utils.ts
 msgid "This name is not available."
 msgstr "この名前は使用できません。"
+
+#. js-lingui-id: eitC3W
+#: src/engine/workspace-datasource/workspace-datasource.service.ts
+msgid "This operation is not allowed. Please try a different approach or contact support if you need assistance."
+msgstr "この操作は許可されていません。別の方法を試してください。サポートが必要な場合はお問い合わせください。"
+
+#. js-lingui-id: TjUnO1
+#: src/engine/api/graphql/workspace-query-runner/utils/handle-duplicate-key-error.util.ts
+msgid "This record already exists. Please check your data and try again."
+msgstr "このレコードはすでに存在します。データを確認してもう一度お試しください。"
+
+#. js-lingui-id: +L9yxk
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "This role cannot be assigned to users. Please select a different role."
+msgstr "このロールはユーザーに割り当てることはできません。別のロールを選択してください。"
+
+#. js-lingui-id: KoDdqN
+#: src/engine/metadata-modules/role/role.service.ts
+#: src/engine/metadata-modules/permission-flag/permission-flag.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "This role cannot be modified because it is a system role. Only custom roles can be edited."
+msgstr "このロールはシステムロールであるため変更できません。カスタムロールのみ編集できます。"
 
 #. js-lingui-id: Zl0BJl
 #: src/modules/messaging/common/standard-objects/message-channel-message-association.workspace-entity.ts
@@ -3176,6 +3503,11 @@ msgstr "メッセージングプロバイダーからのスレッドID"
 #: src/modules/calendar/common/standard-objects/calendar-channel.workspace-entity.ts
 msgid "Throttle Failure Count"
 msgstr "スロットル失敗数"
+
+#. js-lingui-id: kkDQ8m
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Thursday"
+msgstr "木曜日"
 
 #. js-lingui-id: n9nSNJ
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3209,7 +3541,7 @@ msgstr "会社にリンクしたタイムライン活動"
 #. js-lingui-id: CNev+0
 #: src/modules/dashboard/standard-objects/dashboard.workspace-entity.ts
 msgid "Timeline activities linked to the dashboard"
-msgstr ""
+msgstr "ダッシュボードにリンクされたタイムライン活動"
 
 #. js-lingui-id: 4/UzU5
 #: src/modules/note/standard-objects/note.workspace-entity.ts
@@ -3260,6 +3592,11 @@ msgstr "タイムライン活動"
 msgid "Title"
 msgstr "タイトル"
 
+#. js-lingui-id: G3myU+
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Tuesday"
+msgstr "火曜日"
+
 #. js-lingui-id: +zy2Nq
 #: src/modules/view/standard-objects/view.workspace-entity.ts
 #: src/modules/messaging/common/standard-objects/message-channel.workspace-entity.ts
@@ -3294,11 +3631,21 @@ msgstr "更新日時"
 msgid "Updated field name is not synced with label"
 msgstr "更新されたフィールド名がラベルと同期していません"
 
+#. js-lingui-id: GkcfmO
+#: src/engine/core-modules/auth/services/sign-in-up.service.ts
+msgid "User already exists"
+msgstr "ユーザーは既に存在します"
+
 #. js-lingui-id: l9dlVi
 #: src/engine/core-modules/auth/strategies/jwt.auth.strategy.ts
 #: src/engine/core-modules/auth/services/auth.service.ts
 msgid "User does not have access to this workspace"
 msgstr "ユーザーはこのワークスペースにアクセスできません"
+
+#. js-lingui-id: Sl1ElS
+#: src/engine/metadata-modules/permissions/utils/permission-graphql-api-exception-handler.util.ts
+msgid "User does not have permission."
+msgstr "ユーザーにはアクセス権がありません。"
 
 #. js-lingui-id: YFciqL
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3314,6 +3661,11 @@ msgstr "ユーザーID"
 #: src/engine/core-modules/auth/services/sign-in-up.service.ts
 msgid "User is not part of the workspace"
 msgstr "ユーザーはワークスペースの一員ではありません"
+
+#. js-lingui-id: g5Z6no
+#: src/engine/core-modules/admin-panel/admin-panel.service.ts
+msgid "User not found. Please check the email or ID."
+msgstr "ユーザーが見つかりません。メールまたはIDを確認してください。"
 
 #. js-lingui-id: 4juE7s
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3333,7 +3685,7 @@ msgstr "ユーザーの好ましい日付フォーマット"
 #. js-lingui-id: PLfanm
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
 msgid "User's preferred number format"
-msgstr ""
+msgstr "ユーザーの好みの数値形式"
 
 #. js-lingui-id: Uce+A8
 #: src/modules/workspace-member/standard-objects/workspace-member.workspace-entity.ts
@@ -3348,7 +3700,7 @@ msgstr "ユーザーの好ましい時間フォーマット"
 #. js-lingui-id: xInMK/
 #: src/engine/workspace-manager/workspace-migration-v2/interceptors/workspace-migration-builder-exception-v2-formatter.ts
 msgid "Validation failed for 0 object(s) and 0 field(s)"
-msgstr ""
+msgstr "0個のオブジェクトと0個のフィールドの検証に失敗しました"
 
 #. js-lingui-id: wMHvYH
 #: src/modules/view/standard-objects/view-filter.workspace-entity.ts
@@ -3357,6 +3709,7 @@ msgstr "値"
 
 #. js-lingui-id: UBPzFQ
 #: src/engine/metadata-modules/flat-field-metadata/validators/utils/validate-enum-flat-field-metadata.util.ts
+#: src/engine/metadata-modules/field-metadata/services/field-metadata-enum-validation.service.ts
 msgid "Value must be in UPPER_CASE and follow snake_case \"{sanitizedValue}\""
 msgstr "値はUPPER_CASEであり、snake_caseに従っている必要があります「{sanitizedValue}」"
 
@@ -3394,7 +3747,7 @@ msgstr "ビュー"
 #. js-lingui-id: HhN1Bv
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "View already exists"
-msgstr ""
+msgstr "ビューはすでに存在します"
 
 #. js-lingui-id: cZPDyy
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
@@ -3404,22 +3757,22 @@ msgstr "ビューフィールド"
 #. js-lingui-id: pTvQqf
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field already exists"
-msgstr ""
+msgstr "ビュー フィールドはすでに存在します"
 
 #. js-lingui-id: Xm6R6B
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "View field already exists."
 msgstr "ビュー フィールドは既に存在します。"
 
 #. js-lingui-id: 7jUWQ+
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field metadata already exists"
-msgstr ""
+msgstr "ビュー フィールド メタデータはすでに存在します"
 
 #. js-lingui-id: Yvf7WL
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field metadata with id {flatViewFieldId} already exists"
-msgstr ""
+msgstr "ID {flatViewFieldId} のビュー フィールド メタデータはすでに存在します"
 
 #. js-lingui-id: 6jpoH4
 #: src/modules/view/standard-objects/view-group.workspace-entity.ts
@@ -3427,10 +3780,22 @@ msgstr ""
 msgid "View Field position"
 msgstr "ビューフィールドの位置"
 
+#. js-lingui-id: 7LMaUn
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field position cannot be lower than label identifier view field position"
+msgstr "ビュー項目の位置はラベル識別子ビュー項目の位置より低くすることはできません"
+
 #. js-lingui-id: Ju6gri
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
 msgid "View Field related view"
 msgstr "ビューフィールドの関連ビュー"
+
+#. js-lingui-id: WZzm3R
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field related view object metadata not found"
+msgstr "ビュー項目関連のオブジェクトメタデータが見つかりません"
 
 #. js-lingui-id: tvTr2y
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
@@ -3446,26 +3811,38 @@ msgstr "ビューフィールドの対象フィールド"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field to delete has not been soft deleted"
-msgstr ""
+msgstr "削除するビュー フィールドはソフト削除されていません"
 
 #. js-lingui-id: XJlyZS
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
-#: src/engine/core-modules/view/flat-view/utils/from-delete-view-field-input-to-flat-view-field-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view-field/utils/from-delete-view-field-input-to-flat-view-field-or-throw.util.ts
 msgid "View field to delete not found"
-msgstr ""
+msgstr "削除するフィールドが見つかりません"
 
 #. js-lingui-id: DXyYuh
-#: src/engine/core-modules/view/flat-view/utils/from-destroy-view-field-input-to-flat-view-field-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view-field/utils/from-destroy-view-field-input-to-flat-view-field-or-throw.util.ts
 msgid "View field to destroy not found"
-msgstr ""
+msgstr "破棄するフィールドが見つかりません"
 
 #. js-lingui-id: Fpy/K1
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
-#: src/engine/core-modules/view/flat-view/utils/from-update-view-field-input-to-flat-view-field-to-update-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view-field/utils/from-update-view-field-input-to-flat-view-field-to-update-or-throw.util.ts
 msgid "View field to update not found"
-msgstr ""
+msgstr "更新するフィールドを表示して更新が見つかりません"
+
+#. js-lingui-id: AprfQL
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field to update parent view not found"
+msgstr "親ビューを更新するためのビュー項目が見つかりません"
+
+#. js-lingui-id: sqzMKR
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
+msgid "View field to update parent view object not found"
+msgstr "親ビューオブジェクトを更新するためのビュー項目が見つかりません"
 
 #. js-lingui-id: Gd/LzL
 #: src/modules/view/standard-objects/view-field.workspace-entity.ts
@@ -3475,7 +3852,7 @@ msgstr "ビューフィールドの表示"
 #. js-lingui-id: 89Wiy+
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View field with same fieldmetadataId and viewId already exists"
-msgstr ""
+msgstr "同じフィールドメタデータIDとビューIDを持つフィールドビューが既に存在します"
 
 #. js-lingui-id: GUFYyq
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3512,6 +3889,20 @@ msgstr "ビューフィルタグループID"
 msgid "View Filter Groups"
 msgstr "ビューフィルタグループ"
 
+#. js-lingui-id: DjGFaP
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+msgid "View filter has to be soft deleted first"
+msgstr "ビュー フィルターは、まずソフト デリートする必要があります。"
+
+#. js-lingui-id: 1KSqGE
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+msgid "View filter not found"
+msgstr "ビューフィルターが見つかりません。"
+
 #. js-lingui-id: 4MG8+B
 #: src/modules/view/standard-objects/view-filter.workspace-entity.ts
 msgid "View Filter operand"
@@ -3527,10 +3918,31 @@ msgstr "ビューフィルタの関連ビュー"
 msgid "View Filter target field"
 msgstr "ビューフィルタの対象フィールド"
 
+#. js-lingui-id: 3l1ppY
+#: src/engine/metadata-modules/flat-view-filter/utils/from-delete-view-filter-input-to-flat-view-filter-or-throw.util.ts
+msgid "View filter to delete not found"
+msgstr "削除するビューフィルターが見つかりません。"
+
+#. js-lingui-id: 9gedIx
+#: src/engine/metadata-modules/flat-view-filter/utils/from-destroy-view-filter-input-to-flat-view-filter-or-throw.util.ts
+msgid "View filter to destroy not found"
+msgstr "破棄するフィルターが見つかりません"
+
+#. js-lingui-id: GzthLy
+#: src/engine/metadata-modules/flat-view-filter/utils/from-update-view-filter-input-to-flat-view-filter-to-update-or-throw.util.ts
+msgid "View filter to update not found"
+msgstr "更新するフィルターが見つかりません"
+
 #. js-lingui-id: 3KzkxN
 #: src/modules/view/standard-objects/view-filter.workspace-entity.ts
 msgid "View Filter value"
 msgstr "ビューフィルタの値"
+
+#. js-lingui-id: LnNgrI
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+msgid "View filter with this id already exists"
+msgstr "同じIDを持つフィルターはすでに存在します"
 
 #. js-lingui-id: vj5JsR
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3591,10 +4003,12 @@ msgstr "ビューの名前"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
+#: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-filter-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-field-validator.service.ts
 msgid "View not found"
-msgstr ""
+msgstr "ビューが見つかりません"
 
 #. js-lingui-id: rhO8zp
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3607,7 +4021,7 @@ msgid "View Sort"
 msgstr "ビューソート"
 
 #. js-lingui-id: znNExx
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "View sort (id: {id}) not found"
 msgstr "ビューソート（ID：{id}）が見つかりません"
 
@@ -3617,7 +4031,7 @@ msgid "View Sort direction"
 msgstr "ビューソートの方向"
 
 #. js-lingui-id: 3zMs+f
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "View sort not found"
 msgstr "ビューソートが見つかりません"
 
@@ -3647,22 +4061,22 @@ msgstr "対象オブジェクトの表示"
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "View to delete has not been soft deleted"
-msgstr ""
+msgstr "削除するビューがソフト削除されていません"
 
 #. js-lingui-id: toB/08
-#: src/engine/core-modules/view/flat-view/utils/from-delete-view-input-to-flat-view-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view/utils/from-delete-view-input-to-flat-view-or-throw.util.ts
 msgid "View to delete not found"
-msgstr ""
+msgstr "削除するビューが見つかりません"
 
 #. js-lingui-id: NnD3Ti
-#: src/engine/core-modules/view/flat-view/utils/from-destroy-view-input-to-flat-view-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view/utils/from-destroy-view-input-to-flat-view-or-throw.util.ts
 msgid "View to destroy not found"
-msgstr ""
+msgstr "破棄するビューが見つかりません"
 
 #. js-lingui-id: 3+GbNY
-#: src/engine/core-modules/view/flat-view/utils/from-update-view-input-to-flat-view-to-update-or-throw.util.ts
+#: src/engine/metadata-modules/flat-view/utils/from-update-view-input-to-flat-view-to-update-or-throw.util.ts
 msgid "View to update not found"
-msgstr ""
+msgstr "更新するビューが見つかりません"
 
 #. js-lingui-id: bJAIqT
 #: src/modules/view/standard-objects/view.workspace-entity.ts
@@ -3672,7 +4086,7 @@ msgstr "ビューのタイプ"
 #. js-lingui-id: ZgRtC4
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-view-validator.service.ts
 msgid "View with same id is already exists"
-msgstr ""
+msgstr "同じIDでビューが既に存在します"
 
 #. js-lingui-id: aeqysn
 #: src/modules/favorite/standard-objects/favorite.workspace-entity.ts
@@ -3681,32 +4095,32 @@ msgid "ViewId"
 msgstr "ビューID"
 
 #. js-lingui-id: kpQRY2
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "ViewId is required"
 msgstr "ViewIdが必要です"
 
 #. js-lingui-id: l88nXn
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "ViewId is required to create a view field."
 msgstr "ビュー フィールドを作成するには ViewId が必要です。"
 
 #. js-lingui-id: 9XMTpT
-#: src/engine/core-modules/view/exceptions/view-filter-group.exception.ts
+#: src/engine/metadata-modules/view-filter-group/exceptions/view-filter-group.exception.ts
 msgid "ViewId is required to create a view filter group."
 msgstr "ビュー フィルター グループを作成するには ViewId が必要です。"
 
 #. js-lingui-id: pCCxli
-#: src/engine/core-modules/view/exceptions/view-filter.exception.ts
+#: src/engine/metadata-modules/view-filter/exceptions/view-filter.exception.ts
 msgid "ViewId is required to create a view filter."
 msgstr "ビュー フィルターを作成するには ViewId が必要です。"
 
 #. js-lingui-id: 1X1RW5
-#: src/engine/core-modules/view/exceptions/view-group.exception.ts
+#: src/engine/metadata-modules/view-group/exceptions/view-group.exception.ts
 msgid "ViewId is required to create a view group."
 msgstr "ビュー グループを作成するには ViewId が必要です。"
 
 #. js-lingui-id: uGUFcy
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "ViewId is required to create a view sort."
 msgstr "ビュー ソートを作成するには ViewId が必要です。"
 
@@ -3733,6 +4147,36 @@ msgstr "表示可能"
 #: src/engine/twenty-orm/error-handling/compute-twenty-orm-exception.ts
 msgid "We are experiencing a temporary issue with our database. Please try again later."
 msgstr "データベースに一時的な問題が発生しています。しばらくしてからもう一度お試しください。"
+
+#. js-lingui-id: B3CG/U
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't connect to your CalDAV server. Please check your server settings and try again."
+msgstr "CalDAV サーバーへの接続ができませんでした。サーバー設定を確認して再試行してください。"
+
+#. js-lingui-id: ax8unE
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't connect to your email server. Please check your server settings and try again."
+msgstr "メールサーバーへの接続ができませんでした。サーバー設定を確認してもう一度お試しください。"
+
+#. js-lingui-id: g4rOV3
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't connect to your outgoing email server. Please check your SMTP settings and try again."
+msgstr "送信メールサーバーへの接続ができませんでした。SMTP設定を確認してもう一度お試しください。"
+
+#. js-lingui-id: v8UNEA
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We couldn't log in to your email account. Please check your email address and password, then try again."
+msgstr "メールアカウントにログインできませんでした。メールアドレスとパスワードを確認し、再試行してください。"
+
+#. js-lingui-id: YxBvFz
+#: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection.service.ts
+msgid "We encountered an issue connecting to your email account. Please check your settings and try again."
+msgstr "メールアカウントへの接続に問題が発生しました。設定を確認してもう一度試してください。"
+
+#. js-lingui-id: VAcXNz
+#: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
+msgid "Wednesday"
+msgstr "水曜日"
 
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
@@ -3896,7 +4340,7 @@ msgstr "WorkflowVersion のワークフロー"
 #. js-lingui-id: XsSVrR
 #: src/engine/core-modules/auth/services/sign-in-up.service.ts
 msgid "Workspace creation is restricted to admins"
-msgstr ""
+msgstr "ワークスペースの作成は管理者に限定されています"
 
 #. js-lingui-id: rklt6M
 #: src/engine/core-modules/auth/services/sign-in-up.service.ts
@@ -3939,37 +4383,37 @@ msgid "Workspace Members"
 msgstr "ワークスペースメンバー"
 
 #. js-lingui-id: bBr+RW
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "WorkspaceId is required"
 msgstr "WorkspaceIdが必要です"
 
 #. js-lingui-id: kjLpTn
-#: src/engine/core-modules/view/exceptions/view-field.exception.ts
+#: src/engine/metadata-modules/view-field/exceptions/view-field.exception.ts
 msgid "WorkspaceId is required to create a view field."
 msgstr "ビュー フィールドを作成するには WorkspaceId が必要です。"
 
 #. js-lingui-id: zWj6VZ
-#: src/engine/core-modules/view/exceptions/view-filter-group.exception.ts
+#: src/engine/metadata-modules/view-filter-group/exceptions/view-filter-group.exception.ts
 msgid "WorkspaceId is required to create a view filter group."
 msgstr "ビュー フィルター グループを作成するには WorkspaceId が必要です。"
 
 #. js-lingui-id: jQMXtD
-#: src/engine/core-modules/view/exceptions/view-filter.exception.ts
+#: src/engine/metadata-modules/view-filter/exceptions/view-filter.exception.ts
 msgid "WorkspaceId is required to create a view filter."
 msgstr "ビュー フィルターを作成するには WorkspaceId が必要です。"
 
 #. js-lingui-id: NAoJAX
-#: src/engine/core-modules/view/exceptions/view-group.exception.ts
+#: src/engine/metadata-modules/view-group/exceptions/view-group.exception.ts
 msgid "WorkspaceId is required to create a view group."
 msgstr "ビュー グループを作成するには WorkspaceId が必要です。"
 
 #. js-lingui-id: hU1QaN
-#: src/engine/core-modules/view/exceptions/view-sort.exception.ts
+#: src/engine/metadata-modules/view-sort/exceptions/view-sort.exception.ts
 msgid "WorkspaceId is required to create a view sort."
 msgstr "ビュー ソートを作成するには WorkspaceId が必要です。"
 
 #. js-lingui-id: jtb/lI
-#: src/engine/core-modules/view/exceptions/view.exception.ts
+#: src/engine/metadata-modules/view/exceptions/view.exception.ts
 msgid "WorkspaceId is required to create a view."
 msgstr "ビューを作成するには WorkspaceId が必要です。"
 
@@ -3991,6 +4435,52 @@ msgstr "間違ったパスワード"
 msgid "X"
 msgstr "X"
 
+#. js-lingui-id: 1SQnFB
+#: src/engine/metadata-modules/role/role.resolver.ts
+msgid "You cannot change your own role. Please ask another administrator to update your role."
+msgstr "自分のロールを変更することはできません。別の管理者にロールの更新を依頼してください。"
+
+#. js-lingui-id: y5haJ4
+#: src/engine/metadata-modules/role/role.service.ts
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+msgid "You cannot grant edit permissions without also granting read permissions. Please enable read access first."
+msgstr "読み取りアクセスも付与せずに編集権限を付与することはできません。最初に読み取りアクセスを有効にしてください。"
+
+#. js-lingui-id: 8wovNr
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "You cannot remove the admin role from the last administrator. Please assign another administrator first."
+msgstr "最後の管理者から管理者ロールを削除することはできません。最初に別の管理者を割り当ててください。"
+
+#. js-lingui-id: WUcQVb
+#: src/engine/metadata-modules/object-permission/field-permission/field-permission.service.ts
+msgid "You cannot set field permissions on system objects as they are managed by the platform."
+msgstr "システムオブジェクトにはフィールドアクセス権を設定できません。それらはプラットフォームによって管理されています。"
+
+#. js-lingui-id: SI6USg
+#: src/engine/metadata-modules/object-permission/object-permission.service.ts
+msgid "You cannot set permissions on system objects as they are managed by the platform."
+msgstr "システムオブジェクトにはアクセス権を設定できません。それらはプラットフォームによって管理されています。"
+
+#. js-lingui-id: EFQeXU
+#: src/engine/guards/settings-permissions.guard.ts
+msgid "You do not have permission to access this feature. Please contact your workspace administrator for access."
+msgstr "この機能へのアクセス権がありません。アクセスにはワークスペース管理者に連絡してください。"
+
+#. js-lingui-id: +2vVRB
+#: src/engine/guards/impersonate-permission.guard.ts
+msgid "You do not have permission to impersonate users. Please contact your workspace administrator for access."
+msgstr "ユーザーの偽装権限がありません。アクセ..."
+
+#. js-lingui-id: k7P8yU
+#: src/engine/core-modules/workspace/services/workspace.service.ts
+msgid "You do not have permission to manage security settings. Please contact your workspace administrator."
+msgstr "セキュリティ設定を管理する権限がありません。ワークスペースの管理者に連絡してください。"
+
+#. js-lingui-id: svchJc
+#: src/engine/core-modules/workspace/services/workspace.service.ts
+msgid "You do not have permission to manage workspace settings. Please contact your workspace administrator."
+msgstr "ワークスペース設定を管理する権限がありません。ワークスペースの管理者に連絡してください。"
+
 #. js-lingui-id: z+7x/s
 #: src/engine/core-modules/auth/utils/auth-graphql-api-exception-handler.util.ts
 msgid "You must be authenticated to perform this action."
@@ -4001,10 +4491,22 @@ msgstr "このアクションを実行するには認証が必要です。"
 msgid "Your app version is out of date. Please refresh the page to continue."
 msgstr "アプリのバージョンが古くなっています。続行するにはページを再読み込みしてください。"
 
+#. js-lingui-id: J5Vm4Q
+#: src/engine/core-modules/billing/billing.validate.ts
+msgid "Your billing subscription is corrupted. Please contact support."
+msgstr "請求サブスクリプションが破損しています。サポートに連絡してください。"
+
 #. js-lingui-id: bTyBrW
 #: src/engine/core-modules/auth/services/auth.service.ts
 msgid "Your Password Has Been Successfully Changed"
 msgstr "パスワードが正常に変更されました"
+
+#. js-lingui-id: XxkUFT
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+#: src/engine/metadata-modules/permissions/permissions.service.ts
+msgid "Your role in this workspace could not be found. Please contact your workspace administrator."
+msgstr "このワークスペースでのロールが見つかりませんでした。ワークスペース管理者に連絡してください。"
 
 #. js-lingui-id: vPccnr
 #: src/modules/company/standard-objects/company.workspace-entity.ts
@@ -4015,3 +4517,8 @@ msgstr "会社のアカウントを管理する責任のあるチームメンバ
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts
 msgid "Your workspace has been updated with a new data model. Please refresh the page."
 msgstr "ワークスペースが新しいデータモデルで更新されました。ページを更新してください。"
+
+#. js-lingui-id: ZukXiD
+#: src/engine/metadata-modules/user-role/user-role.service.ts
+msgid "Your workspace membership could not be found. You may no longer have access to this workspace."
+msgstr "ワークスペースメンバーシップが見つかりません。ワークスペースへのアクセスができない可能性があります。"
